@@ -1,0 +1,24 @@
+[Info]
+name = "Mr.Boo by OverMind"       
+displayname = "BuuBuu" 
+versiondate = 06,27,2000   
+mugenversion = 06,27,2000  
+author = "OverMind"        
+pal.defaults = 1,2,3,4     
+
+[Files]
+cmd     = MrBooHd.cmd     ;Command set
+cns     = MrBooHd.cns     ;Constants
+st      = MrBooHd.cns     ;States
+stcommon = common1.cns   ;Common states
+sprite  = MrBooHd.sff     ;Sprite
+anim    = MrBooHd.air     ;Animation
+sound   = MrBooHd.snd     ;Sound
+pal1    = Original.act     ;Palettes
+pal2    = Original2.act
+pal3    = Azul.act
+;pal4    = Vermelha.act
+;pal5    = Preto.act
+;pal6    = Verde.act
+;pal7    = SaoPaulo.act
+;pal8    = SuperMan.act

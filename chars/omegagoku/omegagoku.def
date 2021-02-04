@@ -1,0 +1,21 @@
+; Definition file for Player
+; Contains all the filenames needed for the character
+; Template player 9X-09-12
+
+; Character information
+[Info]
+name    = "Goku";<-- Replace with a real name
+displayname = "Last Adult Goku";<-- Replace with name to display
+
+; Files for the character
+[Files]
+cmd     = goku.cmd     ;Command set
+cmd1     = ssjcommand.cmd     ;Command set
+cns     = goku.cns     ;Constants
+st      = goku.cns     ;States
+stcommon = common1.cns   ;Common states
+sprite  = goku.sff     ;Sprite
+anim    = goku.air     ;Animation
+sound   = goku.snd     ;Sound
+pal1    = goku.act     ;Palettes
+pal2    = goku2.act

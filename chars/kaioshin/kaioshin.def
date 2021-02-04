@@ -1,0 +1,16 @@
+[Info]
+name="Kaio Shin by Alunfl@"
+DisplayName="Kaio Shin"
+pal.defaults = 1
+
+[Files]
+cmd=kaioshin.cmd
+cns=kaioshin.cns
+st=kaioshin.cns
+stcommon=common1.cns
+sprite=kaioshin.sff
+anim=kaioshin.air
+pal1=kaioshin1.act
+pal2=kaioshin2.act
+sound=kaioshin.snd
+

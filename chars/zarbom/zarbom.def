@@ -1,0 +1,20 @@
+; Zarbom (1.2) by EmuBoarding
+http://www.mugenitalia.go.to
+
+[Info]
+name = "Zarbom by EmuBoarding"
+displayname = "Zarbon"
+versiondate = 28,07,2000  
+mugenversion = 06,27,2000 
+author = "EmuBoarding-MugeNow"     
+pal.defaults = 1
+
+[Files]
+cmd     = zarbom.cmd   
+cns     = zarbom.cns   
+st      = zarbom.cns   
+stcommon = common1.cns  
+sound   = zarbom.snd   
+sprite  = zarbom.sff   
+anim    = zarbom.air      
+pal1    = zarbom.act   

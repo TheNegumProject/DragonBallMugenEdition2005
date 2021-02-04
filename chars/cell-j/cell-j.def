@@ -1,0 +1,18 @@
+[Info]
+name="Cell Junior by _Vision"
+DisplayName="Komurczak Junior"
+
+[Files]
+cmd=cell-j.cmd
+cns=cell-j.cns
+st=cell-j.cns
+stcommon=common1.cns
+sprite=cell-j.sff
+anim=cell-j.air
+sound=cell-j.snd
+pal1=cell-j.act
+pal2=cell-j.act
+pal3=cell-j2.act
+pal4=cell-j3.act
+pal5=cell-j4.act
+

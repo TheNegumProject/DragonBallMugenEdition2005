@@ -1,0 +1,683 @@
+;Programming by Goten88
+; Underground
+[Statedef 777]
+type    = A
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,6
+anim = 777
+ctrl = 0
+
+[State 777, Super A]
+type = SuperPause
+trigger1 = Time = 2
+pos = 0, -60
+anim = 30
+
+[State 777, Super B]
+type = PlaySnd
+trigger1 = Time = 2
+value = F20, 0
+
+[State 777, Super D]
+type = AfterImage
+trigger1 = Time = 2
+time = 2
+
+[State 777, Super E]
+type = AfterImageTime
+trigger1 = Time = [2,68]
+time = 2
+
+[state 777]
+type = explod
+trigger1 = Pos Y >= 0
+anim = 783
+pos = -30,-20
+postype = P1
+ownpal = 1
+sprpriority = -2
+removetime = 200
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock"
+ID = 777
+pos = 0,0
+postype = p1
+stateno = 784
+size.xscale = .5
+size.yscale = .5
+ownpal = 1
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock2"
+ID = 778
+pos = 0,0
+postype = p1
+stateno = 785
+size.xscale = .7
+size.yscale = .5
+ownpal = 1
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock3"
+ID = 779
+pos = 0,0
+postype = p1
+stateno = 786
+size.xscale = .9
+size.yscale = .6
+ownpal = 1
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock4"
+ID = 780
+pos = 0,0
+postype = p1
+stateno = 787
+size.xscale = .7
+size.yscale = .85
+size.shadowoffset = -15
+ownpal = 1
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock5"
+ID = 780
+pos = 0,0
+postype = p1
+stateno = 788
+size.xscale = .5
+size.yscale = .7
+ownpal = 1
+
+[State 777]
+type = Helper
+trigger1 = Pos Y > 0
+helpertype = normal
+name = "rock6"
+ID = 781
+pos = 0,0
+postype = p1
+stateno = 789
+size.xscale = .8
+size.yscale = .4
+ownpal = 1
+
+[State 777]
+type = ChangeAnim
+trigger1 = Pos Y > 0
+value = 778
+
+[State 777]
+type = ChangeState
+trigger1 = Pos Y > 0
+value = 778
+
+; Underground 2
+[Statedef 778]
+type    = A
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 778
+ctrl = 0
+
+[State 778, 1]
+type = Velset
+trigger1 = time >= 0
+x = 6
+
+[State 778, 2]
+type = ChangeState
+trigger1 = P2Dist X <= 30
+value = 779
+
+[Statedef 779]
+type    = A
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 778
+ctrl = 0
+
+[State 779, 1]
+type = Posset
+trigger1 = time = 0
+y = 50
+
+[State 779,Turn]
+type = Turn
+trigger1 = P2Dist X < 0
+
+[State 779, 1]
+type = Velset
+trigger1 = time = 1
+y = -7
+
+[state 779]
+type = explod
+trigger1 = Pos Y <= 10
+trigger1 = Pos Y > 5
+anim = 783
+pos = -30,-20
+postype = P1
+ownpal = 1
+sprpriority = -2
+removetime = 200
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock"
+ID = 777
+pos = 0,0
+postype = p1
+stateno = 784
+size.xscale = .5
+size.yscale = .5
+ownpal = 1
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock2"
+ID = 778
+pos = 0,0
+postype = p1
+stateno = 785
+size.xscale = .7
+size.yscale = .5
+ownpal = 1
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock3"
+ID = 779
+pos = 0,0
+postype = p1
+stateno = 786
+size.xscale = .9
+size.yscale = .6
+ownpal = 1
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock4"
+ID = 780
+pos = 0,0
+postype = p1
+stateno = 787
+size.xscale = .7
+size.yscale = .85
+size.shadowoffset = -15
+ownpal = 1
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock5"
+ID = 780
+pos = 0,0
+postype = p1
+stateno = 788
+size.xscale = .5
+size.yscale = .7
+ownpal = 1
+
+[State 779]
+type = Helper
+trigger1 = Pos Y < 10
+trigger1 = Pos Y > 5
+helpertype = normal
+name = "rock6"
+ID = 781
+pos = 0,0
+postype = p1
+stateno = 789
+size.xscale = .8
+size.yscale = .4
+ownpal = 1
+
+[State 779, 2]
+type = ChangeAnim
+trigger1 = time = 6
+value = 779
+
+[State 779, 1]
+type = Velset
+trigger1 = P2BodyDist Y >= 15
+y = 0
+
+[State 779, 2]
+type = HitDef
+trigger1 = P2BodyDist Y >= 3
+attr = S, NA
+animtype  = Medium
+damage    = 45
+guardflag = MA
+sparkno = 3
+sparkxy = -10,-35
+hitsound = S3,0 
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = 0,-5
+air.velocity = 0,-5
+p2stateno = 780
+
+[State 779, 1]
+type = Velset
+trigger1 = P2BodyDist Y >= 8
+y = 0
+
+[State 779]
+type = SelfState
+trigger1 = movecontact
+value = 781
+ctrl = 1
+
+[State 779]
+type = SelfState
+trigger1 = time = 100
+value = 0
+ctrl = 1
+
+;P2 State 1
+[Statedef 780]
+type    = S
+movetype= I
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 5000
+ctrl = 0
+
+[State 779,1]
+type = Velset
+trigger1 = time = 0
+y = -4
+
+[State 779,1]
+type = Velset
+trigger1 = time = 2
+y = 0
+
+[State 779, 2]
+type = SelfState
+trigger1 = time = 30
+value = 0
+ctrl = 1
+
+[Statedef 781]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 780
+ctrl = 0
+
+[State 781]
+type = ChangeAnim
+trigger1 = time = 10
+value = 781
+
+[State 781,Turn]
+type = Turn
+trigger1 = P2Dist X < 0
+
+[State 781]
+type = HitDef
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 6
+attr = S, NA
+animtype  = Medium
+damage    = 100
+guardflag = MA
+sparkno = 3
+sparkxy = -10,-35
+hitsound = S3,0 
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = 0,0
+air.velocity = 0,0
+p2stateno = 782
+
+[State 781]
+type = HitDef
+trigger1 = AnimElem = 4
+attr = S, NA
+animtype  = Medium
+damage    = 100
+guardflag = MA
+sparkno = 3
+sparkxy = -10,-35
+hitsound = S3,0 
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = 0,0
+air.velocity = 0,0
+p2stateno = 783
+
+[State 781]
+type = HitDef
+trigger1 = AnimElem = 8
+attr = S, NA
+animtype  = Medium
+damage    = 100
+guardflag = MA
+sparkno = 3
+sparkxy = -10,-35
+hitsound = S3,0 
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = -3,-5
+air.velocity = -3,-5
+Fall = 1
+
+[State 781]
+type = ChangeState
+trigger1 = time = 83
+value = 0
+ctrl = 1
+
+;P2 State 2
+[Statedef 782]
+type    = S
+movetype= I
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 5001
+ctrl = 0
+
+[State 782, 2]
+type = SelfState
+trigger1 = time = 200
+value = 0
+ctrl = 1
+
+;P2 State 3
+[Statedef 783]
+type    = S
+movetype= I
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 5000
+ctrl = 0
+
+[State 783, 2]
+type = SelfState
+trigger1 = time = 200
+value = 0
+ctrl = 1
+
+;Rock
+[Statedef 784]
+type    = S
+movetype= I
+physics = S
+juggle  = 4
+velset = 0,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 784]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 784]
+type = Velset
+trigger1 = time = 10
+y = -2
+
+[State 784]
+type = Velset
+trigger1 = time = 15
+y = 4
+
+[State 784]
+type = Velset
+trigger1 = Pos Y >= 5
+trigger1 = time > 10
+y = 0
+
+[State 784]
+type = DestroySelf
+trigger1 = time = 200
+
+;Rock
+[Statedef 785]
+type    = S
+movetype= I
+physics = A
+juggle  = 4
+velset = 2,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 785]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 785]
+type = Velset
+trigger1 = time = 7
+x = 2
+y = -5
+
+[State 785]
+type = Velset
+trigger1 = time = 12
+x = 2
+y = 0
+
+[State 785]
+type = Velset
+trigger1 = Pos Y >= -10
+trigger1 = time > 7
+x = 0
+y = 0
+
+[State 785]
+type = DestroySelf
+trigger1 = time = 200
+
+;Rock
+[Statedef 786]
+type    = S
+movetype= I
+physics = A
+juggle  = 4
+velset = 1,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 786]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 786]
+type = Velset
+trigger1 = time = 7
+x = 1
+y = -5
+
+[State 786]
+type = Velset
+trigger1 = time = 12
+x = 1
+y = 0
+
+[State 786]
+type = Velset
+trigger1 = Pos Y >= -10
+trigger1 = time > 7
+x = 0
+y = 0
+
+[State 786]
+type = DestroySelf
+trigger1 = time = 200
+
+;Rock
+[Statedef 787]
+type    = S
+movetype= I
+physics = A
+juggle  = 4
+velset = 1,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 787]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 787]
+type = Velset
+trigger1 = time = 8
+x = 1
+y = -5
+
+[State 787]
+type = Velset
+trigger1 = time = 13
+x = 1
+y = 0
+
+[State 787]
+type = Velset
+trigger1 = Pos Y >= -25
+trigger1 = time > 8
+x = 0
+y = 0
+
+[State 787]
+type = DestroySelf
+trigger1 = time = 200
+
+;Rock
+[Statedef 788]
+type    = S
+movetype= I
+physics = A
+juggle  = 4
+velset = -1,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 788]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 788]
+type = Velset
+trigger1 = time = 11
+x = -1
+y = -5
+
+[State 788]
+type = Velset
+trigger1 = time = 16
+x = -1
+y = 0
+
+[State 788]
+type = Velset
+trigger1 = Pos Y >= -10
+trigger1 = time > 11
+x = 0
+y = 0
+
+[State 788]
+type = DestroySelf
+trigger1 = time = 200
+
+;Rock
+[Statedef 789]
+type    = S
+movetype= I
+physics = A
+juggle  = 4
+velset = -.5,-7
+anim = 782
+ctrl = 0
+sprpriority = -2
+
+[State 789]
+type = ScreenBound
+trigger1 = Time = 0
+value = 0
+
+[State 789]
+type = Velset
+trigger1 = time = 8
+x = -.5
+y = -5
+
+[State 789]
+type = Velset
+trigger1 = time = 13
+x = -.5
+y = 0
+
+[State 789]
+type = Velset
+trigger1 = Pos Y >= -25
+trigger1 = time > 8
+x = 0
+y = 0
+
+[State 789]
+type = DestroySelf
+trigger1 = time = 200
+;------------------------------------------------------------

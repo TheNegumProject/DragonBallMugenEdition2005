@@ -1,0 +1,264 @@
+        =*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*=
+       ==*          ____    _________     _________      ___                           *==
+      ===*	   |\___\  |\________\   |\________>    |\___\   ~~~                   *===
+     ====*	   ||   |  ||         |  ||         \   ||   /   ~~~                   *====
+    =====*   ___   ||   |  ||   ___   |  ||    ___   |  ||  |   ~~~                    *=====
+   ======*  |\__\  ||   |  ||  /   \  |  ||   |___>  |  ||  |  ~~~                     *======
+    =====*  ||  |__||   |  ||  \___/  |  ||    ___  <   ||  |  ~~~                     *=====
+     ====*  ||  |__\|   |  ||         |  ||   |___>  |  ||  |  ~~~                     *====
+      ===*  \\          |  ||   ___   |  ||          |  ||  |  ~~~      	       *===
+       ==*   \\________/   \|__|  \|__|  \|_________/   \|__|  ~~~          06-09-2004 *==
+        =*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*=
+         *:GRUPO "DE-GENERACION Z":::
+         *::::::::::::::::::::::::::
+
+
+***............Mejor vista a tamaño -10- -Courier New- (con "Negrita" activado)..............*** 
+***..............................MAXIMIZA ESTA VENTANA.......................................***
+***...............DESACTIVAR:"EDICION/AJUSTE DE LINEA" ANTES DE CONTINUAR....................***
+
+
+
+
+
+
+            Char: 		   Krillin aka Kuririn
+            Juego:                 Buyuu Retsudan (Mega Drive)
+	    Autor: 		   <<JABI>> (Proyecto DE-GENERACION Z)
+            Version: 		   05 octubre 2004 / 2º lanzamientoBETA (40%) 
+            Version M.U.G.E.N :    2001.04.14 (DOS)
+            Contacto: 		   Jabi24@hotmail.com
+	    Web: 		   Aun no            
+            Visita: 		   <Generacion Mugen foro> 
+		        	    ==> http://generacionmugen.foros.st
+		      
+ATENCION!!!
+ - Este archivo leeme esta bajo desarrollo. Algunas secciones estan sin hacer o sin acabar.
+
+
+
+    
+              
+          ++        -=Contenidos=-        ++
+         <[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]>
+         <[  0.Instalacion / Jugar         ]>
+         <[  1.Ficha / Desarrollo          ]>
+         <[  2.Novedades                   ]>
+         <[  3.Lo que tiene                ]>
+         <[  4.Lo que falta                ]>
+         <[  5.Comandos                    ]>
+         <[  6.Biografia:Krillin           ]>   
+         <[  7.Progreso del char           ]>
+         <[  8.Creditos / Agradecimientos  ]>
+         <[  9.Web Sites / E-mail          ]>
+          +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+
+
+
+
+
+
+
+
+===================================================
+|0.|== INSTALACION/JUGAR ==========================
+===================================================
+
+
+
+
+
+
+
+===================================================
+|1.|== FICHA/CREDITOS/DESARROLLO ==================
+===================================================
+
+
+ Charname: 	          Krillin_JB 
+ Juego ripeado:           Buyuu Retsudan (Mega Drive)
+ Version: 		   ?¿ 
+ Completo:                 % 
+ Fecha de lanzamiento:
+ Version M.U.G.E.N :      2001.04.14 (DOS)
+ --------------------------------------------------
+ Programación: 		  <<JABI>> (DE-GeneracionZ)
+ Sprites ripeados:        GeNoCiDe 
+ Sprites editados:        Chrono_Strife(Zteam)==> http://members.lycos.co.uk/cstrife/index.html
+ Nuevos sprites:
+ Char base:               Kfm(ELECBYTE),creado como modelo de aprendizaje.
+ 
+
+*Krillin_JB a sido programado por mi para el "proyecto" del grupo "DE-GENERACION Z".
+
+
+
+
+
+===================================================
+|2.|== NOVEDADES ==================================
+===================================================
+- Novedades respecto a la ultima version(BETA 0.1):
+
+  
+  *Modo FLY.
+  *Carga de KI.
+  *Combo especial_a.
+  *Combo especial_b.(MULTICOMBO)
+
+
+
+===================================================
+|3.|== LO QUE TIENE ===============================
+===================================================
+
+Modos de juego
+---------------
+*Normal
+*Fly: krillin puede volar por toda la pantalla y luchar en el aire.
+
+Basicos
+--------
+*2 puñetazos (1 saltando y otro agachado)
+*3 patadas (1 saltando y  otra agachado)
+*Burla
+
+===================================================
+|4.|== LO QUE FALTA ===============================
+===================================================
+
+
+
+
+
+
+
+
+
+
+
+===================================================
+|5.|== CONTROLES ==================================
+===================================================
+  
+      UB  U  UF      a = Puñetazo flojo   b = Puñetazo fuerte   c =  
+        \ | /          
+      B---o--- F   
+        / | \        x = Patada floja     y = Patada media      z =  Patada fuerte  
+      DB  D  DF  
+  
+                     Start = Burla
+  
+
+^ = Movimientos que pueden ser hechos en el aire.  
+
+
+
+Estados Especiales
+-------------------
+* Carga de KI^     : a+x (manteniendo pulsado).
+* Modo FLY^        : b+y   
+
+
+Tecnicas Especiales
+--------------------
+
+* Combo especial_a    :  D,DB,B, a
+* Combo especial_b^   :  D,DB,B, b 
+   - Pulsa "b" mientras krillin da la rafaga de puñetazos para ir a remate ESPECIAL_B.
+   - Pulsa "Start" mientras krillin da la rafaga de puñetazos para salir del combo.
+
+
+===================================================
+|6.|== BIOGRAFIA KRILLIN ==========================
+===================================================
+
+
+
+
+
+===================================================
+|7.|== PROGRESO DEL CHAR ==========================
+===================================================
+
+
+
+===================================================
+|8.|== AGRADECIMIENTOS ============================
+===================================================
+
+Gracias a:
+-----------
+
+*Torajau.....por descrubrirme M.U.G.E.N y por pasarme todo lo relacionado con M.U.G.E.N cuando yo no tenia internet).
+
+*Miguel(Tenshin-han).....por ayudarme con las paletas y animarme a hacer a Krillin.
+
+*Next2.....por enseñarme a agregar magias al char y a hacer las paletas.
+ 
+*Bardock.....por sus tutoriales, en especial el de volar, el cual he usado para krillin.
+
+*Al foro de Generacion Mugen por meterme otra vez ganas de hacer proyectos de mugen.
+
+*Chrono_strife([C]CSFF7H).....por dejarme usar sus sprites de krillin.
+
+*Y sobre todo al prouyecto DE-GENERACION Z al cual pertenezco.
+
+Mas gracias a:
+------------
+*Akira toriyama.....por hacer la serie Dragon Ball, Z y GT.                        
+*Bandai.....por hacer los juegos de DBZ. 
+*Elecbyte.....por M.U.G.E.N y las herramientas para el desarrollo.
+*[C]CSFF7H.....por coger su estilo de archivo leeme como base.
+*Ssonic por su sistema de controles en el "leeme".
+*A la desaparecia MugenNow.....por hacer DBZ-me-2.
+*A toda la gente q hace chars ,stages o otras cosas de mugen xa q los demas lo disfruten.
+*Necromancer.....por hacer a Broli(el AI mas agresivo en su momento).
+*Kakaroto.....q creo q fue el 1º en hacer q un char se transformara en ssj...raditz,no?¿
+*Al 1º que se le ocurrio meter en los chars de dbz sonidos reales de la serie.
+*_Vision.....por hacer a Goku-ssj4...fue el char q me engancho a mugen.
+*Bardock.....por hacer a goku-ssj2.
+
+*...Y a los que jueguen con este char y lean este archivo.
+
+
+
+
+===================================================
+|9.|== WEB SITES/E-MAIL(contacto) =================
+===================================================
+
+
+- Si tienes alguna duda de algo o no te funciona mandame un correo y ya veremos q se puede hacer.
+
+- Si sabes de algun sitio o alguien q me pueda ceder espacio en su pagina web para subir cosas de mugen a la red mandame un mail, xfi. 
+
+	***************************************************************
+
+- Sugerencias, ideas, agradecimientos y criticas a:::
+
+	   ***jabi24@hotmail.com***
+
+        ***web://--- todabia no ---***
+
+
+- No dejes de visitar:::
+
+
+                 <Generacion Mugen foro> 
+          ***http://generacionmugen.foros.st***
+   
+                 <Generacion Mugen web>                
+        ***http://www.iespana.es/gmugen/home.htm***                  
+
+                   <Pagina de elecbyte>
+                  ***www.elecbyte.com***
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+: 08 Sep. 2004 :::::::::: by JABI :::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::                                          
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+: Gracias por leer el archivo "Leeme Krillin_jb" !!!!
+:::::::::::::::::::::::::::::::::::::::::::::::::::::

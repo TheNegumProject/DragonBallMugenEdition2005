@@ -1,0 +1,26 @@
+; Mystic Gohan by Zero_X
+; MugeNow - The Great Original DBZ Character for Mugen.
+; http://www.mugenow.cjb.net
+
+; Character information
+[Info]
+name    = "Mystic Gohan by Zero_X";<-- Replace with a real name
+displayname = "SonGohan";<-- Replace with name to display
+pal.defaults = 1
+
+; Files for the character
+[Files]
+cmd     = Gohan.cmd     ;Command set
+cns     = Gohan.cns     ;Constants
+st      = Gohan.cns     ;States
+st1     = Basico.st
+st2     = Golpes.st
+st3     = Especiais.st
+st4     = Piccolo.st
+st5     = SSJ4.st
+stcommon = common1.cns   ;Common states
+sprite  = Gohan.sff     ;Sprite
+anim    = Gohan.air     ;Animation
+sound   = Gohan.snd     ;Sound
+pal1    = Gohan.act     ;Palettes
+pal2    = Gohan-2.act

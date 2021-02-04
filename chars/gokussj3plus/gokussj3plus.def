@@ -1,0 +1,17 @@
+[Info]
+Name="Goku SSJ 3/Baczek"
+DisplayName="SonGoku SSJ3"     
+Author="Unknown (Emuboarding?)/Baczek"
+
+[Files]
+cmd=gokussj3.cmd     
+cns=gokussj3.cns     
+st=gokussj3.cns     
+stcommon=common1.cns   
+sprite=gokussj3.sff      
+anim=gokussj3.air      
+sound=gokussj3.snd
+pal1=gokussj3.act            
+pal2=cinza1.act
+pal3=verde1.act
+pal6=amare1.act

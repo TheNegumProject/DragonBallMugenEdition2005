@@ -1,0 +1,72 @@
+;------------------------------------------------------
+;DEF file for Broli ver.1.2 (from SNES,"Dragon Ball Z") 
+;Originally created by Kuzu-bei for MUGEN 06.27  
+;Changes and English Notes made by The Necromancer
+;------------------------------------------------------
+
+;Definition file for Broli:
+;Contains all the filenames needed for the character.
+;---------------------------------------------------------------------------
+
+;Character Information
+[Info]
+
+;------------------------------------------------------
+name = "Broli Remix ver1.2"             ;Name of character
+displayname = "Broli SSJ"                   ;Name of character to display
+versiondate = 07.00.2000                ;Version date of character
+mugenversion = 06.27.2000               ;Version of M.U.G.E.N character works on
+author = "Kuzu-bei and The Necromancer" ;Character author name
+;------------------------------------------------------
+
+;------------------------------------------------------
+;Pallette Orders: AI Difficulty (Uncomment to enable)
+;pal.defaults = 2,3,4,5,6,1             ;Novice (No Custom AI)
+;pal.defaults = 7,8,9,10,11,12          ;Easy
+pal.defaults = 9,10,11,12,7,8          ;Normal
+;pal.defaults = 11,12,7,8,9,10           ;Hard
+;------------------------------------------------------
+
+;Files for Broli
+[Files]
+
+;-------------------------
+;Character Behaviour Files
+;-------------------------
+
+cmd     = broli.cmd                                    
+cns     = broli.cns 
+stcommon= common.cns                               
+st      = broli.cns  
+st1     = custom.cns       
+st2     = normal.cns 
+st3     = hyper.cns
+st4     = special.cns
+st5     = nandato.cns
+st6     = ai.cns
+
+;-------------------------
+;Graphics/Sounds for Broli
+;-------------------------
+
+sprite  = broli.sff                      
+anim    = broli.air         
+sound   = broli.snd         
+
+;-------------------
+;Pallettes for Broli
+;-------------------
+
+pal1    = broli1.act         
+pal2    = broli2.act        
+pal3    = broli3.act        
+pal4    = broli4.act        
+pal5    = broli5.act         
+pal6    = broli6.act        
+pal7    = broli7.act        
+pal8    = broli8.act        
+pal9    = broli9.act         
+pal10    = broli10.act        
+pal11    = broli11.act        
+pal12    = broli12.act        
+

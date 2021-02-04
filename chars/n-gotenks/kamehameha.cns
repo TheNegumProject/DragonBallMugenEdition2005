@@ -1,0 +1,383 @@
+;Kamehameha
+[Statedef 888]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 888
+ctrl = 0
+sprpriority = 3
+
+[State 888]
+type = Hitadd
+trigger1 = time >= 0
+value = -100
+
+[State 888, Super B]
+type = PlaySnd
+trigger1 = Time = 0
+value = 999, 0 ;Play fight sound of super
+channel = 3
+
+[State 888, Super A]
+type = SuperPause
+trigger1 = Time = 0
+pos = -8, -26
+anim = 100
+Darken = 0
+
+[State 888, Super F]
+type = NotHitBy
+trigger1 = Time = 0
+value = , NA, SA, AT
+time = 6
+
+[State 888, Super F]
+type = NotHitBy
+trigger1 = Time = [2,30]
+value2 = C, NA
+time = 1
+
+[State 222,1st Part]
+type = explod
+trigger1 = time = 5
+anim = 892
+ID = 892
+pos = 44, -30
+postype = P1
+ownpal = 1
+removeongethit = 1
+sprpriority = 3
+supermovetime = -1
+pausemovetime = -1
+bindtime = -1
+
+[State 888, 2]
+type = Projectile
+trigger1 = Time = 5
+projanim = 889
+projhitanim = 3212
+offset = 35, -30
+velocity = 5
+attr = S, SP
+damage = 8
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+palfx.time = 1
+palfx.mul = 256,256,256
+palfx.add = 0,0,0
+
+[State 888, 2]
+type = Projectile
+trigger1 = Time > 5
+trigger1 = Time <= 110
+projanim = 890
+projhitanim = 3212
+offset = 35, -30
+velocity = 5
+projsprpriority = -2
+attr = S, SP
+damage = 2
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+ground.type = High
+ground.slidetime = 22
+ground.hittime = 15
+ground.velocity = -2
+air.velocity = -2
+
+[State 888, 2]
+type = Projectile
+trigger1 = Time = 111
+projanim = 892
+projhitanim = 1999
+offset = 31, -30
+sprpriority = 3
+velocity = 5
+attr = S, SP
+damage = 12
+animtype = Hard
+pausetime = 0
+sparkno = -1
+hitsound = S1900, 1
+guardsound = S1900, 1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[state 222]
+type = RemoveExplod
+trigger1 = Time = 111
+ID = 892
+
+[State 888, Power]
+type = PowerAdd
+trigger1 = Time = 5
+value = -1500
+
+[State 888, 100]
+type = ChangeState
+trigger1 = Time = 112
+value = 0
+ctrl = 1
+
+;Chou Kamehameha
+[Statedef 889]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 444
+ctrl = 0
+sprpriority = 3
+
+[State 889]
+type = Hitadd
+trigger1 = time >= 0
+value = -100
+
+[State 889, Super B]
+type = PlaySnd
+trigger1 = Time = 0
+value = 888, 0 ;Play fight sound of super
+channel = 3
+
+[State 889, Super A]
+type = SuperPause
+trigger1 = Time = 0
+pos = -8, -26
+anim = 100
+Darken = 0
+
+[State 889, Super F]
+type = NotHitBy
+trigger1 = Time = 0
+value = , NA, SA, AT
+time = 6
+
+[State 889, Super F]
+type = NotHitBy
+trigger1 = Time = [2,30]
+value2 = C, NA
+time = 1
+
+[State 889, 2]
+type = Projectile
+trigger1 = Time = 5
+projanim = 445
+projhitanim = 3213
+offset = 30, -30
+velocity = 6
+projremovetime = 44
+attr = S, HP
+damage = 10
+animtype = light
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -3
+air.velocity = -3
+palfx.time = 1
+palfx.mul = 256,256,256
+palfx.add = 0,0,0
+
+[State 889, 2]
+type = Projectile
+trigger1 = Time > 5
+trigger1 = Time <= 120
+projanim = 446
+projhitanim = 3213
+offset = 22, -30
+projremovetime = 44
+velocity = 6
+attr = S, HP
+damage = 3
+animtype = light
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 15
+ground.velocity = -3
+air.velocity = -3
+
+[State 889, 2]
+type = Projectile
+trigger1 = Time = 126
+projanim = 448
+projhitanim = 1999
+offset = 34, -30
+projremovetime = 44
+velocity = 6
+attr = S, HP
+damage = 15
+animtype = Hard
+pausetime = 0
+sparkno = -1
+hitsound = S1900, 1
+guardsound = S1900, 1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -3
+air.velocity = -3
+
+[State 889, Power]
+type = PowerAdd
+trigger1 = Time = 5
+value = -2500
+
+[State 889, 100]
+type = ChangeState
+trigger1 = Time = 127
+value = 0
+ctrl = 1
+
+;Kamehameha
+[Statedef 9696]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 9696
+ctrl = 0
+sprpriority = 3
+
+[State 9696]
+type = Hitadd
+trigger1 = time >= 0
+value = -100
+
+[State 9696, Super B]
+type = PlaySnd
+trigger1 = Time = 0
+value = 999, 0 ;Play fight sound of super
+channel = 3
+
+[State 9696, Super A]
+type = SuperPause
+trigger1 = Time = 0
+pos = -8, -26
+anim = 100
+Darken = 0
+
+[State 9696, Super F]
+type = NotHitBy
+trigger1 = Time = 0
+value = , NA, SA, AT
+time = 6
+
+[State 9696, Super F]
+type = NotHitBy
+trigger1 = Time = [2,30]
+value2 = C, NA
+time = 1
+
+[State 9696, 2]
+type = Projectile
+trigger1 = Time = 5
+projanim = 9697
+projhitanim = 3214
+projshadow = -1
+offset = 19, -30
+velocity = 5
+attr = S, HP
+damage = 5
+animtype = medium
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+palfx.time = 1
+palfx.mul = 256,256,256
+palfx.add = 0,0,0
+
+[State 9696, 2]
+type = Projectile
+trigger1 = Time > 5
+trigger1 = Time < 100
+projanim = 9698
+projhitanim = 3214
+projshadow = -1
+offset = 19, -30
+velocity = 5
+attr = S, HP
+damage = 1
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 15
+ground.velocity = -2
+air.velocity = -2
+
+[State 9696, 2]
+type = Projectile
+trigger1 = Time = 100
+projanim = 9700
+projhitanim = 1999
+projshadow = -1
+offset = 19, -30
+velocity = 5
+attr = S, HP
+damage = 9
+animtype = Hard
+pausetime = 0
+sparkno = -1
+hitsound = S1900, 1
+guardsound = S1900, 1
+guard.sparkno = -1
+guardflag = MA
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[State 9696, Power]
+type = PowerAdd
+trigger1 = Time = 5
+value = -500
+
+[State 9696, 100]
+type = ChangeState
+trigger1 = Time = 101
+value = 0
+ctrl = 1

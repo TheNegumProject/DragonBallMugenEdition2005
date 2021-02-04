@@ -1,0 +1,19 @@
+
+[Info]
+name    = "Cell-Jr by Goten88"
+displayname = "Komurczak Junior"
+versiondate = 09,19,2004
+pal.defaults = 1
+
+[Files]
+cmd     = Cell-Jr.cmd
+cns     = Cell-Jr.cns
+st      = Cell-Jr.cns
+st2     = UnderGround.cns
+st3     = AI.cns
+st4     = Meteo.cns
+stcommon = Cell-Jrcommon1.cns
+sprite  = Cell-Jr.sff
+anim    = Cell-Jr.air
+sound   = Cell-Jr.snd
+pal1    = Cell-Jr.act

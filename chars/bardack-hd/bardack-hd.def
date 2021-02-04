@@ -1,0 +1,28 @@
+; Bardack HD def file 
+; by Alive
+
+
+[Info]
+name    = "Bardack-HD"
+displayname = "Bardcck"
+versiondate = 6,10,2001  
+mugenversion = 07,2000
+author = "Alive"     
+pal.defaults = 1
+
+[Files]
+cmd     = bardack-hd.cmd     
+cns     = bardack-hd.cns     
+st      = bardack-hd.cns
+stcommon = common1.cns   
+sprite  = bardack-hd.sff
+anim    = bardack-hd.air      
+sound   = bardack-hd.snd
+pal1    = bardackhd1(14-9-01).act  
+pal2    = bardackhd2(14-9-01).act  
+pal3    = bardackhd3(14-9-01).act  
+pal4    = bardackhd8(14-9-01).act  
+pal5    = bardackhd5(14-9-01).act  
+pal6    = bardackhd7(14-9-01).act  
+pal7    = bardackhd6(14-9-01).act  
+pal8    = bardackhd4(14-9-01).act  

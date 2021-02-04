@@ -1,0 +1,64 @@
+|-Goten Gt's Moves---------------------------------------------------------------
+Version - 1.3
+Character made by Goten88 a.k.a. Pextin http://blargh-net.com/pextin/
+Whats new in Version 1.3--> NEW Beam system which allows for more beam struggles
+|-Basics----------------------------------------------------------------------
+
+x   = Punch
+y   = Punch
+z   = Ki Blast(hold up or down for it to move in directions)
+a   = Side Kick
+b   = Kick
+c   = Uppercut
+
+|-Specials--------------------------------------------------------------------
+
+Fly                 - a+x
+Charge              - x+y
+Zanzoken            - x+y - Hold it and press any direction.
+Counter             - c+z - must be in guard state or in hit state
+Beam Counter        - b+y - After doing beam counter hold b to make beam longer
+Kamehameha          - D,DF,F, x (If and only if in a beam war. Hold a to make the beam go longer)
+Renzoku Energy Dan  - D,DF,F, z
+Ki Ball             - D,DF,F, b
+---Energy Blast Combo  - a+b
+---Elbow Dash          - D,DB,B, x
+---Punch Combo         - D,DB,B, y
+---Knee Combo          - D,DB,B, z
+Double Hit Combo    - D,DB,B, a
+---Standard Combo      - D,DB,B, b
+---TakeDown Knee       - b+c(have to be in air or flying)(Tri Hit Combo)
+
+|-Supers Moves----------------------------------------------------------------
+
+SSJ Transformation   - D, DF, F, D, DF, F, x
+Chou Kamehameha      - D, DF, F, D, DB, B, c (SSJ Mode ONLY)
+
+ 
+Special thanks to:
+
+Elecbyte - For creating Mugen 
+
+Akira Toriyama - For creating Dragonball Z
+
+Bandai - For the Trunks sprites from the MegaDrive game that I edited into GotenGT
+
+Detah - For Help 
+
+Lonewolf - For Help 
+
+Majita - For the NEWEST acts 
+
+The Rellik - For help on an old act
+
+Lil J - For help 
+
+Hyperion X - For help 
+
+Cyanide - For help 
+
+RedSpider4k - For help 
+
+Roken - For the NEW act, and for nagging me to update GotenGT
+
+and anyone else I can't think of who helped me. 

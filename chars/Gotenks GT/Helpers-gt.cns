@@ -1,0 +1,529 @@
+
+;----------------------------------------------------------------------------
+; Char = " Gotenks GT "  
+; Criado por = " Lip Ultra SSJ "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================
+
+; Father Call (gotenks)
+[Statedef 5656]
+type = S
+movetype = A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5656
+velset = 0,0,0
+
+[State 5656, 1]
+type = Helper
+trigger1 = Time = 0
+name = "Goku"
+helpertype = player
+id = 5757
+stateno = 5757
+postype = p1
+pos = 35,0
+keyctrl = 0
+ownpal = 1
+
+[State 5656, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Vegeta"
+helpertype = player
+id = 5858
+stateno = 5858
+postype = p1
+pos = 60,0
+keyctrl = 0
+ownpal = 1
+
+[State 5656, 3]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = -8, -26
+time = 360
+Darken = 0
+
+[State 5656, 4]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 113
+offset = 0, 0
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage    = 30,4
+animtype  = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+palfx.time = 15
+palfx.add = 32,0,0
+palfx.mul = 300,192,192
+
+[State 5656, 5]
+type = ChangeState
+trigger1 = animTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Father Call (goku)
+[Statedef 5757]
+type    = S
+movetype= A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5757
+sprpriority = 3
+velset = 0,0,0
+
+[State 5757]
+type = PlaySnd
+trigger1 = time = 0
+value = 2001, 0
+
+[State 5757, 1]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = -8, -42
+time = 360
+Darken = 0
+
+[State 5757, 2]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 111
+offset = 2, 5
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projsprpriority = 4
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage    = 30,4
+animtype  = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+palfx.time = 15
+palfx.add = 32,0,0
+palfx.mul = 300,192,192
+
+[State 5757, 6]
+type = Changeanim
+trigger1 = Win = 1
+trigger1 = time = 107
+value = 5151
+
+[State 5757, 3]
+type = DestroySelf
+trigger1 = animTime = 0
+
+;---------------------------------------------------------------------------
+; Father Call (vegeta)
+[Statedef 5858]
+type    = S
+movetype= A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5858
+sprpriority = 4
+velset = 0,0,0
+
+[State 5959]
+type = PlaySnd
+trigger1 = animelem = 7
+value = 2001, 0
+
+[State 5858]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 4, 4
+channel= 2
+
+[State 5858 vegetasnd]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 4, 5
+channel= 3
+
+[State 5858, 1]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = 10, -52
+time = 360
+Darken = 0
+
+[State 5858, 2]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 112
+offset = -23, 23
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projsprpriority = 5
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage = 30,4
+animtype = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+palfx.time = 15
+palfx.add = 32,0,0
+palfx.mul = 300,192,192
+
+[State 5858, 6]
+type = Changeanim
+trigger1 = Win = 1
+trigger1 = time = 107
+value = 5252
+
+[State 5858, 3]
+type = DestroySelf
+trigger1 = animTime = 0
+
+;---------------------------------------------------------------------------
+;Dynamite Kick ( inicio )
+[Statedef 3020]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3020
+ctrl = 0
+
+[State Power]
+type = PowerAdd
+Trigger1 = Time = 0
+value = -2000
+
+[State 3001,som]
+type = Playsnd
+trigger1 = AnimElem = 2
+value = F20,0
+
+[State 4000,Spark]
+type = posfreeze
+trigger1 = time = 1
+trigger1 = time >= 1
+trigger1 = time <= 26
+
+[State 3000, 1]
+type = SuperPause
+trigger1 = AnimElem = 2
+pos = -18, -73
+anim = 101
+Time = 55
+Darken = 0
+
+[State 3000, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3021
+ctrl = 0
+
+;---------------------------------------------------------------------------
+;Dynamite Kick ( corte )
+[Statedef 3021]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+poweradd= 70
+ctrl = 0
+anim = 3021
+
+[State 1300, Super D]
+type = AfterImage
+trigger1 = Time = 0
+trans = add1
+TimeGap  = 1
+FrameGap = 6
+time = 20
+length = 15
+PalBright   =   0,  0,  0
+PalContrast = 128,128,128
+PalAdd      =   0,  0,  0
+PalMul      =  1,1,1;.9, .9, .9
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = Time = 2
+value = 3, 7
+
+[State 410, 2] ;Gravity
+type = VelAdd
+trigger1 = AnimElem = 1
+y = 0
+x = 30
+
+[State 2060, 13]
+type = MoveHitReset
+trigger1 = TimeMod = 8,6
+value = 0,0,0
+under = 0
+ignorehitpause = 1
+
+[State 410, 3]
+type = HitDef
+trigger1 = AnimElem = 1
+animtype  = light
+attr = S, HA
+damage    = 0
+pausetime = 9,12
+guardflag = M
+sparkxy = -10,-40
+sparkno = 12
+hitsound   = S52,0
+guardsound = 6,0
+ground.type = Low                 ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5             ;Time that the victim slides back
+ground.hittime  = 100             ;Time victim is in hit state
+ground.velocity = 1   
+p2stateno = 890
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = movehit = 1
+value = 3022
+ctrl = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = moveguarded = 1
+value = 3024
+ctrl = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = animtime = 0
+value = 3024
+ctrl = 0
+
+;---------------------------------------------------------------------------
+;Dynamite Kick ( acerta e atravessa )
+[Statedef 3022]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 25,0
+anim = 3022
+ctrl = 0
+
+[State 1001, BGPalFX1]
+type = BGPalFX
+trigger1 = AnimElem = 1
+mul = 128,0,0
+invertall = 1
+time = 90
+persistent = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3023
+ctrl = 0
+
+;---------------------------------------------------------------------------
+;Dynimite Kick ( fim )
+[Statedef 3023]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3023
+ctrl = 0
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = AnimElem = 2
+value = 3, 5
+
+[State 1001, BGPalFX1]
+type = BGPalFX
+trigger1 = AnimElem = 1
+mul = 128,0,0
+invertall = 1
+time = 160
+persistent = 0
+
+[State 225, BGPalFX1]
+type = BGPalFX
+trigger1 = winko = 1
+mul = 128,0,0
+invertall = 1
+time = 50
+persistent = 0
+ignorehitpause = 1
+
+[State 225, 3]
+type = Explod
+trigger1 = time = 160
+persistent = 0
+anim = 6009
+pos = 30,-60
+postype = p2
+sprpriority = 4
+bindtime = 1
+ignorehitpause = 1
+supermove = 1
+ownpal = 1
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = time = 160
+value = 1900, 1
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Dynamite Kick( fim )
+[Statedef 3024]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3024
+ctrl = 0
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = AnimElem = 2
+value = 3, 2
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;Dynamite Kick
+[Statedef 890]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0,0
+anim = 5300
+ctrl = 0
+
+[State 3000, não toma] 
+type = NotHitBy
+trigger1 = Time > 0
+value = SCA, NA, SA, SA, HA, SP, HP
+time = 12
+
+[State 210, 4]
+type = changestate
+trigger1 = Time = 200
+value = 891
+ctrl = 0
+
+;-------------------------------------------------------------------------
+; Player 2 Dynamite Kick
+[Statedef 891]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0.1,-5
+anim = 5050
+ctrl = 0
+
+[State 931, 2] ;Gravity
+type = VelAdd
+Trigger1 = Time > 0
+y = .4
+
+[State 931, 3]
+type = LifeAdd
+Trigger1 = Time = 0
+value = -350
+
+[State 931, 4] ;Hit ground
+type = SelfState
+trigger1 = Vel Y > 0
+trigger1 = Pos Y >= 10
+value = 5100 ;Hit ground

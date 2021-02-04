@@ -1,0 +1,25 @@
+;----------------------------------------------------------------
+;Special Tanks to Bandai
+;Sprites and sound from Dragon Ball final-bout 
+; Definition file for Player
+; Contains all the filenames needed for the character
+; Template player 9X-09-12
+
+; Character information
+[Info]
+name    = "Son Goku SSJ4 by Nemesis82 && Biohazard82";<-- Replace with a real name
+displayname = "SonGoku SSJ4";<-- Replace with name to display
+author = "Nemesis82 && Biohazard82"
+
+; Files for the character
+[Files]
+cmd     = gokussj4GT.cmd     ;Command set
+cmd1     = ssjcommandoll.cmd     ;Command set
+cns     = gokussj4GT.cns     ;Constants
+cns1     = gokuoll1.cns
+st      = gokussj4GT.cns     ;States
+stcommon = commonGT.cns   ;Common states
+sprite  = ssj4.sff     ;Sprite
+anim    = gokussj4GT.air     ;Animation
+sound   = gokussj4gt.snd     ;Sound
+pal1    = ssj4GT.act  ;Paletters

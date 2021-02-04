@@ -1,0 +1,51 @@
+;Animação do Final
+
+[Statedef 182]
+type = S
+ctrl = 0
+anim = 909090
+velset = 0,0,0
+
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 30000
+pos = 0,0
+postype = left
+sprpriority = 0
+supermove = 1
+removetime = -1
+
+; Recoom
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 50090
+pos = 200,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = -1
+
+;Freeza
+[State 9001, 2]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10010
+pos = 290,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = -1
+
+;Falas Recoom
+[State 9001, 2]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 666
+pos = 10,65
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = 500
+

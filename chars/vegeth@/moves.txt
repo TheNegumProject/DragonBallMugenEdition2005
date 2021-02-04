@@ -1,0 +1,51 @@
+;-----------------------| Normal |-----------------
+;turn ssj2
+command = ~D, F, a
+
+;chain kick & buubits
+command = ~D, F, b
+
+;kame hame ha
+command = ~D, F, c
+
+;fast combo
+command = ~D, F, y
+
+;barberino
+command = ~F, z
+
+;counter
+command = ~F, a
+
+;norkickcombo
+command = ~F, x
+
+;-----------------| SSJ |-------------------------
+;final kame hame ha
+command = ~D, F, c
+
+;atomic breack combination
+command = ~D, F, z
+
+;rising chain kick
+command = ~B, x
+
+;ssjkickcombo
+command = ~F, x
+
+;ssjfastkcombo
+command = ~D, F, y
+
+;"Psychic_Wave"
+command = ~F, y
+
+
+;big bang Attack
+command = ~D, F, b
+
+;ssjcounter
+command = ~F, a
+
+
+
+

@@ -1,0 +1,18 @@
+; Definition file for Player
+; Contains all the filenames needed for the character
+; Template player 9X-09-12
+
+; Character information
+[Info]
+name    = "C 17"    ;<-- Replace with a real name
+;displayname = "C 17";<-- Replace with name to display
+
+; Files for the character
+[Files]
+cmd     = 17.cmd     ;Command set
+cns     = 17.cns     ;Constants
+st      = 17.cns     ;States
+stcommon = common1.cns   ;Common states
+sprite  = 17.sff     ;Sprite
+anim    = 17.air     ;Animation
+pal1    = 17.act

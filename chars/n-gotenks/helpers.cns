@@ -1,0 +1,879 @@
+; Father Call (gotenks)
+[Statedef 5656]
+type = S
+movetype = A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5656
+velset = 0,0,0
+
+[State 5656, 1]
+type = Helper
+trigger1 = Time = 0
+name = "Goku"
+helpertype = player
+id = 5757
+stateno = 5757
+postype = p1
+pos = 35,0
+keyctrl = 0
+ownpal = 1
+
+[State 5656, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Vegeta"
+helpertype = player
+id = 5858
+stateno = 5858
+postype = p1
+pos = 60,0
+keyctrl = 0
+ownpal = 1
+
+[State 5656, 3]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = -8, -26
+time = 360
+Darken = 0
+
+[State 5656, 4]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 113
+offset = 0, 0
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage    = 30,4
+animtype  = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+
+[State 5656, 5]
+type = ChangeState
+trigger1 = animTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Father Call (goku)
+[Statedef 5757]
+type    = S
+movetype= A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5757
+sprpriority = 3
+velset = 0,0,0
+
+[State 5757]
+type = PlaySnd
+trigger1 = time = 0
+value = 2001, 0
+
+[State 5757, 1]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = -8, -42
+time = 360
+Darken = 0
+
+[State 5757, 2]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 111
+offset = 2, 5
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projsprpriority = 4
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage    = 30,4
+animtype  = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+
+[State 5757, 6]
+type = Changeanim
+trigger1 = Win = 1
+trigger1 = time = 107
+value = 5151
+
+[State 5757, 3]
+type = DestroySelf
+trigger1 = animTime = 0
+
+;---------------------------------------------------------------------------
+; Father Call (vegeta)
+[Statedef 5858]
+type    = S
+movetype= A
+physics = S
+poweradd = -3000
+ctrl = 0
+anim = 5858
+sprpriority = 4
+velset = 0,0,0
+
+[State 5959]
+type = PlaySnd
+trigger1 = animelem = 7
+value = 2001, 0
+
+[State 5858]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 4, 4
+channel= 2
+
+[State 5858 vegetasnd]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 4, 5
+channel= 3
+
+[State 5858, 1]
+type = SuperPause
+trigger1 = AnimElem = 5
+pos = 10, -52
+time = 360
+Darken = 0
+
+[State 5858, 2]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 112
+offset = -23, 23
+velocity = 0, 0
+projremovetime = 80
+projhits = 10
+projsprpriority = 5
+projpriority = 9999
+projmisstime = 5
+attr = S, HP
+damage = 30,4
+animtype = Hard
+numhits = 1
+getpower  = 5
+givepower = 31
+guardflag = MA
+pausetime = 2,15
+sparkno = -1
+hitspark = -1
+hitsound   = 5,3
+guardsound = 6,0
+guard.sparkno = -1
+ground.type = high
+ground.slidetime = 4
+ground.velocity = -50,-1
+airguard.velocity = -50,0
+air.type = Low
+air.velocity = -50,1
+air.juggle = 5
+fall.animtype = Hard
+fall = 1
+
+[State 5858, 6]
+type = Changeanim
+trigger1 = Win = 1
+trigger1 = time = 107
+value = 5252
+
+[State 5858, 3]
+type = DestroySelf
+trigger1 = animTime = 0
+
+;---------------------------------------------------------------------------
+;Dynamite Kick
+[Statedef 3020]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3020
+ctrl = 0
+
+[State 3001]
+type = Playsnd
+trigger1 = AnimElem = 2
+value = F20,0
+
+[State 4000,Spark]
+type = posfreeze
+trigger1 = time = 1
+trigger1 = time >= 1
+trigger1 = time <= 26
+
+[State 3000, 1]
+type = SuperPause
+trigger1 = AnimElem = 2
+pos = 0, 0
+anim = -1
+Time = 55
+Darken = 0
+
+[State 3000, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3021
+ctrl = 0
+
+;---------------------------------------------------------------------------
+;Dynamite Kick
+[Statedef 3021]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+poweradd= 70
+ctrl = 0
+anim = 3021
+
+[State 1300, Super D]
+type = AfterImage
+trigger1 = Time = 0
+trans = add1
+TimeGap  = 1
+FrameGap = 6
+time = 20
+length = 15
+PalBright   =   0,  0,  0
+PalContrast = 128,128,128
+PalAdd      =   0,  0,  0
+PalMul      =  1,1,1;.9, .9, .9
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = Time = 2
+value = 3, 7
+
+[State 410, 2] ;Gravity
+type = VelAdd
+trigger1 = AnimElem = 1
+y = 0
+x = 30
+
+[State 2060, 13]
+type = MoveHitReset
+trigger1 = TimeMod = 8,6
+value = 0,0,0
+under = 0
+ignorehitpause = 1
+
+[State 410, 3]
+type = HitDef
+trigger1 = AnimElem = 1
+animtype  = light
+attr = S, HA
+damage    = 0
+pausetime = 9,12
+guardflag = M
+sparkxy = -10,-40
+sparkno = 12
+hitsound   = S52,0
+guardsound = 6,0
+ground.type = Low                 ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5             ;Time that the victim slides back
+ground.hittime  = 100             ;Time victim is in hit state
+ground.velocity = 1   
+p2stateno = 890
+
+[State 1101]
+type = helper
+trigger1 = p2stateno = 890
+helpertype = normal
+name = "detector"
+ID = 3021
+pos = 0,0
+postype = p2
+ownpal = 1
+stateno = 3025
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = movehit
+value = 3022
+ctrl = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = moveguarded
+value = 3024
+ctrl = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = animtime = 0
+value = 3024
+ctrl = 0
+
+[Statedef 3025]
+type    = S
+velset = 0,0
+anim = 1104
+ctrl = 0
+
+[State 3025]
+type = PlayerPush
+trigger1 = time >= 0
+value = 0
+
+[State 3025]
+type = Varset
+trigger1 = time = 0
+v = 11
+value = Enemynear, ID
+
+[State 3025]
+type = explod
+trigger1 = playerid(var(11)), stateno != 890
+sprpriority = 3
+anim = 1910
+pos = -40,-40
+
+[State 1102]
+Type = Destroyself
+trigger1 = playerid(var(11)), stateno != 890
+;---------------------------------------------------------------------------
+;Dynamite Kick 
+[Statedef 3022]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 25,0
+anim = 3022
+ctrl = 0
+
+[State 1001, BGPalFX1]
+type = BGPalFX
+trigger1 = AnimElem = 1
+mul = 128,0,0
+invertall = 1
+time = 90
+persistent = 0
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3023
+ctrl = 0
+
+;---------------------------------------------------------------------------
+;Dynimite Kick
+[Statedef 3023]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3023
+ctrl = 0
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = AnimElem = 2
+value = 3, 5
+
+[State 1001, BGPalFX1]
+type = BGPalFX
+trigger1 = AnimElem = 1
+mul = 128,0,0
+invertall = 1
+time = 160
+persistent = 0
+
+[State 225, BGPalFX1]
+type = BGPalFX
+trigger1 = winko = 1
+mul = 128,0,0
+invertall = 1
+time = 50
+persistent = 0
+ignorehitpause = 1
+
+[State Power]
+type = PowerAdd
+Trigger1 = Time = 0
+value = -2000
+
+;[State 225, 3]
+;type = Explod
+;trigger1 = time = 160
+;persistent = 0
+;anim = 6009
+;pos = 40,-40
+;postype = p2
+;sprpriority = 4
+;bindtime = 1
+;ignorehitpause = 1
+;supermove = 1
+;ownpal = 1
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = time = 160
+value = 1900, 1
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Dynamite Kick
+[Statedef 3024]
+type    = S
+movetype= I
+physics = S
+juggle  = 0
+velset = 0,0
+anim = 3024
+ctrl = 0
+
+[State 210, 1] 
+type = PlaySnd
+trigger1 = AnimElem = 2
+value = 3, 2
+
+[State 1001, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;Dynamite Kick
+[Statedef 890]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0,0
+anim = 5300
+ctrl = 0
+
+[State 3000] 
+type = NotHitBy
+trigger1 = Time > 0
+value = SCA, NA, SA, SA, HA, SP, HP
+time = 12
+
+[State 210, 4]
+type = changestate
+trigger1 = Time = 200
+value = 891
+ctrl = 0
+
+;-------------------------------------------------------------------------
+; Player 2 Dynamite Kick
+[Statedef 891]
+type    = S
+movetype= H ;Get hit
+physics = N
+velset = 0.1,-5
+anim = 5050
+ctrl = 0
+
+[State 931, 2] ;Gravity
+type = VelAdd
+Trigger1 = Time > 0
+y = .4
+
+[State 931, 3]
+type = LifeAdd
+Trigger1 = Time = 0
+value = -300
+
+[State 931, 4] ;Hit ground
+type = SelfState
+trigger1 = Vel Y > 0
+trigger1 = Pos Y >= 10
+value = 5100 ;Hit ground
+
+;------------------------------------------------------
+; Kamikaze Ghost Army
+[Statedef 831]
+type     = S
+movetype = A
+physics  = S
+poweradd = -3000
+juggle = 1
+anim = 555
+ctrl = 0
+velset = 0,0,0
+
+[state 831]
+type = varset
+trigger1 = time = 0
+v = 38
+value = 0
+
+[state 831]
+type = varset
+trigger1 = time = 0
+v = 39
+value = 0
+
+[state 831]
+type = varset
+trigger1 = time = 0
+v = 40
+value = 1
+
+[state 831]
+type = varadd
+trigger1 = animelem = 6
+v = 38
+value = 1
+
+[State 831]
+type = Explod
+trigger1 = AnimElem = 1
+id = 5555
+anim = 5555
+pos = 160,128
+postype = left
+sprpriority = -998
+removeongethit = 1
+removetime = 40
+bindtime = -1
+supermove = 1
+ownpal = 1
+
+[State 831]
+type = EnvColor
+trigger1 = Time = 0
+time = 40
+under = 1
+value = 24,24,24 
+
+[State 831]
+type = PlaySnd
+trigger1 = Time = 0
+value = 555, 1
+
+[State 831]
+type = SuperPause
+trigger1 = Time = 0
+Time = 150
+Darken = 0
+anim = -1
+
+[State 831]
+type = SuperPause
+trigger1 = Time = 1
+Time = 325
+Darken = 0
+anim = -1
+movetime = 325
+
+[State 831]
+type = PlaySnd
+trigger1 = Time = 5
+trigger2 = Time = 70
+trigger3 = Time = 135
+trigger4 = Time = 200
+trigger5 = Time = 265
+value = 555, 0
+
+[State 831]
+type = Helper
+trigger1 = time = 35
+trigger2 = time = 100
+trigger3 = time = 165
+trigger4 = time = 230
+trigger5 = time = 295
+ID = 751
+Pos = 15, -35
+postype = p1
+stateno = 832 + var(38) - 1
+helpertype = normal
+keyctrl = 0
+ownpal = 1
+supermovetime = 9999
+
+[State 831]
+type = ChangeAnim
+trigger1 = time = 325
+value = 831
+
+[State 831]
+type = PlaySnd
+trigger1 = time = 325
+trigger2 = time = 340
+trigger3 = time = 355
+trigger4 = time = 370
+trigger5 = time = 380
+value = 3,4
+
+[state 831]
+type = varadd
+trigger1 = time = 325
+trigger2 = time = 340
+trigger3 = time = 355
+trigger4 = time = 370
+trigger5 = time = 380
+v = 39
+value = 1
+
+[State 831]
+Type = ChangeState
+trigger1 = time = 415
+value = 0
+ctrl = 1
+
+; Ghost itself
+[Statedef 832]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 832
+
+[State 752]
+type = NotHitBy
+trigger1 = time >= 0
+value = SCA
+
+[State 751, 0]
+type = Turn
+trigger1 = P2Dist X <= -5
+
+[State 751]
+type = playerpush
+trigger1 = time >= 0
+value = 0
+
+[State 751, 2]
+type = velset
+trigger1 = time = 0
+x = 6
+y = -9
+
+[State 751, 3]
+type = velset
+trigger1 = time = 10
+x = 0
+y = 0
+
+[State 751, 10]
+type = ChangeState
+trigger1 = parent, var(39) = 1
+value = 751
+ctrl = 0
+
+; Ghost itself
+[Statedef 833]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 832
+
+[State 752]
+type = NotHitBy
+trigger1 = time >= 0
+value = SCA
+
+[State 751, 0]
+type = Turn
+trigger1 = P2Dist X <= -5
+
+[State 751]
+type = playerpush
+trigger1 = time >= 0
+value = 0
+
+[State 751, 2]
+type = velset
+trigger1 = time = 0
+x = 11
+y = 1
+
+[State 751, 3]
+type = velset
+trigger1 = time = 10
+x = 0
+y = 0
+
+[State 751, 10]
+type = ChangeState
+trigger1 = parent, var(39) = 2
+value = 751
+ctrl = 0
+
+; Ghost itself
+[Statedef 834]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 832
+
+[State 752]
+type = NotHitBy
+trigger1 = time >= 0
+value = SCA
+
+[State 751, 0]
+type = Turn
+trigger1 = P2Dist X <= -5
+
+[State 751]
+type = playerpush
+trigger1 = time >= 0
+value = 0
+
+[State 751, 2]
+type = velset
+trigger1 = time = 0
+x = 13
+y = -3
+
+[State 751, 3]
+type = velset
+trigger1 = time = 10
+x = 0
+y = 0
+
+[State 751, 10]
+type = ChangeState
+trigger1 = parent, var(39) = 3
+value = 751
+ctrl = 0
+
+; Ghost itself
+[Statedef 835]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 832
+
+[State 752]
+type = NotHitBy
+trigger1 = time >= 0
+value = SCA
+
+[State 751, 0]
+type = Turn
+trigger1 = P2Dist X <= -5
+
+[State 751]
+type = playerpush
+trigger1 = time >= 0
+value = 0
+
+[State 751, 2]
+type = velset
+trigger1 = time = 0
+x = -5
+y = -7
+
+[State 751, 3]
+type = velset
+trigger1 = time = 10
+x = 0
+y = 0
+
+[State 751, 10]
+type = ChangeState
+trigger1 = parent, var(39) = 5
+value = 751
+ctrl = 0
+
+; Ghost itself
+[Statedef 836]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 832
+
+[State 752]
+type = NotHitBy
+trigger1 = time >= 0
+value = SCA
+
+[State 751, 0]
+type = Turn
+trigger1 = P2Dist X <= -5
+
+[State 751]
+type = playerpush
+trigger1 = time >= 0
+value = 0
+
+[State 751, 2]
+type = velset
+trigger1 = time = 0
+x = 4
+y = -.5
+
+[State 751, 3]
+type = velset
+trigger1 = time = 10
+x = 0
+y = 0
+
+[State 751, 10]
+type = ChangeState
+trigger1 = parent, var(39) = 4
+value = 751
+ctrl = 0
+
+[Statedef -2]
+
+[State -2]
+type = SuperPause
+trigger1 = name != "N-Gotenks"
+time = 10000000000000000000000

@@ -1,0 +1,29 @@
+[Info]
+name = "Trunks-Z-2 By Metal-Mind"
+displayname = "Tronk SSJ"
+versiondate = 26,03,2002
+mugenversion = 04,14,2001
+author = "Metal-Mind"
+pal.defaults  = 2,4,6,8,10,12
+
+[Files]
+cmd = trunks-z-2.cmd
+cns = trunks-z-2.cns
+st = trunks-z-2.cns
+st2 = battle.cns
+stcommon = basic.cns
+sprite = trunks-z-2.sff
+anim = trunks-z-2.air
+sound = trunks-z-2.snd
+pal1 = trunks-z-2.act
+;pal2 = trunks-z-2.act
+;pal3 = trunks-z-2.act
+;pal4 = trunks-z-2.act
+;pal5 = trunks-z-2.act
+pal6 = trunks-z-21.act
+;pal7 = trunks-z-2.act
+;pal8 = trunks-z-2.act
+;pal9 = trunks-z-2.act
+;pal10 = trunks-z-2.act
+;pal11 = trunks-z-2.act
+;pal12 = trunks-z-2.act

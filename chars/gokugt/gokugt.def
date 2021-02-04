@@ -1,0 +1,64 @@
+
+;----------------------------------------------------------------------------
+; Char = " Goku SSJ3 Kid "  
+; Criado por = " Future_Vegetto "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================
+
+; GokuGT.DEF
+
+[Info]
+name="Goku Ssj3"
+displayname="Goku Ssj3"
+versiondate=18,01,2001
+mugenversion=06,27,2000
+author="Future_Vegetto"
+pal.defaults=1
+
+[Files]
+cmd=gokuGT.cmd
+cns=gokuGT.cns
+st=gokuGT.cns
+st1=kaioken.cns
+stcommon=Basico.cns
+sprite=gokubambinossj3.sff
+anim=gokuGT.air
+sound=gokuGT.snd
+pal1=trunten.act
+pal2=
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+
+[Arcade]
+ending.storyboard=ending.def
+intro.storyboard=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+

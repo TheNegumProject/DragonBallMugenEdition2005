@@ -1,0 +1,19 @@
+; Mestre Kame (1.0) def file 
+; by EmuBoarding
+; http://www.mugenow.cjb.net
+
+[Info]
+name    = "Kame by EmuBoarding"
+displayname = "Genialny Zolw"
+pal.defaults = 1
+
+[Files]
+cmd     = Kame.cmd     
+cns     = Kame.cns     
+st      = Kame.cns
+stcommon = common1.cns   
+sprite  = Kame.sff      
+anim    = Kame.air      
+sound   = Kame.snd             
+pal1    = kame.act   
+pal2    = kame2.act   

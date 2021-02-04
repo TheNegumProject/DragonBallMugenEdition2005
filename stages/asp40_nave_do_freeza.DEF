@@ -1,0 +1,139 @@
+;http://asp40.vila.bol.com.br - o seu site de Piabetá - Magé - RJ
+;email: dllcaxiense@ieg.com.br
+;Uma produção: asp40 MiniBrowser - http://asp40.vila.bol.com.br
+;AUTORES: Rafael (Ikki) & Robson (007)
+;Data: 25/06/2003
+;--------------------------------------------------------
+
+[Info]
+name = "Nave do Freeza"
+
+[Camera]
+
+startx = 310
+starty = 0
+
+boundleft = 160
+boundright = 470
+
+boundhigh = -81;-91
+boundlow = 0
+
+verticalfollow = .4
+
+tension = 50
+
+[PlayerInfo]
+;--- Player 1 ---
+; Cordenadas P1
+p1startx = 240
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 370
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0     
+
+[Scaling]
+
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+
+screenleft = 15    
+screenright = 15   
+
+[StageInfo]
+
+zoffset = 228 ;210
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+
+color = 128,128,128
+yscale = .4
+reflect = 0
+
+[Music]
+
+bgmusic = 
+
+bgvolume = 255
+
+[BGdef]
+
+spr = asp40_nave_do_freeza.sff
+
+debugbg = 1
+
+
+[BG 1]
+type  = normal
+spriteno = 0, 0  
+start = 0, 0
+delta = 0.4, 0.6
+trans = none
+mask  = 0
+
+[BG 2]
+type = normal
+spriteno = 1,0
+start = 0,0
+mask = 1
+window = 640, 331   
+
+[BG 3]
+type = anim
+actionno = 3
+start = 475,115 ;95 
+trans = none
+mask  = 1
+
+
+[Begin Action 3]
+3,0, 0,0, 20
+3,1, 0,0, 20
+
+
+[BG 4]
+type = anim
+actionno = 4
+start = 180,80
+trans = none
+mask  = 1
+
+
+[Begin Action 4]
+4,0, 0,0, 15
+4,1, 0,0, 15
+
+[BG 5]
+type = normal
+spriteno = 2,0
+start = 450,95 
+trans = none
+mask  = 1
+
+[BG 10]
+type = normal
+spriteno = 1,1
+trans = none
+mask  = 1
+
+
+
+                                           
+; ASTALAVISTA ;-)
+

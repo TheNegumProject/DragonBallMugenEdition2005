@@ -1,0 +1,20 @@
+[Info] 
+name    = "Ginyu";<-- ponha o nome completo do personagem aqui 
+;displayname = "Ginyu";<-- nome do jogador, aparece na luta, não é obrigatório 
+  
+; arquivos do personagem 
+[Files] 
+cmd     = ginew.cmd     ;<---- comandos do personagem 
+cns     = ginew.cns     ;<---- constantes do personagem 
+st      = ginew.cns    ;<---- um personagem pode ter vários arquivos cns desde que listados                             ;aqui 
+st2     = ginew-2.cns
+stcommon = common1.cns   ;<---- neste arquivo ficam os movimentos básicos do seu personagem como  pular e andar este arquivo vem junto com o mugem e se encontra no  diretório data. 
+ sprite  = ginew.sff     ;<---- gráfico do personagem 
+ anim    = ginew.air     ;<---- animação do personagem 
+;sound   = player.snd     ;<---- som do personagem, se o personagem não tiver som esta linha deve ser desabilitada. 
+pal1   = original.act     ;<---- as várias palhetas que o personagem pode ter, não é obrigatório 
+pal2   = original-2.act 
+pal3   = ginew-2.act 
+pal4   = ginew-3.act 
+pal5   = ginew-4.act 
+;pal6   = player6.act 

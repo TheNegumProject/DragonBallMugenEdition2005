@@ -1,0 +1,18 @@
+[Info]
+name="Androide 18 by _Vision"
+DisplayName="C 18"
+pal.defaults = 1
+
+[Files]
+cmd=and-18.cmd
+cns=and-18.cns
+st=and-18.cns
+stcommon=common1.cns
+sprite=and-18.sff
+anim=and-18.air
+sound=and-18.snd
+pal1=and-18.act
+pal2=and2-18.act
+pal3=and3-18.act
+pal4=and4-18.act
+

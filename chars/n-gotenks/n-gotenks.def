@@ -1,0 +1,27 @@
+
+[Info]
+name = "N-Gotenks"             ;Name of character
+displayname = "Gotenks"   ;Name of character to display
+versiondate = 11,20,2001    ;Version date of character
+mugenversion = 04,01,2001   ;Version of M.U.G.E.N character works on
+author = "Goten88"         ;Character author name
+pal.defaults = 1            ;Default palettes in order of preference
+
+[Files]
+cmd     = n-gotenks.cmd   ;Command set
+cns     = n-gotenks.cns   ;Constants
+st      = n-gotenks.cns   ;States
+st2     = fly.cns
+st3     = helpers.cns
+st4     = Bigcombo.cns
+st5     = kamehameha.cns
+stcommon = common1.cns ;Common states
+sprite  = n-gotenks.sff   ;Sprite
+anim    = n-gotenks.air   ;Animation
+sound   = n-gotenks.snd   ;Sound (leave blank if no sound file)
+
+; Arcade mode
+[Arcade]
+intro.storyboard =     ;Set to blank
+ending.storyboard =    ;Set to blank
+

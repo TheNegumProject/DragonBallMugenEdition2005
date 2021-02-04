@@ -1,0 +1,23 @@
+; Super Androide 17   
+; by OcariocaNildo e Found Glory
+; http://www.portalmugencg.rg3.net
+; Proibido Capiar meu spriter seu lammer
+
+[Info]
+name="Super Androide 17"
+DisplayName="Super C17"
+versiondate = 17,11,2001  
+mugenversion = 07,31,2000 
+author = "OcariocaNildo e Found Glory"     
+
+[Files]
+cmd=S_AND_17.cmd
+cns=S_AND_17.cns
+st=S_AND_17.cns
+stcommon=common1.cns
+sprite=S_AND_17.sff
+anim=S_AND_17.air
+sound=S_AND_17.snd
+pal1=S_AND_17.act
+
+

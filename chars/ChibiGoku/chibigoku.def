@@ -1,0 +1,17 @@
+[Info]
+name = "Chibi Goku"
+displayname = "Maly SonGoku"
+versiondate = 22,08,2000  
+mugenversion = 06,27,2000 
+author = "SSJTrunks"     
+pal.defaults = 1,6,12,11  
+
+[Files]
+cmd      = ChibiGoku.cmd     
+cns      = ChibiGoku.cns     
+st       = ChibiGoku.cns     
+stcommon = common1.cns   
+sprite   = ChibiGoku.sff      
+anim     = ChibiGoku.air      
+sound    = ChibiGoku.snd
+pal1     = ChibiGoku.act

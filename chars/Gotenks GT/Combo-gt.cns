@@ -1,0 +1,489 @@
+
+;----------------------------------------------------------------------------
+; Char = " Gotenks GT "  
+; Criado por = " Lip Ultra SSJ "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================
+
+; Meteor Atack 'inicio'
+[Statedef 4010]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd = -3000
+ctrl = 0
+anim = 4010
+
+[State 3000, 1]
+type = SuperPause
+trigger1 = Time = 0
+Time = 55
+Darken = 0
+
+[State 3000, 2]
+type = PlaySnd
+trigger1 = Time = 0
+value = F20, 0
+
+[State 210, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4011
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; dash
+[Statedef 4011]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+poweradd= 70
+ctrl = 0
+anim = 4011
+
+[State 110, 1]
+type = afterimage
+trigger1 = time = 0
+time = 120
+palcolor = 11
+palbright = 30,30,30
+palcontrast = 132,99,222
+framegap = 4
+timegap = 1
+
+[State 110, 2]
+type = afterimage
+trigger1 = time = 0
+time = 120
+palcolor = 11
+palbright = 30,30,30
+palcontrast = 132,99,222
+framegap = 4
+timegap = 1
+
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = Time = 2
+value = 3,0
+
+[State 410, 2] ;Gravity
+type = VelAdd
+trigger1 = AnimElem = 2
+y = 0
+x = 30
+
+[State 410, 3]
+type = HitDef
+trigger1 = AnimElem = 1
+animtype  = light
+attr = S, NA
+damage    = 30, 90
+pausetime = 9,12
+;guardflag = MA
+sparkxy = -10,-30
+sparkno = 1
+priority = 2, Miss    
+sprpriority = -2      
+hitsound   = 5,2
+guardsound = 6,0
+ground.type = Low            
+ground.slidetime = 5         
+ground.hittime  = 11         
+ground.velocity = 1             
+p2facing = 1
+p2getp1state = 1
+p1stateno = 4012
+
+[State 3401, 5]
+type = ChangeState
+trigger1 = MoveHit = 1
+trigger1 = AnimTime = 0
+value = 4012
+
+[State 3401, 6]
+type = ChangeState
+trigger1 = MoveHit != 1
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Combo
+[Statedef 4012]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= 0
+ctrl = 0
+anim = 4012
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 6
+trigger4 = AnimElem = 8
+trigger5 = AnimElem = 10
+trigger6 = AnimElem = 12
+trigger7 = AnimElem = 14
+trigger8 = AnimElem = 16
+trigger9 = AnimElem = 18
+trigger10 = AnimElem = 20
+value = 3,0
+
+[State 210, 1]
+type = afterimage
+trigger1 = time = 0
+time = 120
+palcolor = 11
+palbright = 30,30,30
+palcontrast = 132,99,222
+framegap = 4
+timegap = 1
+
+[State 210, 2]
+type = HitDef
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 6
+trigger4 = AnimElem = 8
+trigger5 = AnimElem = 10
+trigger6 = AnimElem = 12
+trigger7 = AnimElem = 14
+trigger8 = AnimElem = 16
+trigger9 = AnimElem = 18
+trigger10 = AnimElem = 20
+attr = S, NA
+animtype  = light
+damage    = 10,10
+guardflag = MA
+pausetime = 9,11
+;sparkno = 0
+sparkxy = -10,-35
+hitsound   = 3,7
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 0
+ground.hittime  = 500
+ground.velocity = 0
+air.velocity = 0
+
+[State 210, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4013
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Teleporte 
+[Statedef 4013]
+type = S
+Movetype = I
+Physics = S
+Anim = 4013
+ctrl = 0
+
+[state 7510, sonido]
+type = playsnd
+trigger1 = animelem = 1
+value = 2001,0
+
+[State 1211, 1]
+type = velset
+trigger1 = time >= 0
+trigger1 = time <= 48
+x = 0
+y = 0
+
+[state 7510,1]
+type = posadd
+trigger1 = animelem = 5
+x = -250
+y = 0
+
+[State 3021, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+trigger1 = Pos Y < 0
+value = 1500
+
+[State 7510, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4014
+ctrl = 1
+
+;--------------------------------------------------------
+; intro
+[Statedef 4014]
+type = S
+ctrl = 0
+anim = 4014
+velset = 0,0,0
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 16
+trigger2 = AnimElem = 23
+trigger3 = AnimElem = 30
+trigger4 = AnimElem = 37
+trigger5 = AnimElem = 45
+trigger6 = AnimElem = 52
+trigger7 = AnimElem = 59
+trigger8 = AnimElem = 66
+value = 730, 0
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 69
+trigger2 = AnimElem = 70
+trigger3 = AnimElem = 71
+trigger4 = AnimElem = 72
+trigger5 = AnimElem = 73
+value = 3, 7
+
+[State 1700, envshake]
+type = EnvShake
+trigger1 = AnimElem = 16
+trigger2 = AnimElem = 23
+trigger3 = AnimElem = 30
+trigger4 = AnimElem = 37
+time = 100
+
+[State 210, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4015
+ctrl = 1
+
+; dash
+[Statedef 4015]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+poweradd= 70
+ctrl = 0
+anim = 4015
+
+[State 1050, 2]
+type = afterimage
+trigger1 = time = 0
+time = 120
+palcolor = 26
+palbright = 50,50,50
+palcontrast = 255,231,115
+framegap = 10
+timegap = 1
+
+[State 110, 2]
+type = afterimage
+trigger1 = time = 0
+time = 120
+palcolor = 26
+palbright = 50,50,50
+palcontrast = 255,231,115
+framegap = 10
+timegap = 1
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = Time = 2
+value = 3,0
+
+[State 410, 2] ;Gravity
+type = VelAdd
+trigger1 = AnimElem = 2
+y = 0
+x = 40
+
+[State 410, 3]
+type = HitDef
+trigger1 = AnimElem = 1
+animtype  = light
+attr = S, NA
+damage    = 30, 90
+pausetime = 9,12
+guardflag = MA
+sparkxy = 0,-30
+sparkno = 12
+hitsound   = 3,7
+guardsound = 6,0
+ground.type = Low            
+ground.slidetime = 5         
+ground.hittime  = 11         
+ground.velocity = 1             
+p2facing = 1
+p2getp1state = 1
+p1stateno = 4016
+
+[State 3401, 5]
+type = ChangeState
+trigger1 = MoveHit = 1
+trigger1 = AnimTime = 0
+value = 4016
+
+[State 3401, 6]
+type = ChangeState
+trigger1 = MoveHit != 1
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+; Combo
+[Statedef 4016]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= 0
+ctrl = 0
+anim = 4016
+
+[State 410, 2]
+type = PlaySnd
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 6
+trigger4 = AnimElem = 8
+trigger5 = AnimElem = 10
+trigger6 = AnimElem = 12
+trigger7 = AnimElem = 14
+trigger8 = AnimElem = 16
+trigger9 = AnimElem = 18
+trigger10 = AnimElem = 20
+trigger11 = AnimElem = 22
+trigger12 = AnimElem = 24
+trigger13 = AnimElem = 26
+trigger14 = AnimElem = 28
+trigger15 = AnimElem = 30
+trigger16 = AnimElem = 32
+trigger17 = AnimElem = 34
+trigger18 = AnimElem = 36
+trigger19 = AnimElem = 38
+trigger20 = AnimElem = 40
+value = 3, 4
+
+[State 410, 1]
+type = afterimage
+trigger1 = time = 0
+time = 200
+palcolor = 26
+palbright = 50,50,50
+palcontrast = 255,231,115
+framegap = 10
+timegap = 1
+
+[State 210, 2]
+type = HitDef
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 6
+trigger4 = AnimElem = 8
+trigger5 = AnimElem = 10
+trigger6 = AnimElem = 12
+trigger7 = AnimElem = 14
+trigger8 = AnimElem = 16
+trigger9 = AnimElem = 18
+trigger10 = AnimElem = 20
+trigger11 = AnimElem = 22
+trigger12 = AnimElem = 24
+trigger13 = AnimElem = 26
+trigger14 = AnimElem = 28
+trigger15 = AnimElem = 30
+trigger16 = AnimElem = 32
+trigger17 = AnimElem = 34
+trigger18 = AnimElem = 36
+trigger19 = AnimElem = 38
+trigger20 = AnimElem = 40
+attr = S, NA
+animtype  = light
+damage    = 25,10
+guardflag = MA
+pausetime = 8,5
+sparkno = 12
+sparkxy = 0,-35
+hitsound   = 5,2
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 0
+ground.hittime  = 280
+ground.velocity = 0
+air.velocity = 0
+
+[State 210, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4022
+ctrl = 1
+
+; intro
+[Statedef 4022]
+type = S
+ctrl = 0
+anim = 4022
+velset = 0,0,0
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 2
+trigger2 = AnimElem = 9
+trigger3 = AnimElem = 16
+trigger4 = AnimElem = 23
+trigger5 = AnimElem = 30
+trigger6 = AnimElem = 37
+trigger7 = AnimElem = 44
+value = 730, 0
+
+[State 1700, envshake]
+type = EnvShake
+trigger1 = AnimElem = 16
+time = 100
+
+[State 1090, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;----------------------------------------------------------------------------
+; Char = " Gotenks GT "  
+; Criado por = " Lip Ultra SSJ "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================

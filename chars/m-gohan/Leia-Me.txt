@@ -1,0 +1,138 @@
+===================Mystic Gohan==================
+Por Zero_X
+helio.m@terra.com.br
+
+Versão 2.0 do Mystic Gohan, retirado do jogo Dragon Ball Z Hyper Dimesion
+do Super Nintendo (SNES)
+
+	=====
+	D = Baixo
+	F = Frente
+	B = Tras
+	U = Cima
+	=====
+
+====Golpes====
+
+Fireball - y
+Downwards Fireball - D, y (voo)
+Upwards Fireball - U, y
+Fireball Break - x
+Rising Vertical Punch - U, a (voo)
+Slash Down Kick - D, b
+Throw - F, x (perto)
+Air Throw - D, x (perto - ar)
+Front Attack - F, B, F, x
+Uppercut Attack - D, DF, F, x
+Slash Down Attack - D, DB, B, x
+Air Slash Down - D, DB, B, x (ar)
+
+====Movimentos Especiais====
+
+Air Dash - F, F / B, B
+Air Turbo - F, F///B, B/// U, U (voo)
+Long Jump (Frente) - DB, UF
+Long Jump (Tras) - DF, UB
+High Jump - D, U
+Suddenly Fall - D, D (ar)
+Bukujutsu - z
+Ki Charge - c
+
+====Especiais====
+
+Dash Uppercut - F, a 
+Multi Punch - D, DF, F, a
+Dash Roundhouse Kick - (B) F, b
+Air Machine Gun Kick - F, D, b (ar)
+Shockwave Punch - D, B, a (ar)
+Air Shockwave Punch - F, D, a
+Rising Kick - F, D, DF, F, b
+Rising Punch - F, D, DF, F, a
+Super Punch - (B) F, a
+Renzoku Energy Dan - D, F, y 
+Air Renzoku Energy Dan - D, F, y (ar)
+Seeker Fireball - D, DB, B, y
+Kiai Ho - B, F, y
+Downwards Kiai Ho - B, F, D, y 
+Upwards Kiai Ho - D, F, U, y
+Ki Burn - D, U, y 
+Evading Knee Attack (perto) - a+b
+Evadeing Knee Attack (longe) - x+y
+Zanzoken (Frente) - b+y
+Zanzoken (Trás) - a+x
+
+===Contra-Ataques====
+
+Ground Counter Attack - a+b após defender um golpe
+Air Counter Attack - a+b após ser isolado
+Zanzoken Escape - x+y após sofrer um ataque
+
+=====Super=====  
+
+Legenda :
+. :Helper
+- :Super Aéreo
+* :Super
+numeros - energia da barra de super necessária
+
+.Piccolo - D, B, D, B, x - 600 (Makankousappo / Combo)
+.Vegeta - D, B, D, B, b - 1200 (Final Flash / Suicide)
+.Goku - D, B, D, B, a - 1800 (Kamehame Ha / Genki-Dama)
+.Gotenks - D, B, D, B, y - 2400 (KikouHa / Ghost)
+-Kikou Ha - D, DF, F, D, DF, F, a - 1500
+-Ki Explosion - D, DF, F, D, DF, F, x - 2000 
+*Super Renzoku Energy Dan - D, DF, F, D, DF, F, y - 1000 
+*Super Shockwave - D, DF, F, D, DF, F, b - 1500
+*Ultra Combo - D, DF, F, D, DF, F, a - 2000 
+
+===Carregáveis=====
+
+Esses golpes podem ficar mais fortes ao segurar X
+Quanto mais você segurar mais fortes erá o golpes e mais energia gastará
+existem 5 níveis.
+O 1o será uma bola gigante de energia que gasta 1/3 da energia
+O 2o será um laser pequeno de energia que gasta 1/2 da energia
+O 3o será uma rajada mais forte e maior que gasta 2/3
+O 4o é o mesmo que anterior, mas com faíscas de energia. Gasta 5/6
+A última tem a aparência da 3a, mas Gohan mostra seu Ki e a rajada nao eh apenas amarelada.
+Gasta a barra de energia inteira
+
+-Masenko - D, DF, F, D, DF, F, x (pode ser redirecionado com os direcionais)
+-Kamehame Ha - D, DF, F, D, DF, F, x
+
+===Meteor Attack=====
+
+Comando : F, B, D, DF, F, a+b
+
+Gasta a barra inteira e precisa de estar ao menos com 150 de vida
+
+===================
+Comentarios:
+
+Nessa nova versão eu adicionei pose de vitoria nos Striker
+(Gotenks, Vegeta e o Goku), quando 
+o Goku (por exemplo) derrotar o adversário com o seu KameHameHa, 
+ele irá junto com o Gohan fazer a sua pose de vitória.
+Adicionado vários sons também, como por exemplo o som do Charge.
+Duas Intros e Duas poses de Vitórias
+Vários Golpes, especiais, supers do jogo de Snes incluindo alguns originais 
+Final
+
+===================
+Quem eu Agradeço:
+
+Kuzu-bei - Por ter feito o golpe Fly existente nesse personagem.
+Ses - O criador do MCM.
+Ao criador do Mugenerator.
+Anotherlife - Por te me ensinado muita coisa (esse cara é fera).
+Elecbyte - Preciso falar porque? 
+Daeyrat - Tester e por ter dado alguma idéias 
+Rage_Ex_Plus - um cara legal q me deu umas idéias e testou o Char
+_Barret_ - Cara Legal q sempre me apoiou
+Todos os membros da MUGENMANIA!!!!
+
+===================
+
+Qualquer coisa me avise rapidamente
+Zero_X
+www.mugenmania.com

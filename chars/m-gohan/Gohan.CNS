@@ -1,0 +1,345 @@
+[Data]
+life=1700
+attack=140
+defence=150
+fall.defence_up=50
+liedown.time=60
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+volume=0
+echo=0
+
+[Size]
+xscale=1
+yscale=1
+z.width=3
+ground.back=15
+ground.front=15
+air.back=12
+air.front=12
+height=60
+attack.width=0
+attack.dist=160
+proj.attack.dist=90
+proj.doscale=0
+
+[Movement]
+airjump.num=0
+airjump.height=35
+yaccel=0.43
+crouch.friction=0.82
+stand.friction=0.85
+
+[Velocity]
+walk.fwd=2.1
+walk.back=-1.9
+run.fwd=4.0,0
+run.back=-4.5,-3.8
+runjump.back=-2.55,-8.1
+runjump.fwd=4,-8.1
+jump.neu=0,-9.1
+jump.back=-2.55,0
+jump.fwd=2.5,0
+airjump.neu=0,-8.1
+airjump.back=-2.55,-8.1
+airjump.fwd=2.5,-8.1
+
+[Statedef 170]
+type = S
+ctrl = 0
+anim = 170
+velset = 0,0,0
+
+[State 170 , 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+; WIN
+[Statedef 180]
+type = S
+
+[State 180, 1] ;Vitoria Normal
+type = ChangeState
+trigger1 = Time = 0
+trigger1 = Win = 1
+value = 189
+
+[State 180, 1] ; Final
+type = ChangeState
+trigger1 = Time = 0
+trigger1 = Win = 0
+value = 9797
+
+; Final 
+;Animação do Final
+
+[Statedef 9797]
+type = S
+ctrl = 0
+velset = 0,0,0
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 9797
+facing = 1
+pos = 0,0
+postype = left
+sprpriority = 1;-2
+bindtime = -1
+ownpal = 1
+supermove = 1
+removetime = 99999999999999999999999999
+
+[Statedef 189]
+type = S
+
+[State 180,1]
+type = ChangeState
+trigger1 = MatchOver != 1
+trigger1 = Time = 0
+value = 181
+
+[State 180,2]
+type = ChangeState
+trigger1 = MatchOver = 1
+trigger1 = Time = 0
+value = 182
+
+[Statedef 181]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0,0
+
+[State 181 , 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[Statedef 182]
+type = S
+ctrl = 0
+anim = 182
+velset = 0,0,0
+
+[State 420, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 183
+ctrl = 1
+
+[Statedef 183]
+type = S
+ctrl = 0
+anim = 183
+velset = 0,0,0
+
+[State 181 , 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[Statedef 190]
+
+[State 190, 3]
+type = ChangeState
+trigger1 = random <= 449
+value = 191
+
+[State 190, 3]
+type = ChangeState
+trigger1 = random <= 449
+value = 192
+
+[Statedef 191]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 191, Som_da_Queda]
+type = PlaySnd
+trigger1 = Time = 15
+value = 0,2
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 190, 1] ;If opponent 
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Goku-n-hd by EmuBoarding"
+trigger2 = P2Name = "N-Trunks by EmuBoarding"
+trigger3 = P2Name = "Recoom by Lucifer"
+trigger4 = P2Name = "Goku Super Sayajin 2 by ribeiro"
+trigger5 = P2Name = "Mr.Satan"
+trigger6 = P2Name = "Goku SSJ4 by _Vision and MRP"
+trigger7 = P2Name = "Androide 18 by _Vision"
+trigger8 = P2Name = "Broli Remix ver1.2"
+trigger9 = P2Name = "Cell por Ssonic"
+trigger10= P2Name = "Cell Junior by _Vision"
+trigger11= P2Name = "C-Trunks by EmuBoarding"
+trigger12= P2Name = "Freeza by OverMind";
+trigger13= P2Name = "Goten by Alunfl@"
+trigger14= P2Name = "Kaio Shin by Alunfl@"
+trigger15= P2Name = "Kame by EmuBoarding"
+trigger16= P2Name = "Kuririn by EmuBoarding"
+value = 159999
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 159999
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[Statedef 192]
+type = S
+ctrl = 0
+anim = 192
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 190, 1] ;If opponent 
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Goku-n-hd by EmuBoarding"
+trigger2 = P2Name = "N-Trunks by EmuBoarding"
+trigger3 = P2Name = "Recoom by Lucifer"
+trigger4 = P2Name = "Goku Super Sayajin 2 by ribeiro"
+trigger5 = P2Name = "Mr.Satan"
+trigger6 = P2Name = "Goku SSJ4 by _Vision and MRP"
+trigger7 = P2Name = "Androide 18 by _Vision"
+trigger8 = P2Name = "Broli Remix ver1.2"
+trigger9 = P2Name = "Cell por Ssonic"
+trigger10= P2Name = "Cell Junior by _Vision"
+trigger11= P2Name = "C-Trunks by EmuBoarding"
+trigger12= P2Name = "Freeza by OverMind";
+trigger13= P2Name = "Goten by Alunfl@"
+trigger14= P2Name = "Kaio Shin by Alunfl@"
+trigger15= P2Name = "Kame by EmuBoarding"
+trigger16= P2Name = "Kuririn by EmuBoarding"
+value = 159999
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 159999
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 2500, 6]
+type = PlaySnd
+trigger1 = Time < 150
+trigger2 = TimeMod = 150, 0
+value = 0, 26
+
+[State 3000, Super]
+type = Explod
+trigger1 = time = 1
+anim = 1921
+pos = 0,3
+postype = p1
+sprpriority = -2
+supermove = 1
+bindtime = 1
+removetime = 150
+
+; INTRO Especial
+
+;Intro padão
+[Statedef 159999]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 191, Som_da_Queda]
+type = PlaySnd
+trigger1 = Time = 15
+value = 0,2
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,700]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 159998
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 900
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 800
+value = 0
+ctrl = 0
+
+[Statedef -2]
+
+; Power bar sobe sozinha
+[State -2,1]
+type = poweradd
+trigger1 = time >= 0
+trigger1 = palno = 1
+trigger2 = palno = 2
+trigger3 = palno = 3
+trigger4 = palno = 4
+trigger5 = palno = 5
+trigger6 = palno = 6
+trigger7 = palno = 7
+trigger8 = palno = 8
+trigger9 = palno = 9
+trigger10 = palno = 10
+trigger11 = palno = 11
+trigger12 = palno = 12
+value = 1
+
+[State -2,1]
+type = VarSet
+trigger1 = palno = 1
+trigger2 = palno = 2
+trigger3 = palno = 3
+trigger4 = palno = 4
+trigger5 = palno = 5
+trigger6 = palno = 6
+trigger7 = palno = 7
+trigger8 = palno = 8
+trigger9 = palno = 9
+trigger10 = palno = 10
+trigger11 = palno = 11
+trigger12 = palno = 12
+v = 1
+value = 1

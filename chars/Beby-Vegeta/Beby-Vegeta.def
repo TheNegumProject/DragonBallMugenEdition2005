@@ -1,0 +1,28 @@
+; Beby-Vegeta (beta1)
+; by K-bum
+; http://server2047.virtualave.net/mugendb2/
+
+[Info]
+name    = "Baby Vegeta"
+displayname = "Baby Vegeta"
+versiondate = 26,10,2000  
+mugenversion = 07,31,2000 
+author = "K-bum"     
+pal.defaults = 1
+
+[Files]
+cmd     = Beby-Vegeta.cmd     
+cns     = Beby-Vegeta.cns     
+st      = Beby-Vegeta.cns  
+stcommon = common1.cns   
+sprite  = Beby-Vegeta.sff      
+anim    = Beby-Vegeta.air      
+sound   = Beby-Vegeta.snd
+pal1    = Beby-Vegeta-1.act
+pal2    = Beby-Vegeta-2.act
+pal3    = Beby-Vegeta-3.act
+pal4    = Beby-Vegeta-4.act
+pal5    = Beby-Vegeta-5.act
+pal6    = Beby-Vegeta-6.act        
+pal7    = Beby-Vegeta-7.act        
+pal8    = Beby-Vegeta-8.act

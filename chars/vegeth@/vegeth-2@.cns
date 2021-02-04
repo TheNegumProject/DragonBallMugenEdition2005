@@ -1,0 +1,300 @@
+[StateDef -2]
+
+[State -2,Display]
+type = DisplayToClipboard
+trigger1 = 1
+text = "A.I. %d, Ssj2 %d, P2DistX %f, P2DistY %f" 
+params = Var(6),Var(1), P2BodyDist X, P2BodyDist Y
+
+[State -2, DefenceMulSet1]
+type = DefenceMulSet
+triggerall = var(1) = 1
+trigger1 = MoveType != H
+value = 0.7
+
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != [1000,20000]
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 1002
+
+[State -2, 500]
+type = envshake
+triggerall = stateno != [1000,20000]
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+value = 0
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10002
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 875
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 876
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10875
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10876
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10877
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10878
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10879
+
+[State -2, 500]
+type = removeexplod
+triggerall = stateno != 1000
+trigger1 = command != "charge" && var(6) != 1
+trigger2 = command != "charge 1" && var(6) != 1
+trigger3 = power >= 9000
+trigger4 = var(6) = 1 && power >= 3000
+id = 10880
+
+;-----------------------------------------------------------------
+; AI ovvero intellligenza idiota 
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = p2life > 0
+triggerall = stateno != [730,751]
+triggerall = MoveType != A
+triggerall = StateNo = 0 || stateno = 1510
+trigger1 = power <= 3000  
+value = 750
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = stateno = 1510 || stateno = [310,320]
+trigger1 = time = 250
+value = 50
+
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = p2life > 0
+triggerall = var(1) = 0
+triggerall = MoveType != A
+triggerall = stateno = 1510 || stateno = [310,320]
+trigger1 = p2bodydist Y > 250
+value = 1250
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 0
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = StateNo = 0 || stateno = 1510 || stateno = [310,320]
+trigger1 = p2bodydist Y < -180
+value = 1250
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 0
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = p2statetype = A
+triggerall = p2stateno!= [5000,5200]
+trigger1 = time = 150
+value = 1250
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 0
+triggerall = p2life > 0
+triggerall = power > 2000
+triggerall = MoveType != A
+triggerall = StateNo = 0
+trigger1 = Pos Y = 0
+trigger1 = Life < 2200 
+value = 1000
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 0
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = stateno = 0 || stateno = 1510
+triggerall = p2stateno != 5110
+trigger1 = time = 20 || time = 50 || time = 80 || time = 110
+value = 1310
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = p2life > 0
+triggerall = var(1) = 1
+triggerall = MoveType != A
+triggerall = p2stateno != 5110
+triggerall = stateno = 0 || stateno = 1510
+trigger1 = time = 20 || time = 50 || time = 80 || time = 110
+value = 11310
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = stateno != 11000
+triggerall = stateno = 1510 || stateno = [310,320]
+trigger1 = p2bodydist Y > 250
+value = 11300
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = stateno != 11000
+triggerall = MoveType != A
+triggerall = StateNo = 0 || stateno = 1510 || stateno = [310,320]
+trigger1 = p2bodydist Y < -180
+value = 11300
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = p2statetype = A
+triggerall = stateno != 11000
+triggerall = MoveType != A
+triggerall = p2stateno!= [5000,5200]
+trigger1 = time = 150
+value = 11300
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = p2stateno!= [5000,5200]
+triggerall = stateno = 1510 || StateNo = [0,105]
+trigger1 = p2bodydist Y = [-70,30]
+trigger1 = p2bodydist X = [0,30]
+value = 11350
+
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = p2stateno!= [5000,5200]
+triggerall = stateno = 1510 || StateNo = [0,105]
+trigger1 = p2bodydist Y = [-70,30]
+trigger1 = p2bodydist X = [0,30]
+value = 11350
+
+[State -2, ssj]
+type = ChangeState
+triggerall = var(6) = 1
+triggerall = var(1) = 1
+triggerall = p2life > 0
+triggerall = MoveType != A
+triggerall = stateno = 1510 || StateNo = [0,105]
+trigger1 = p2bodydist Y = [-20,10]
+trigger1 = p2bodydist X = [100,130]
+value = 1300
+
+
+;---------------------------------------------------------------------------
+;si para in automobile
+
+[State -2, StandGuard]
+type = ChangeState
+triggerall = Var(6) = 1
+triggerall = Pos Y >= 0
+triggerall = P2BodyDist X <= 40
+triggerall = P2BodyDist Y <= 0
+triggerall = P2BodyDist Y >= -120
+triggerall = P2StateType != C
+triggerall = P2MoveType = A
+trigger1 = StateNo = 0
+trigger2 = StateNo = [10, 11]
+value = 120
+
+
+[State -2, AirGuard]
+type = ChangeState
+triggerall = Var(6) = 1
+triggerall = P2BodyDist X <= 40
+triggerall = P2BodyDist Y <= 15 
+triggerall = P2BodyDist Y >= -50
+triggerall = P2MoveType = A
+trigger1 = StateNo = 50
+value = 132
+

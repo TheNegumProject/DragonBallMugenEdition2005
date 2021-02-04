@@ -1,0 +1,33 @@
+Ciosy dla Goku SSJ3/Baczek (dla tych, co nie chc¹ przekopywaæ siê przez cmd):
+
+a - pi¹cha 1
+b - kop 1
+c - pi¹cha 2
+y - kop 2
+a+b - recharge
+x+z - latanie (dzia³a wiêkszoœæ ciosów)
+
+P, x - pi¹choszar¿a
+T, x - ³okcioszar¿a
+
+D, DT, T, y - super uppercut
+D, DP, P, a - kamehameha
+D, DT, T, c - genki dama
+D, DT, T, a - kaioken
+D, DP, P, c - fireball
+D, DT, T, b - combo
+D, DP, P, z - mega super combo (meteor)
+D, DT, T, z - multifireball (z zatrzymuje)
+D, DP, P, b - super kamehameha
+D, DP, P, x - mini kamehameha
+w powietrzu P, D, c - superkop
+
+ponadto teleporty (trzymaæ z i klepn¹æ, mo¿na w powietrzu:)
+P - do przodu
+T - do ty³u
+D - za przeciwnika
+
+Dodatkowo niektóre ciosy mo¿na ³¹czyæ z innymi (np. a, b). Zachêcam do eksperymentów.
+
+Happy asskicking
+Baczek

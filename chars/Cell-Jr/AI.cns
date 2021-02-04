@@ -1,0 +1,645 @@
+;Programming by Goten88
+
+; Sokidan
+[Statedef 1888]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 1888
+poweradd = -2000
+ctrl = 0
+
+[State 1888]
+type = SuperPause
+trigger1 = Time = 2
+pos = 0, -60
+anim = 30
+time = 107
+movetime = 107
+
+[State 888]
+type = NotHitBy
+trigger1 = Time = 2
+value = SCA
+time = 320
+
+[State 1888]
+type = PlaySnd
+trigger1 = Time = 2
+value = F20, 0
+
+[state 1888, aurora]
+type = explod
+trigger1 = animelem = 2
+anim = 731
+ID = 731
+pos = 25,20
+scale = 1,1
+postype = P1
+ownpal = 1
+sprpriority = -1
+bindtime = -1
+removetime = 50
+supermovetime = 50
+
+[state 1888]
+type = helper
+trigger1 = animelem = 5
+trigger1 = NumHelper(888) = 0
+trigger1 = time <= 127
+helpertype = normal
+name = "Sokidan"
+ID = 1888
+pos = -15,-68
+postype = p1
+stateno = 1889
+keyctrl = 1
+ownpal = 1
+
+[State 1888]
+type = NotHitBy
+trigger1 = Time = 2
+value = SCA
+time = 320
+
+[State 1888]
+type = ChangeState
+trigger1 = NumHelper(1888) = 0
+trigger1 = time > 127
+value = 0
+ctrl = 1
+
+; Sokidan Itself
+[Statedef 1889]
+type    = S
+movetype= A
+physics = S
+poweradd= 0
+ctrl = 0
+anim = 889
+
+[State 1889]
+type = Screenbound
+trigger1 = time > 0
+value = 1
+
+[State 1889]
+type = HitDef
+trigger1 = time = 0
+attr = S, HA
+animtype  = Hard
+damage    = 300,50
+getpower  = 0
+priority  = 6
+guardflag = MA
+pausetime = 0,15
+sparkxy = -10,65
+sparkno = -1
+hitsound   = S8,0
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 22
+ground.hittime  = 22
+ground.velocity = -6
+air.velocity = -3,-3
+fall.animtype = Hard
+fall = 1
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X < 0
+x = -2
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X = 0
+x = 0
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X > 0
+x = 2
+
+[State 1889]
+type = velset
+trigger1 = P2Dist Y < 0
+y = -2
+
+[State 1889]
+type = velset
+trigger1 = P2Dist Y = 0
+;trigger1 = Pos Y = -65
+y = 0
+
+[State 1889]
+type = velset
+trigger1 = P2Dist Y > 0
+;trigger1 = Pos Y < -65
+y = 2
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 892
+trigger1 = Vel X != 2
+trigger1 = Vel X != -2
+trigger1 = Vel Y = -2
+value = 892
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 899
+trigger1 = Vel X = 2
+trigger1 = Vel Y = -2
+value = 899
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 902
+trigger1 = Vel X = -2
+trigger1 = Vel Y = -2
+value = 902
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 890
+trigger1 = Vel X = 2
+trigger1 = Vel Y != -2
+trigger1 = Vel Y != 2
+value = 890
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 891
+trigger1 = Vel X = -2
+trigger1 = Vel Y != -2
+trigger1 = Vel Y != 2
+value = 891
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 893
+trigger1 = Vel Y = 2
+trigger1 = Vel X != 2
+trigger1 = Vel X != -2
+value = 893
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 900
+trigger1 = Vel X = 2
+trigger1 = Vel Y = 2
+value = 900
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 901
+trigger1 = Vel X = -2
+trigger1 = Vel Y = 2
+value = 901
+
+[state 1889]
+type = explod
+trigger1 = MoveContact = 1
+anim = 1900
+ID = 1900
+pos = -10,-35
+scale = 1,1
+postype = P2
+ownpal = 1
+sprpriority = 2
+removetime = 66
+
+[State 1889]
+type = Destroyself
+trigger1 = MoveContact = 1
+
+;Kamehameha
+[Statedef 2050]
+type    = S
+movetype= A
+physics = S
+velset = 0,0,0
+anim = 2000
+ctrl = 0
+
+[State 2050]
+type = SuperPause
+trigger1 = Time = 2
+pos = 0, -60
+anim = 30
+movetime = 150
+time = 150
+
+[State 2050] 
+type = Playsnd
+trigger1 = animelem = 1
+value = 15,0
+channel = 1
+
+[State 2050]
+type = PowerAdd
+trigger1 = Time = 5
+value = -1000
+
+[State 2050]
+type = ChangeAnim
+trigger1 = Time = 150
+value = 2003
+
+[State 2050]
+type = ChangeState
+trigger1 = time = 145
+trigger1 = P2Dist Y <= -10
+trigger1 = Var(12) != 1
+value = 2002
+ctrl = 0
+
+[state 2050]
+type = ChangeState
+trigger1 = time = 145
+trigger1 = P2BodyDist Y > 10 
+trigger1 = Pos Y < 0
+trigger1 = Var(12) != 1
+trigger1 = P2Name != "GotenGT"
+trigger1 = P4Name != "GotenGT"
+trigger1 = P2Name != "SSJ4 Vegeta by ReDSpideR4k & Goten88"
+trigger1 = P4Name != "SSJ4 Vegeta by ReDSpideR4k & Goten88"
+trigger1 = P2Name != "Mystic Gohan by HyperionX"
+trigger1 = P4Name != "Mystic Gohan by HyperionX"
+value = 2003
+ctrl = 0
+
+[State 2050]
+type = explod
+trigger1 = time = 159
+anim = 2005
+ID = 2005
+pos = 78,-46
+postype = P1
+ownpal = 1
+removeongethit = 1
+sprpriority = 1
+supermovetime = -1
+pausemovetime = -1
+bindtime = -1
+
+[State 2050]
+type = HitDef
+trigger1 = time >= 158
+attr = S, SA
+animtype  = Hard
+damage    = 2
+getpower  = 0
+priority  = 6
+guardflag = MA
+pausetime = 0
+sparkxy = -10,-60
+sparkno = -1
+hitsound   = -1
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 22
+ground.hittime  = 22
+ground.velocity = -6
+air.velocity = -6
+
+;Start
+[State 2050]
+type = Projectile
+trigger1 = Time = 159
+projanim = 2001
+projhitanim = 2004
+projremovetime = 42
+projid = 2001
+velocity = 5
+offset = 69, -46
+getpower = 0
+attr = S, SP
+damage = 2
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = S19,0
+guardsound = 6, 0
+guardflag = MA
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+;Middle
+[State 2050]
+type = Projectile
+trigger1 = Time >= 160
+trigger1 = Time <= 254
+projremovetime = 42
+projanim = 2002
+projhitanim = 2004
+pausemovetime = -1
+getpower = 0
+offset = 73,-46
+ProjID = 2000
+velocity = 5
+attr = S, SP
+damage = 2,1
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = S19,0
+guardsound = 6,0
+guardflag = MA
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[state 2050]
+type = RemoveExplod
+trigger1 = Time = 255
+ID = 2005
+
+;End
+[State 2050]
+type = Projectile
+trigger1 = Time = 255
+projanim = 2005
+projremovetime = 42
+ProjID = 2050
+offset = 78,-46
+getpower = 0
+velocity = 5
+attr = S, SP
+damage = 2
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = S8, 0
+guardsound = S8, 0
+guardflag = MA
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[state 2050]
+type = RemoveExplod
+trigger1 = Time = 253
+trigger1 = command = "holda"
+trigger1 = power > 0
+trigger1 = ProjContact2000 = 0 < 97
+ID = 2005
+
+[State 2050]
+type = ChangeState
+trigger1 = Time = 253
+trigger1 = command = "holda"
+trigger1 = power > 0
+trigger1 = ProjContact2000 = 0 < 97
+value = 2001
+ctrl = 0
+
+[State 2050]
+type = ChangeState
+trigger1 = Time = 255
+value = 0
+ctrl = 1
+
+[Statedef -2]
+
+[State -2: DisplayToClipBoard]
+type = DisplayToClipBoard
+trigger1 = 1
+text = "Variable 4: %d,Variable 5: %d, Variable 6: %d, Variable 7: %d"
+params = Var(4),Var(5),Var(6),Var(7)
+
+[state -2, Kamehameha]
+type = explod
+trigger1 = ProjContact2050 = 1
+anim = 1900
+ID = 1900
+pos = -10,-35
+scale = 1,1
+postype = P2
+ownpal = 1
+sprpriority = 2
+removetime = 66
+
+[State -2]
+type = Varset
+trigger1 = command = "holdb"
+trigger1 = command = "holdy"
+trigger1 = Var(12) != 1
+v = 12
+value = 1
+
+[State -2]
+type = Varset
+trigger1 = stateno != 2000
+trigger1 = stateno != 2400
+trigger1 = stateno != 2401
+trigger1 = Var(12) != 0
+v = 12
+value = 0
+
+[State -2, Laughter]
+type = Varset
+trigger1 = stateno != 200
+trigger1 = stateno != 201
+trigger1 = stateno != 202
+trigger1 = stateno != 210
+trigger1 = stateno != 211
+trigger1 = stateno != 212
+trigger1 = stateno != 213
+trigger1 = stateno != 2022
+trigger1 = stateno != 111
+trigger1 = stateno != 333
+trigger1 = stateno != 555
+trigger1 = stateno != 999
+trigger1 = stateno != 994
+trigger1 = stateno != 620
+trigger1 = stateno != 2000
+trigger1 = stateno != 2001
+trigger1 = stateno != 1055
+trigger1 = stateno != 251
+trigger1 = stateno != 260
+v = 8
+value = 0
+
+[State -2, Laughter]
+type = Varset
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+v = 8
+value = 1
+
+[State -2, Laughter]
+type = Playsnd
+trigger1 = (Gametime%500) = 0
+trigger1 = Random <= 50
+trigger1 = Var(8) != 1
+trigger1 = RoundState = 2
+trigger1 = alive = 1
+value = ifelse(random < 499, 18, 17) , 0
+channel = 0
+volume = 350
+
+[State -1]
+type = Stopsnd
+trigger1 = stateno != 190
+trigger1 = alive = 1
+value = 190, 0
+channel = 3
+
+[State -2, Laughter]
+type = Stopsnd
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+value = 17,0
+channel = 0
+
+[State -2, Laughter]
+type = Stopsnd
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+value = 18,0
+channel = 0
+
+[State -2]
+type = PlaySnd
+trigger1 = LoseKO
+trigger1 = time = 1
+trigger1 = var(9) = 0
+value = 12,0
+
+[State -2]
+type = SuperPause
+trigger1 = P1name != "Cell-Jr by Goten88"
+time = 10000000000000000000000000000000
+
+[State -2]
+type = varset
+trigger1 = LoseKO
+trigger1 = time = 1
+var(9) = 1
+
+[State -2]
+type = PlaySnd
+trigger1 = var(10) = 0
+trigger1 = GetHitVar(fall) = 1
+trigger1 = GetHitVar(hitcount) < 2
+trigger1 = time = 0
+trigger1 = alive = 1
+value = 12,0
+
+[State -2]
+type = Varset
+trigger1 = Stateno != 281
+trigger1 = Var(11) != 0
+v = 11
+value = 0
+
+[State -2]
+type = varset
+trigger1 = GetHitVar(fall) = 1
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 1
+
+[State -2]
+type = varset
+trigger1 = stateno < 5000
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 0
+
+; AI Power Gain
+[State -2]
+type = PowerAdd
+triggerall = Var(4) = 1
+triggerall = 1
+trigger1 = ctrl = 1
+trigger2 = Stateno = 1500
+trigger3 = Movetype = A
+value = 2
+
+;AI Come Down
+[State -2]
+type = ChangeState
+trigger1 = Stateno = 1500
+trigger1 = Var(4) = 1
+trigger1 = P2BodyDist Y >= 20
+value = 15100
+
+;Die
+;[State -2]
+;type = ChangeState
+;value = 7777
+;triggerall = Stateno != 7777
+;triggerall = Stateno != 5150
+;triggerall = stateno != 821
+;trigger1 = alive = 0
+;------------------------------------------------------------

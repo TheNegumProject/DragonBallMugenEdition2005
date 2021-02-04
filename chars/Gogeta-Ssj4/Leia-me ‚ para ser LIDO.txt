@@ -1,0 +1,301 @@
+===LEIA-ME===
+
+Gogeta Super Sayia-jin 4
+
+Leia-Me em português
+
+===ÍNDICE===
+
+1)Ficha
+2)Desenvolvimento
+3)História do Char
+4)Créditos
+5)Instalação
+6)O Que falta
+7)O Que tem
+8)Novidades
+9)Biografia
+10)Modos
+11)Comandos
+12)Kaio Ken
+13)Final
+14)Agradecimentos
+15)Conclusão
+
+===FICHA===
+
+Nome : Gogeta-SSJ4
+Jogo : Editado do Dragonball Z Hyper Dimension
+Baseado no: Goku ssj2 
+Versão do Mugen : 2000.7.31 e 2000.11.29
+Versão : 1.2
+Completo : 95%
+Data de Lançamento : 07/04/2001
+
+===DESENVOLVIMENTO===
+
+Ripagem de Imagens : Sarevok e Pocket_Danyell
+Ripagem de Sons : Pocket_Danyell
+Edição de imagens: Sarevok e Pocket_Danyell
+Conversão para MUGEN : Pocket_Danyell
+Emulador : Zsnes
+Testadores : Zero_X e T-Max
+
+===HISTÓRIA DO CHAR===
+No DBGT na saga de Evil Shen Longs a luta estava muito díficil, e ninguem conseguia vencer Li-Shen Long. Até que Goku e Vegeta resolveram se fusionar em Gogeta através da dança Metamofuru. A luta estava fácil para Gogeta e ele até brincava, Li Shen Long estava muito enfraquecido, ae Gogeta mandou um Big Bang Kamehameha, mas Li ainda sobreviveu, e quando ia mandar um de novo pra acabar com Li eles se desfusionaram. Goku e Vegeta iriam se fusionar de novo, mas Li espancou os 2. Goku foi atacar Li, mas levou um golpe mortal. O ki de Goku sumiu, e vegeta deixou de ser SSJ4. Parecia que tudo estava acabado até que vegeta olhou para o abismo onde estaria o corpo de Goku e começou a rir. Li não entendeu nada, até que viu uma gigantesca Genki Dama com todas as energias do universo!!! Foi assim que Li morreu, e assim Goku morre depois do último pedido a shen long e nunca mais volta!
+
+===CRÉDITOS===
+
+Autor: Pocket_Danyell
+Site: http://www.detudohpbr.cjb.net
+E-mail: danyellpacheco@bol.com.br
+
+
+===INSTALAÇÃO===
+
+Para colocar Vegetto no seu M.U.G.E.N. primeiro tenha certeza de que há espaço
+no seu System.def abrindo-o com um editor de texto(como Wordpad)e aumentando
+o número de Columns e Rows se necessário.
+Se já tiver espaço,bom.
+Mande todos os arquivos para uma pasta de nome FreezaHD e coloque-a na pasta
+CHARS de seu M.U.G.E.N.
+Agora, entre no arquivo Select.def e procure por uma parte com [Characters]
+escrito.
+Logo embaixo escreva:
+vegetto-n (se quiser que ele esteja no seu jogo)
+vegetto-n, stages/estagio.def (se quiser que ele tenha uma fase própria no Arcade
+Mode)
+vegetto-n, stages/estagio.def, music=sound/nomedamusica.def (se quiser que a fase
+do modo Arcade tenha música própria)
+Se quiser que ele seja o último chefe de seu jogo, acrescente , order=10 logo
+após a música ou o estágio(vindo em últmo lugar),senão, coloque :, order=9
+para que esteja num nível anterior a último chefe.
+
+===O QUE FALTA===
+
+Corrigir bugs, mais Story Lines e talvez + golpes.
+
+===O QUE TEM===
+
+.2 Meteors Attacks
+.12 supers
+.8 especiais
+.Modo Kaio Ken
+.Modo Super Kaio Ken
+.Sistema de combos
+.Air Combos
+.Extras
+.Final
+.1 provocação
+.1 intro
+.2 poses de vitória
+.Carregamento de ki
+.Muitos sons
+.4 Paletas
+===NOVIDADES===
+
+Melhoramento de imagens e modificação do "Ki" do kaio ken, agora está mais real.
+
+===Gogeta-SSJ4===
+
+Raça : Saiya-Jin (fusão) 
+Familiares : N/A
+Olhos : Azuis
+Cabelo : Vermelho
+Séries : DBZ
+Técnicas : Todas as de Goku e Vegeta, e algumas "fusões" de técnicas.
+
+ 
+===MODOS DE JOGO===
+
+1)Normal
+2)Fly
+3)Kaio Ken
+4)Super Kaioken
+
+------
+NORMAL
+------
+Modo comum, terrestre com todos os golpes básicos.
+---
+FLY
+---
+Gogeta voa pela tela.
+------
+Kaio Ken
+------
+Os poderes são aumentados em 1.2x como a defesa.
+---
+Comando : a+z - Power 4
+------
+Super Kaio Ken
+------
+Os poderes são aumentados em 2.5x como a defesa.
+---
+Comando : y+z - Power 6
+
+===COMANDOS===
+
+-------
+Legenda
+-------
+
+F - Frente
+B - Trás
+D - Baixo
+U - Cima
+DF - Baixo frente
+DB - Baixo trás
+UF - Cima frente
+
+-------
+Básicos
+-------
+
+a - botão a
+b - botão b
+c - botão c
+x - botão x
+y - botão y
+z - botão z
+s - botão enter
+
+------
+Extras
+------
+
+.DASH - F,F/B,B
+Corrida pra frente ou pra trás
+
+.Air DASH - F,F/B,B
+Corrida pra frente ou pra trás - Tem de ser feito durante o pulo
+
+.HIGH JUMP - D,U
+Um pulo muito alto na vertical,mas que pode ser redirecionado
+
+.LONG JUMP TOWARDS - D,UF
+Um pulo longo(diagonal) para frente
+
+.LONG JUMP BACKWARDS - D,UB
+O mesmo que o anterior,porém este é para trás
+
+.AIR JUMP - Um pulo comum no ar em qualquer direção
+Um pulo aéreo
+
+.ZANZOKEN  - x+y
+Gogeta se move rapidamente para trás dando uma impressão de teleporte.
+Apos o comando escolha a direção.
+
+.Provocação - s
+Gogeta provoca seu inimigo
+
+.Sistema de Combos - Vá apertando os botões de golpes básicos rapidamente
+Gogeta vai espancando seu inimigo do jeito que você quiser!
+
+.Air Combos - De um Flash Kick no kra, e no ar espanque o kra
+Gogeta vai espancando seu inimigo no ar do jeito que você quiser!
+-------------
+CARREGAMENTOS
+-------------
+
+.KI CHARGE - a+b
+Gogeta carrega seu Ki.
+
+--------------------
+MOVIMENTOS ESPECIAIS
+--------------------
+
+.Magia  - D, B, z
+
+.Combo - D, DF, F, a
+
+.5 magias - D, F, z
+
+.flash kick - D, DF, F, y
+
+.Gogeta Combo - D, DB, B, a
+
+.Super Beam - D, DF, F, x
+
+.Eye Beam - D, DF, F, c
+
+-----------
+SUPER MOVES
+-----------
+
+.Kamehameha - D, DF, F, B, b
+Level 2
+
+.Cho Kamehameha - D, DF, F, B, y
+-Level 4
+
+.X-Bai 10x Kamehameha - D, DF, F, B, a
+-Level 6
+
+.Big Bang Attack - D, DB, B, F, z
+-Level 3
+
+.Final Flash - D, DB, B, F, y
+-Level 4
+
+.Ajuda de Gohan - D, DB, B, F, c
+-Level 3
+
+.Garlick Kamehameha - D, DB, B, F, b
+-Level 3
+
+.Final Kamehameha - D, DF, F, B, x
+-Level 7
+
+.Big Bang Kamehameha - D, DF, F, B, c
+-Level 7
+
+.Genki Dama - D, DF, F, D, DF, F, a+b
+-Level 9
+-----------
+METEOR ATTACKS
+-----------
+Meteor Attack 1 - D, DF, F, B, z (não funciona feito a uma distância muito longa)
+-Level 5
+
+Meteor Attack 2 (brutality) - D, DB, B, F, x
+-Level 8
+
+===Kaio Ken===
+Deu trabalho mais consegui fazer o kaio ken por tempo e com a barra de kaio ken!!! Não esqueçam, quem criou aquela barra e o modo kaio ken por tempo fui EU - POCKET_DANYELL
+quando forem copiar (hehehehe) não esqueçam de dizer que fui eu que fiz e o url do meu site - WWW.DETUDOHPBR.CJB.NET
+NÃO ESQUEÇAM OU ESTARÃO SENDO LAMMERS!!!
+===FINAL===
+Fiz um final bem legal para o Gogeta. Se o seu mugen não for o DBZ Mugen Edition 2 apenas coloque o código abaixo no arquivo system.def na pasta data do mugen em baixo WIN SCREEN DEFINITION:
+
+[Win Screen]
+wintext.text = Press any button for exit
+wintext.font = 1,0,0
+wintext.offset = 268,238
+wintext.displaytime = -1
+wintext.layerno = 500
+fadein.time = 32
+pose.time = -1
+fadeout.time = 64
+
+===AGRADECIMENTOS===
+
+*Sarevok - Valeu mesmo pelos sprites kra, tu edita perfeitamente!!!
+*Elecbyte
+*Bandai 
+*Zero_X - Sempre me ajudou, me disse todos os bugs do Gogeta e ainda agilizou o combo!
+*T-Max - Por uma dúvida que eu tirei em um de seus tutos
+*MRP - Por algumas imagens do Goku SSJ4 que depois eu melhorei
+*OverMind - Por esse modelo de Leia-me e por sempre me ajudar
+*[S]oni[C] - Valeu pelos sprites que me passou
+*[Victor_Hugo] - Valeu por enviar pra mim o Gogeta, já q essa bosta do meu moden é uma MERDA (desculpem o termo utilizado)
+*Pessoal do #templo_mugen, #amugen e #mugenious da BrasNet - irc.brasnet.org (entrem lah)
+*E um grande vai tomar no ** (hehehehe) para os lammers do #mugen (quem é sabe) pelo que fizeram comigo injustamente!!!
+*A todos que eu esqueci (foi mal ae)
+
+===CONCLUSÃO===
+Espero que tenham gostado da minha melhor criação até o momento!
+Não copiem nada sem minha permissão, ou estará dando uma de lammer!
+Gogeta-SSJ4© by Pocket_Danyell©
+Para mais chars vá em http://www.detudohpbr.cjb.net 
+			FIM

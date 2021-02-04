@@ -1,0 +1,267 @@
+; WIN
+[Statedef 180]
+type = S
+
+[State 180, 1] ;Vitoria Normal
+type = ChangeState
+trigger1 = Time = 0
+trigger1 = Win = 1
+value = 181
+
+[State 180, 1] ; Final
+type = ChangeState
+trigger1 = Time = 0
+trigger1 = Win = 0
+value = 182
+
+; WIN1
+[Statedef 181]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0,0
+
+[State 181, 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+;Animação do Final
+
+[Statedef 182]
+type = S
+ctrl = 0
+anim = 909090
+velset = 0,0,0
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 14000
+facing = 1
+pos = 0,0
+postype = left
+sprpriority = 1;-2
+bindtime = 1025
+ownpal = 1
+supermove = 1
+removetime = 1025
+
+; MugeNow Credits
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 14109
+facing = 1
+pos = 65,65
+postype = left
+sprpriority = 1;-2
+bindtime = 100000
+ownpal = 1
+supermove = 1
+removetime = -1
+
+Historia Final
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 14100
+facing = 1
+pos = 15,65
+postype = left
+sprpriority = 1;-2
+bindtime = 100000
+ownpal = 1
+supermove = 1
+removetime = 100000
+
+ Foto And 17 & 18
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 14101
+facing = 1
+pos = 0,-5
+postype = left
+sprpriority = 1;-2
+bindtime = 10000
+ownpal = 1
+supermove = 1
+removetime = 10000
+
+ Foto Trunks
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 14102
+facing = 1
+pos = 0,-2;-232,-2
+postype = left
+sprpriority = 1;-2
+bindtime = 10000
+ownpal = 1
+supermove = 1
+removetime = 10000
+
+; intro Trunks + Gohan
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 13101
+facing = 1
+pos = 10,65
+postype = left
+sprpriority = 1;-2
+bindtime = 10000
+ownpal = 1
+supermove = 1
+removetime = 10000
+
+; Trunks Chegando
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 13100
+pos = 200,0
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = -1
+
+; Gohan Morto
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10025
+pos = 160,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = -1
+
+; intro Androide 17
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 15001
+facing = 1
+pos = 10,65
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+; Intro Androide 18
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 15002
+facing = 1
+pos = 10,65
+postype = left
+sprpriority = 1;-2
+bindtime = 90000
+ownpal = 1
+supermove = 1
+removetime = 9000
+
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 30000
+pos = 0,0
+postype = left
+sprpriority = 0
+supermove = 1
+removetime = -1
+
+; And 18
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10010
+pos = 295,205
+postype = left
+sprpriority = 1
+supermove = 2
+removetime = 914
+
+; And 17
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10000
+pos = 260,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = 914
+
+; Gohan
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10020
+pos = 35,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = 719
+
+; Gohan Porrada
+[State 9001, 4]
+type = Explod
+trigger1 = AnimElem = 1
+anim = 10021
+pos = 35,205
+postype = left
+sprpriority = 1
+supermove = 1
+removetime = 914
+
+
+
+
+;---------------------------------------------------------------------------
+
+[Statedef -2]
+
+; Power bar sobe sozinha
+[State -2,1]
+type = poweradd
+trigger1 = time >= 0
+trigger1 = palno = 1
+trigger2 = palno = 2
+trigger3 = palno = 3
+trigger4 = palno = 4
+trigger5 = palno = 5
+trigger6 = palno = 6
+trigger7 = palno = 7
+trigger8 = palno = 8
+trigger9 = palno = 9
+trigger10 = palno = 10
+trigger11 = palno = 11
+trigger12 = palno = 12
+value = 1
+
+[State -2,1]
+type = VarSet
+trigger1 = palno = 1
+trigger2 = palno = 2
+trigger3 = palno = 3
+trigger4 = palno = 4
+trigger5 = palno = 5
+trigger6 = palno = 6
+trigger7 = palno = 7
+trigger8 = palno = 8
+trigger9 = palno = 9
+trigger10 = palno = 10
+trigger11 = palno = 11
+trigger12 = palno = 12
+v = 1
+value = 1
+
+;------------------------------------------------------------------------ 

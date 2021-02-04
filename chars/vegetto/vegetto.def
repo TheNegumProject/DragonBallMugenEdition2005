@@ -1,0 +1,25 @@
+[Info]
+Name="vegetto by gokkuhyper"
+DisplayName="Vegetto"
+VersionDate=07,31,2000
+MugenVersion=07,31,2000
+Author="Trunks"
+Pal.Defaults=1,4,5,3,2,6
+
+[Files]
+cmd=vegetto.cmd        ;Custom AI
+;cmd=vegetto-noai.cmd  ;No Custom AI
+cns=vegetto.cns
+st=vegetto.cns         ;Custom AI
+;st=vegetto-noai.cns   ;No Custom AI
+st1=special.cns
+stcommon=common1.cns
+sprite=vegetto.sff
+anim=vegetto.air
+sound=vegetto.snd
+pal1=vegetto0.act
+pal2=vegetto1.act
+pal3=vegetto2.act
+pal4=vegetto3.act
+pal5=vegetto4.act
+pal6=vegetto5.act

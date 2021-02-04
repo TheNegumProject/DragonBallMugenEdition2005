@@ -1,0 +1,979 @@
+
+[Info]
+name = "DB MUGEN Edition 2005"      
+author = "Majin Team"
+version = "1.0.0"
+
+;----------------------------
+
+
+[Files]
+spr = system.sff    ;Filename of sprite data
+snd = system.snd    ;Filename of sound data
+fight = fight.def   ;Fight definition filename
+select = select.def ;Character and stage selection list
+
+logo.storyboard = title.def 
+intro.storyboard = 
+
+font1 = f-6x9.fnt
+font2 = f-6x9.fnt
+font3 = jg.fnt
+font4 = qoh_big.fnt
+font5 = qoh_sm~1.fnt
+;----------------------------
+[Music]
+title.bgm = sound/menu.mp3
+title.bgm.loop = 1
+select.bgm = sound/select.mp3
+select.bgm.loop = 1 
+vs.bgm = sound/vs.mp3
+vs.bgm.loop = 1 
+
+;-------------------------------------------------------------------
+;Title screen definition
+[Title Info]
+cursor.move.snd = 100,0
+cursor.done.snd = 100,1
+cancel.snd = 100,2
+menu.item.font = 3,0,0
+menu.item.active.font = 4,0,0
+menu.item.spacing = 0, 15
+menu.itemname.arcade="ARCADE"
+menu.itemname.versus="VERSUS"
+menu.itemname.teamarcade="TEAM ARCADE"
+menu.itemname.teamversus="TEAM VERSUS"
+menu.itemname.teamcoop="TEM COOP"
+menu.itemname.survival="SURVIVAL"
+menu.itemname.survivalcoop="SURVIVAL C."
+menu.itemname.training="TRENING"
+menu.itemname.watch="PATRZ"
+menu.itemname.options="OPCJE"
+menu.itemname.exit="KONIEC"
+
+;----------------------------
+;Title background definition
+[TitleBGdef]
+bgclearcolor = 0,0,0
+
+
+[TitleBG 1] ;Flames BG - test
+type  = normal
+layerno = 0
+spriteno = 111,17
+tile = 0,1
+start = -160,0
+velocity = 0,-2
+
+
+[TitleBG 0] ;Fire - test
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,-80
+tile  = 1,1
+trans = add
+velocity = 0.25,-1.25
+
+[TitleBG 0] ;Fire - test - Smaller Flames
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,0
+tile  = 1,1
+velocity = -0.42,-2.10
+trans = add
+
+[TitleBG flames] ; extra Flames
+type  = normal
+spriteno = 111,13
+trans = add
+start = -160,-160
+tile = 1,1
+velocity = 0,-2.45
+
+
+[TitleBG flames] ; rising cinders 1
+type  = normal
+spriteno = 111,15
+trans = add
+start = -180,0
+tile = 0,1
+velocity = 0,-2.0
+
+[TitleBG flames] ; rising cinders 2
+type  = normal
+spriteno = 111,15
+trans = add
+start = 110,0
+tile = 0,1
+velocity = 0,-2.0
+
+[TitleBG 0] ;Flames BG - Burst into Flames
+type  = normal
+layerno = 0
+spriteno = 111,18
+start = -160, 0
+;tile = 1,0
+mask = 1
+velocity = 0,-5.0
+
+
+[TitleBG 1] ;Subtract Yellow - test
+type  = normal
+layerno = 0
+spriteno = 111,1
+start = -160,0
+tile  = 1,0
+velocity = -2, 0
+trans = sub
+
+[TitleBG 1]
+type  = normal ; logo bg glow effect
+spriteno = 886, 3
+start = -160, -20
+trans = add
+mask = 1
+
+[TitleBG 1] 
+type  = normal ; menu panel
+layerno = 0
+spriteno = 886,2
+start = -160,125
+trans = sub
+
+
+[TitleBG 1]
+type  = normal ; logo bg (black, anti-alias)
+spriteno = 886, 1
+start = -160, -20
+trans = sub
+mask = 1
+
+[TitleBG 1]
+type  = normal ; logo
+spriteno = 886, 0
+start = -160, -25
+mask = 1
+
+;============== Screen Transitions ================
+
+
+[TitleBG 1.b1];fader
+type = normal
+layerno = 0
+spriteno = 900,0
+start = 0,0
+velocity = 0,-20
+trans = sub
+tile = 1,0
+
+
+;-------------------------------------------------------------------
+;Character select definition
+[Select Info]
+rows = 25
+columns = 26
+wrapping = 1              ;1 to let cursor wrap around
+pos = 6,6              ;Position to draw to
+showemptyboxes = 0        ;*2000.07.31 NEW*
+moveoveremptyboxes = 0    ;*2000.07.31 NEW*
+
+;------ Cell Data -------
+
+cell.size = 18,18         ;x,y size of each cell (in pixels)
+cell.spacing = 1          ;space between each cell
+cell.bg.spr = 150,0       ;Note: Don't use animation for cells
+cell.random.spr = 180,0   ;*2000.07.31 NEW* Icon for random select (don't use animation)
+cell.random.switchtime = 4;*2000.07.31 NEW* Time to wait before changing to another random portrait
+
+;-------- P1 Cursor ---------
+
+p1.cursor.startcell = 0,10;0,6
+p1.cursor.active.anim = 160,0
+p1.cursor.done.anim = 161,0
+p1.cursor.move.snd = 100,0
+p1.cursor.done.snd = 100,1
+p1.random.move.snd = 100,0;*2001.04.01 NEW*
+
+;-------- P2 Cursor ---------
+
+p2.cursor.startcell = 1,9
+p2.cursor.active.anim = 170,0
+p2.cursor.done.anim = 171,0
+p2.cursor.blink = 1       ;1 to blink p2's cursor if overlapping p1's
+p2.cursor.move.snd = 100,0
+p2.cursor.done.snd = 100,1
+p2.random.move.snd = 100,0;*2001.04.01 NEW*
+
+;-------- Misc Cursor Sounds --------
+
+cancel.snd = 100,2
+random.move.snd.cancel = 0;*2001.04.01 NEW* 1 to have random move sound cancel itself when played repeatedly
+stage.move.snd = 100,0    ;*2001.04.01 NEW*
+stage.done.snd = 100,1    ;*2001.04.01 NEW*
+
+;--------- Portrait Scale and Offset -------
+
+portrait.offset = 0,0
+portrait.scale = 0.8, 0.8
+
+;-------- Game Mode Title ---------  
+
+title.offset = 500,500     ;Position of title (Arcade Mode, etc)
+title.font = -1;5,0,-1   ;Font of title (-1 for none)
+
+;------- Big portraits --------   
+
+p1.face.offset = -11,9;-7      ;Position to put big portrait
+p1.face.scale = 1,1
+p1.face.facing = 1        ;*2001.04.01 NEW*
+
+p2.face.offset = 330,99
+p2.face.facing = -1       ;*2001.04.01 NEW*
+p2.face.scale = 1,1
+
+;---------- Name -----------
+
+p1.name.offset = 5,27     ;Position to put name
+p1.name.font = 4,0,1      ;Set to -1 for no display
+p2.name.offset = 314,220
+p2.name.font = 4,0,-1
+
+;-------- Stage select ---------
+
+stage.pos = 75,35
+;stage.active.font = 5,0,0
+;stage.active2.font = 5,1,0  ;Second font color for blinking
+;stage.done.font = 5,0,0
+
+;~~~~~~~~~~~~~~~~~ TEAM MENU ~~~~~~~~~~~~~~~~~~~
+
+;----- P1 team menu data ------
+
+teammenu.move.wrapping = 1
+p1.teammenu.pos = 20, 30
+;p1.teammenu.bg.spr =
+
+p1.teammenu.selftitle.font = 4,0, 1
+p1.teammenu.selftitle.text = Team mode
+p1.teammenu.enemytitle.font = 4,0, 1
+p1.teammenu.enemytitle.text =  CPU Team
+
+p1.teammenu.move.snd = 100,0
+p1.teammenu.value.snd = 100,0
+p1.teammenu.done.snd = 100,1
+
+p1.teammenu.item.offset = 0,20
+p1.teammenu.item.spacing = 0,12
+p1.teammenu.item.font = 5,0, 1
+p1.teammenu.item.active.font = 5,0,1 ;3,3,1
+p1.teammenu.item.active2.font = 5,0,1 ;Second font color for blinking
+p1.teammenu.item.cursor.offset = -10, 0
+p1.teammenu.item.cursor.anim = 183
+
+p1.teammenu.value.icon.offset = 60,1
+p1.teammenu.value.icon.spr = 181,0
+p1.teammenu.value.empty.icon.offset = 60,1
+p1.teammenu.value.empty.icon.spr = 182,0
+p1.teammenu.value.spacing = 6,0
+
+;----- P2 team menu data ------
+
+p2.teammenu.pos = 302, 167;299, 30
+;p2.teammenu.bg.spr =
+
+p2.teammenu.selftitle.font = 4,0, -1
+p2.teammenu.selftitle.text = Team Mode
+p2.teammenu.enemytitle.font = 4,0, -1
+p2.teammenu.enemytitle.text = CPU Team
+
+p2.teammenu.move.snd = 100,0
+p2.teammenu.value.snd = 100,0
+p2.teammenu.done.snd = 100,1
+
+p2.teammenu.item.offset = 0,20
+p2.teammenu.item.spacing = 0,12
+p2.teammenu.item.font = 5,0, -1
+p2.teammenu.item.active.font = 5,0, -1 ;3,1, -1
+p2.teammenu.item.active2.font = 5,0, -1 ;Second font color for blinking
+p2.teammenu.item.cursor.offset = 10, 0
+p2.teammenu.item.cursor.anim = 184
+
+p2.teammenu.value.icon.offset = -60,1
+p2.teammenu.value.icon.spr = 181,0
+p2.teammenu.value.empty.icon.offset = -60,1
+p2.teammenu.value.empty.icon.spr = 182,0
+p2.teammenu.value.spacing = 6,0
+
+[begin action 160]
+160,0,0,0,1, ,A
+160,0,0,0,1, ,A
+160,0,0,0,1, ,A
+172,0,0,0,1, ,A
+172,0,0,0,1, ,A
+172,0,0,0,1, ,A
+
+[begin action 161]
+171,0,0,0,1, ,A
+
+[begin action 170]
+170,0,0,0,1, ,A
+170,0,0,0,1, ,A
+170,0,0,0,1, ,A
+162,0,0,0,1, ,A
+162,0,0,0,1, ,A
+162,0,0,0,1, ,A
+
+[begin action 171]
+161,0,0,0,1, ,A
+
+[begin action 183]
+183,0,0,0,1, ,A
+183,0,0,0,1, ,A
+183,1,0,0,1, ,
+183,1,0,0,1, ,
+
+[begin action 184]
+184,0,0,0,1, ,A1;original
+184,0,0,0,1, ,A1;original
+184,1,0,0,1, ,
+184,1,0,0,1, ,
+
+
+
+;-----------------------
+;Character select screen background
+[SelectBGdef]
+;spr = graphics/selectbg.sff  ;Filename of sprite data
+
+[SelectBG 0] ;Flames BG - test
+type  = normal
+layerno = 0
+spriteno = 111,17
+tile = 0,1
+start = -160,0
+velocity = 0,-2
+
+
+
+;--------- Flames
+
+[SelectBG 0] ;Fire - test
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,-80
+tile  = 1,1
+trans = add
+velocity = 0.25,-1.25
+
+[SelectBG 0] ;Fire - test - Smaller Flames
+type  = normal
+layerno = 0
+spriteno = 111,12
+start = -160,0
+tile  = 1,1
+velocity = -0.42,-2.10
+trans = add
+
+[SelectBG flames] ; extra Flames
+type  = normal
+spriteno = 111,13
+trans = add
+start = -160,-160
+tile = 1,1
+velocity = 0,-2.45
+
+;========= Restrict Flames ============
+
+[SelectBG restrict]
+type  = normal
+spriteno = 111,14
+;trans = add
+start = -160,0
+tile = 1,0
+velocity = 1,0
+mask = 1
+
+[SelectBG restrict]
+type  = normal
+spriteno = 111,14
+;trans = add
+start = -160,0
+tile = 1,0
+velocity = -0.75,0
+mask = 1
+
+;========= End Restrict Flames ============
+
+
+[SelectBG 0] ;Flames BG - Burst into Flames
+type  = normal
+layerno = 0
+spriteno = 111,18
+start = -160, 0
+;tile = 1,0
+mask = 1
+velocity = 0,-5.0
+
+;----------- end flames
+
+
+;Big logo
+[SelectBG 0] ;ww2k  - test
+type  = normal
+layerno = 0
+spriteno = 111,7
+start = -130,5
+tile  = 0,0
+trans = add1
+
+;Big logo
+[SelectBG 0] ;ww2k  - test
+type  = normal
+layerno = 0
+spriteno = 111,7
+start = -70,5
+tile  = 0,0
+trans = add1
+
+[SelectBG 0] ;Subtract Yellow - test
+type  = normal
+layerno = 0
+spriteno = 111,1
+start = -160,0
+tile  = 1,0
+velocity = -2, 0
+trans = sub
+
+;============= Grid + Marquee Start ===============
+
+[SelectBG 0] ;ww2k small logos - test
+type  = normal
+layerno = 0
+spriteno = 111,8
+start = -160,0
+tile  = 1,0
+velocity = -0.5,0
+trans = add
+mask = 1
+
+
+[SelectBG 0] ;ww2k - top grid
+type  = normal
+layerno = 0
+spriteno = 111,10
+start = -19,12
+tile  = 1,0
+velocity = -0.3,0
+trans = add
+mask = 1
+
+
+[SelectBG 0] ;ww2k - bottom grid
+type  = normal
+layerno = 0
+spriteno = 111,9
+start = -164,183
+tile  = 1,0
+velocity = -0.3,0
+trans = add
+mask = 1
+
+;============= Grid + Marquee Finish ==============
+
+;subtract original position
+
+
+[SelectBG logo_mask_VSfadein] 
+type  = normal
+spriteno = 75,6
+start = -34,50
+trans = sub
+tile = 1,0
+velocity = 0,-8
+
+[SelectBG 0] ;Black Icon BG - test
+type  = normal
+layerno = 0
+spriteno = 111,2
+start = -160,0
+tile  = 0
+mask = 1
+
+;[SelectBG 0] ;yellow diagonal fillers
+;type  = normal
+;layerno = 1
+;spriteno = 111,3
+;start = -160,0
+;tile  = 0
+;mask = 1
+
+
+[SelectBG 0] ; portrait fixers
+type  = normal
+layerno = 1
+spriteno = 111,4
+start = -160,0
+tile  = 0
+;trans = sub
+mask = 1
+
+
+[SelectBG 0] ; p1 and p2 labels
+type  = normal
+layerno = 1
+spriteno = 111,5
+start = -160,0
+tile  = 0
+trans = sub
+mask = 1
+
+
+[SelectBG 0] ; p1 and p2 labels
+type  = normal
+layerno = 1
+spriteno = 111,6
+start = -160,0
+tile  = 0
+mask = 1
+
+
+;============== Screen Transitions ================
+
+
+[SelectBG 1.b1];fader
+type = normal
+layerno = 1
+spriteno = 900,0
+start = 0,0
+velocity = 0,-20
+trans = sub
+tile = 1,0
+
+
+
+
+
+
+
+;-------------------------------------------------------------------
+[VS Screen]
+time = 45000                ;Time to show screen
+p1.pos =  0,43;0,20;
+p1.facing = 1             ;*2001.04.01 NEW*
+p1.scale = 1,1            ;*2001.04.01 NEW*
+
+p2.pos = 320,43;320,79;
+p2.facing = -1            ;*2001.04.01 NEW*
+p2.scale = 1,1            ;*2001.04.01 NEW*
+
+p1.name.pos  =  110,195;86
+p1.name.font =   4,0,-1
+p2.name.pos  = 210,195
+p2.name.font =   4,0, 1
+
+;-----------------------
+;VS Match up screen background
+[VersusBGdef] 
+
+;------- Background Fire Effect ----------
+
+[VersusBG 0] ;Flames BG - test
+type  = normal
+layerno = 0
+spriteno = 111,17
+start = -160,-220
+tile = 1,1
+velocity = 0,-2.75
+
+[VersusBG 0] ;Fire - test
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,-80
+tile  = 1,1
+trans = add
+velocity = 0.25,-1.5
+
+[VersusBG 0] ;Fire - test - Smaller Flames
+type  = normal
+layerno = 0
+spriteno = 111,12
+start = -160,0
+tile  = 1,1
+velocity = -0.84,-3.20
+trans = add
+
+[VersusBG 0] ;Fire - test - Smaller Flames
+type  = normal
+layerno = 0
+spriteno = 111,12
+start = -160,0
+tile  = 1,1
+velocity = 0,-3.52
+trans = add
+
+;========= Restrict Flames ============
+
+[VersusBG restrict]
+type  = normal
+spriteno = 111,14
+;trans = add
+start = -160,0
+tile = 1,0
+velocity = 1,0
+mask = 1
+
+[VersusBG restrict]
+type  = normal
+spriteno = 111,14
+;trans = add
+start = -160,0
+tile = 1,0
+velocity = -0.75,0
+mask = 1
+
+;========= End Restrict Flames ============
+
+
+[VersusBG 0] ;Flames BG - Burst into Flames
+type  = normal
+layerno = 0
+spriteno = 111,18
+start = -160, 0
+mask = 1
+velocity = 0,-3.0
+
+[VersusBG 0] ;ww2k big logo - test
+type  = normal
+layerno = 0
+spriteno = 111,7
+start = -100,-3
+trans = add1
+
+
+;------- channel mask-------------------
+
+[VersusBG 0] ;Subtract Channels 
+type  = normal
+layerno = 0
+spriteno = 111,1
+start = -160,0
+trans = sub
+;------- end channel mask-------------------
+
+
+;------- Marquee and Grid ----------------
+
+[VersusBG 0] ;ww2k small logos - test
+type  = normal
+layerno = 0
+spriteno = 111,8
+start = -160,0
+tile  = 1,0
+velocity = -0.5,0
+trans = add
+mask = 1
+
+[VersusBG 0] ;ww2k - top grid
+type  = normal
+layerno = 0
+spriteno = 111,10
+start = -164,12
+tile  = 1,0
+velocity = -0.3,0
+trans = add
+mask = 1
+
+[VersusBG 0] ;ww2k - bottom grid
+type  = normal
+layerno = 0
+spriteno = 111,9
+start = -164,183
+tile  = 1,0
+velocity = -0.3,0
+trans = add
+mask = 1
+
+;-------End Marquee and grid ----------------
+
+;-------- Portrait Backgrounds -------------
+[VersusBG p1_bg sub]
+type = normal
+layerno = 0
+spriteno = 891,0
+trans = sub
+start = -100,120
+
+[VersusBG p1_bg]
+type = normal
+layerno = 0
+spriteno = 891,1
+mask = 1
+start = -101,119; -1,-1
+
+
+;=========================
+
+
+[VersusBG p2_bg sub]
+type = normal
+layerno = 0
+spriteno = 891,0
+trans = sub
+start = 102,120
+
+[VersusBG p2_bg]
+type = normal
+layerno = 0
+spriteno = 891,1
+mask = 1
+start = 101,119; -1,-1
+
+
+
+;-------VS logo--------------------------------
+
+[VersusBG diamond]
+type = normal
+layerno = 1
+spriteno = 890,1
+start = -0,120
+trans = sub
+
+[VersusBG sign]
+type = normal
+layerno = 1
+spriteno = 890,0
+start = 1,119
+trans = add
+
+
+;-------End VS logo--------------------------------
+
+;-------- P1 and P2 labels ------------------------------
+[VersusBG 0] ; p1 and p2 labels
+type  = normal
+layerno = 1
+spriteno = 111,5
+start = -160,0
+tile  = 0
+trans = sub
+mask = 1
+
+[VersusBG 0] ; p1 and p2 labels
+type  = normal
+layerno = 1
+spriteno = 111,6
+start = -160,0
+tile  = 0
+mask = 1
+;-------- End P1 and P2 labels ------------------------------
+
+;=============== Lens Flare ===============
+[xVersusBG flare]
+type = normal
+layerno = 1
+spriteno = 895, 0
+start = -160, 0
+trans = add
+
+;============== Screen Transitions ================
+
+
+[VersusBG 1.b1];fader
+type = normal
+layerno = 1
+spriteno = 900,0
+start = 0,0
+velocity = 0,-9
+trans = add
+tile = 1,0
+
+;-------------------------------------------------------------------
+;Demo mode definition
+;Whole group is *2001.04.01 NEW*
+[Demo Mode]
+enabled = 1               ;Set to 1 to enable demo mode, 0 to disable
+select.enabled = 0        ;Set to 1 to display select screen, 0 to disable
+vsscreen.enabled = 0      ;Set to 1 to display versus screen, 0 to disable
+title.waittime = 900      ;Time to wait at title before starting demo mode
+fight.endtime = 900       ;Time to display the fight before returning to title
+fight.playbgm = 0         ;Set to 1 to enable in-fight BGM, 0 to disable
+fight.bars.display = 0    ;Set to 1 to display lifebar, 0 to disable
+intro.waitcycles = 1      ;Cycles to wait before intro cutscene is played again
+debuginfo = 0             ;Set to 0 to hide debugging info (debug mode only)
+
+;-------------------------------------------------------------------
+;Continue screen definition
+;Whole group is *2001.04.01 NEW*
+[Continue Screen]
+enabled = 1               ;Set to 1 to show continue screen, 0 to disable
+
+;-------------------------------------------------------------------
+;Game over screen definition
+;Whole group is *2001.04.01 NEW*
+[Game Over Screen]
+enabled = 1               ;Set to 1 to show game over screen, 0 to disable
+storyboard = gameover.def ;Game over storyboard filename
+
+;-------------------------------------------------------------------
+;Win screen definition
+;This is the screen that is shown when you win in arcade mode.
+;It will not be displayed if the winning character has an ending.
+[Win Screen]
+enabled = 1               ;Set to 1 to show win screen, 0 to disable *2001.04.01 NEW*
+wintext.text = "Yippee! Yahoo! Woohoo! Yay!"
+wintext.font = 2,0,0
+wintext.offset = 159,70
+wintext.displaytime = -1
+wintext.layerno = 2
+fadein.time = 32
+pose.time = 300
+fadeout.time = 64
+
+;-------------------------------------------------------------------
+;Options screen definition
+[Option Info] 
+cursor.move.snd = 100,0
+cursor.done.snd = 100,1
+cancel.snd = 100,2
+menu.item.font = 4,0,0
+menu.item.active.font = 5,0,0
+menu.item.spacing = 0, 15
+
+
+;-------------------
+;Options screen background
+[OptionBGdef]
+bgclearcolor = 0,0,0
+
+
+[OptionBG 0] ;Flames BG - test
+type  = normal
+layerno = 0
+spriteno = 111,17
+start = -160,-220
+tile = 1,1
+velocity = 0,-2.75
+
+[OptionBG 0] ;Fire - test
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,-80
+tile  = 1,1
+trans = add
+velocity = 0.25,-1.25
+
+[OptionBG 0] ;Fire - test - Smaller Flames
+type  = normal
+layerno = 0
+spriteno = 111,13
+start = -160,0
+tile  = 1,1
+velocity = -0.42,-2.10
+trans = add
+
+[OptionBG flames] ; extra Flames
+type  = normal
+spriteno = 111,13
+trans = add
+start = -160,-160
+tile = 1,1
+velocity = 0,-2.45
+
+
+[OptionBG flames] ; rising cinders 1
+type  = normal
+spriteno = 111,15
+trans = add
+start = -180,0
+tile = 0,1
+velocity = 0,-2.0
+
+[OptionBG flames] ; rising cinders 2
+type  = normal
+spriteno = 111,15
+trans = add
+start = 110,0
+tile = 0,1
+velocity = 0,-2.0
+
+[OptionBG 0] ;Flames BG - Burst into Flames
+type  = normal
+layerno = 0
+spriteno = 111,18
+start = -160, 0
+;tile = 1,0
+mask = 1
+velocity = 0,-5.0
+
+
+
+
+;------- channel mask-------------------
+
+[OptionBG 0] ;Subtract Channels 
+type  = normal
+layerno = 0
+spriteno = 111,1
+start = -160,0
+trans = sub
+;------- end channel mask-------------------
+
+
+;------- End Background Fire Effect ----------
+
+
+;------- Logos and grid ----------------
+
+[OptionBG 0] ;ww2k small logos - test
+type  = normal
+layerno = 0
+spriteno = 111,8
+start = -160,0
+tile  = 1,0
+velocity = -0.75,0
+trans = add
+mask = 1
+
+[OptionBG 0] ;ww2k - top grid
+type  = normal
+layerno = 0
+spriteno = 111,10
+start = -164,12
+tile  = 1,0
+;velocity = -0.3,0
+trans = add
+mask = 1
+
+[OptionBG 0] ;ww2k - bottom grid
+type  = normal
+layerno = 0
+spriteno = 111,9
+start = -164,183
+tile  = 1,0
+;velocity = -0.3,0
+trans = add
+mask = 1
+
+;-------End Logos and grid ----------------
+
+;------- channel mask - old position -------------------
+;--------------- end channel mask-------------------
+
+
+;============== Screen Transitions ================
+
+
+[OptionBG 1.b1];fader
+type = normal
+layerno = 1
+spriteno = 900,0
+start = 0,0
+velocity = 0,-20
+trans = sub
+tile = 1,0

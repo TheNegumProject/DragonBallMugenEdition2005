@@ -1,0 +1,61 @@
+[Statedef -3]
+
+[State -2]
+type = ChangeState
+triggerall = Var(0) = 1 
+triggerall = StateType = S
+triggerall = Pos Y >= 0
+triggerall = P2BodyDist Y <= 0
+triggerall = P2BodyDist Y >= -120 
+triggerall = P2StateType != C
+triggerall = P2MoveType = A
+trigger1 = Random <= 1010
+trigger1 = (P2BodyDist X <= 120 && Ctrl) || (StateNo = [140, 155])
+trigger2 = Var(7) > 0
+trigger2 = (P2BodyDist X <= 120 && Ctrl) || (StateNo = [140, 155]) || (HitDefAttr = SC, NA && P2BodyDist X <= 50)
+trigger3 = StateNo = 2000
+value = 130
+
+[State -2]
+type = ChangeState
+triggerall = Var(0) = 1
+triggerall = StateType = S
+triggerall = Pos Y >= 0
+triggerall = P2BodyDist Y <= 0
+triggerall = P2BodyDist Y >= -50
+triggerall = P2BodyDist X <= 120 
+triggerall = P2StateType != S && P2StateType != A
+triggerall = P2MoveType = A
+trigger1 = Random <= 1010
+trigger1 = Ctrl || (StateNo = [140, 155])
+trigger2 = Var(7) > 0
+trigger2 = (P2BodyDist X <= 120 && Ctrl) || (StateNo = [140, 155]) || (HitDefAttr = SC, NA && P2BodyDist X <= 50)
+value = 131
+
+[State -2]
+type = ChangeState
+triggerall = Var(0) = 1
+triggerall = StateType = A
+triggerall = Pos Y < 0
+triggerall = P2BodyDist X <= 120
+triggerall = P2BodyDist Y >= -120
+triggerall = P2MoveType = A
+triggerall = StateType = A
+trigger1 = Random <= 900
+trigger1 = Ctrl || (StateNo = [140, 155])
+trigger2 = Var(7) > 0
+trigger2 = (P2BodyDist X <= 120 && Ctrl) || (StateNo = [140, 155]) || (HitDefAttr = A, NA && P2BodyDist X <= 50)
+value = 132
+
+
+[State -2]
+type = VarSet
+trigger1 = (var(0) = 0) && (IsHomeTeam) && (TeamSide = 2)
+v = 0
+value = 1
+
+[State -1]
+type = Poweradd
+trigger1 = Power < 3000
+trigger1 = palno = [1,12] 
+value = 1

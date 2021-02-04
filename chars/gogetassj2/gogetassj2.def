@@ -1,0 +1,20 @@
+[Info]
+Name="GogetaSSj2 by CSFF7H"
+DisplayName="Gogeta SSJ2"
+Author="CSFF7H"
+VersionDate=
+MugenVersion=14,04,2001
+Pal.Defaults=
+
+[Files]
+cmd=gogetassj2.cmd
+cns=gogetassj2.cns
+st=gogetassj2.cns
+stcommon=common1.cns
+sprite=gogetassj2.sff
+anim=gogetassj2.air
+sound=gogetassj2.snd
+pal1=original.act
+pal2=blue.act
+
+

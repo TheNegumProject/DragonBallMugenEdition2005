@@ -1,0 +1,765 @@
+;Kamehameha AI
+[Statedef 3333]
+type    = S
+movetype= A
+physics = S
+velset = 0,0,0
+anim = 333
+ctrl = 0
+
+[State 3333, 1]
+type = ChangeAnim
+trigger1 = time = 0
+trigger1 = Var(11) = 111
+value = 339
+
+[State 3333]
+type = SuperPause
+trigger1 = Time = 2
+pos = 0, -60
+anim = 30
+time = 70
+
+[state 3333,2]
+type = playsnd
+trigger1 = time = 1
+value = 333,0
+
+[State 3333, Power]
+type = PowerAdd
+trigger1 = Time = 5
+value = -2000
+
+[State 3333, up]
+type = ChangeState
+trigger1 = animelem = 3
+trigger1 = Var(4) != 1
+trigger1 = P2Dist Y <= -10
+value = 335
+ctrl = 0
+
+[state 3333, down]
+type = ChangeState
+trigger1 = animelem = 3
+trigger1 = P2BodyDist Y > 10 
+trigger1 = Var(4) != 1
+trigger1 = Pos Y < 0
+value = 336
+ctrl = 0
+
+[State 3333,1st Part]
+type = explod
+trigger1 = time = 9
+anim = 338
+ID = 338
+pos = 91,-73
+postype = P1
+ownpal = 1
+removeongethit = 1
+sprpriority = 1
+supermovetime = -1
+pausemovetime = -1
+bindtime = -1
+
+[State 3333, 1]
+type = HitDef
+trigger1 = time >= 8
+attr = S, SA
+animtype  = Hard
+damage    = 3
+getpower  = 0
+priority  = 6
+guardflag = MA
+pausetime = 0
+sparkxy = -10,-60
+sparkno = -1
+hitsound   = -1
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 22
+ground.hittime  = 22
+ground.velocity = -6
+air.velocity = -6
+
+[State 3333, 2]
+type = Projectile
+trigger1 = Time = 9
+projanim = 338
+projhitanim = -1
+projremovetime = 40
+offset = 91, -73
+getpower = 0
+attr = S, SP
+damage = 3
+projpriority = 100
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = -1
+guardsound = 6, 0
+guardflag = MA
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+;Start
+[State 3333, 2]
+type = Projectile
+trigger1 = Time = 9
+projanim = 334
+projhitanim = 337
+velocity = 5
+offset = 91, -73
+getpower = 0
+attr = S, SP
+damage = 3
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = -1
+guardsound = 6, 0
+guardflag = MA
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+;Middle
+[State 3333, 2]
+type = Projectile
+trigger1 = Time >= 10
+trigger1 = Time <= 107
+trigger1 = Var(11) != 111
+projanim = 335
+projhitanim = 337
+pausemovetime = -1
+getpower = 0
+offset = 91, -73
+ProjID = 333
+velocity = 5
+attr = S, SP
+damage = 4,1
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = -1
+guardsound = 6,0
+guardflag = MA
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+;Middle SSJ
+[State 3333, 2]
+type = Projectile
+trigger1 = Time >= 10
+trigger1 = Time <= 107
+trigger1 = Var(11) = 111
+projanim = 335
+projhitanim = 337
+pausemovetime = -1
+getpower = 0
+offset = 91, -73
+ProjID = 333
+velocity = 5
+attr = S, SP
+damage = 6,3
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = -1
+guardsound = 6,0
+guardflag = MA
+ground.type = Low
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[state 3333, remove]
+type = RemoveExplod
+trigger1 = Time = 108
+ID = 338
+
+;End
+[State 3333, 2]
+type = Projectile
+trigger1 = Time = 108
+projanim = 338
+projhitanim = 1900
+offset = 91, -73
+getpower = 0
+velocity = 5
+attr = S, SP
+damage = 3
+animtype = Hard
+pausetime = 0
+sparkno = -1
+guard.sparkno = -1
+hitsound   = S8, 0
+guardsound = S8, 0
+guardflag = MA
+guardsound = 6,0
+ground.type = Trip
+ground.slidetime = 9
+ground.hittime = 9
+ground.velocity = -2
+air.velocity = -2
+
+[state 3333, remove]
+type = RemoveExplod
+trigger1 = Time = 106
+trigger1 = command = "holda"
+trigger1 = power > 0
+trigger1 = ProjContact333 = 0 < 97
+ID = 338
+
+[State 3333, 100]
+type = ChangeState
+trigger1 = Time = 106
+trigger1 = command = "holda"
+trigger1 = power > 0
+trigger1 = ProjContact333 = 0 < 97
+value = 334
+ctrl = 0
+
+[State 3333, 100]
+type = ChangeState
+trigger1 = Time = 109
+value = 0
+ctrl = 1
+
+;Zanzoken Kamehameha (AI ONly)
+[Statedef 4321]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+poweradd= 5
+anim = 222
+ctrl = 0
+facep2 = 1
+
+[State 4321, 1]
+type = ChangeAnim
+trigger1 = time = 0
+trigger1 = Var(11) = 111
+value = 6222
+
+[State 4321, NotHitBy]
+type = NotHitBy
+Trigger1 = Time = 0
+value = SCA
+time = 25
+
+[State 4321, ZanzokenFwd]
+type = PosAdd
+Trigger1 = AnimElem = 6
+x = 400
+y = 0
+
+[State 4321, Turn]
+type = Turn
+Trigger1 = P2Dist X < 0
+
+[State 4321, 3]
+type = Projectile
+Trigger1 = AnimElem = 4
+trigger1 = Var(11) = 111
+projanim = 6223
+projremovetime = 40
+velocity = 0
+offset = 0
+
+[State 4321, 3]
+type = Projectile
+Trigger1 = AnimElem = 4
+trigger1 = Var(11) != 111
+projanim = 223
+projremovetime = 40
+velocity = 0
+offset = 0
+
+[State 4321, 4]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 4322
+ctrl = 1
+
+[State 4321, 7]
+type = ScreenBound
+Trigger1 = Time = 0
+Trigger2 = Time >= 10
+Trigger3 = AnimElem = 2
+Trigger4 = AnimElem = 3
+Trigger5 = AnimElem = 4
+Trigger6 = AnimTime = 0
+value = 0
+movecamera = 1,1
+
+[State 4321, 8]
+type = PlaySnd
+Trigger1 = AnimElem = 1
+value = 10,0
+
+;----------------------------------------------------------------------------------------
+;Zanzoken - Reappear Image
+[Statedef 4322]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+anim = 224
+ctrl = 0
+facep2 = 1
+
+[State 4322, 1]
+type = ChangeAnim
+trigger1 = time = 0
+trigger1 = Var(11) = 111
+value = 6224
+
+[State 4322, 5]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 3333
+ctrl = 0
+
+;Zanzoken DoubleHit (AI ONly)
+[Statedef 1234]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+poweradd= 5
+anim = 222
+ctrl = 0
+facep2 = 1
+
+[State 1234, 1]
+type = ChangeAnim
+trigger1 = time = 0
+trigger1 = Var(11) = 111
+value = 6222
+
+[State 1234, NotHitBy]
+type = NotHitBy
+Trigger1 = Time = 0
+value = SCA
+time = 25
+
+[State 1234, ZanzokenFwd]
+type = PosAdd
+Trigger1 = AnimElem = 6
+x = 400
+y = 0
+
+[State 1234, Turn]
+type = Turn
+Trigger1 = P2Dist X < 0
+
+[State 1234, 3]
+type = Projectile
+Trigger1 = AnimElem = 4
+trigger1 = Var(11) = 111
+projanim = 6223
+projremovetime = 40
+velocity = 0
+offset = 0
+
+[State 1234, 3]
+type = Projectile
+Trigger1 = AnimElem = 4
+trigger1 = Var(11) != 111
+projanim = 223
+projremovetime = 40
+velocity = 0
+offset = 0
+
+[State 1234, 4]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 1235
+ctrl = 1
+
+[State 1234, 7]
+type = ScreenBound
+Trigger1 = Time = 0
+Trigger2 = Time >= 10
+Trigger3 = AnimElem = 2
+Trigger4 = AnimElem = 3
+Trigger5 = AnimElem = 4
+Trigger6 = AnimTime = 0
+value = 0
+movecamera = 1,1
+
+[State 1234, 8]
+type = PlaySnd
+Trigger1 = AnimElem = 1
+value = 10,0
+;----------------------------------------------------------------------------------------
+;Zanzoken - Reappear Image
+[Statedef 1235]
+type    = S
+movetype= I
+physics = S
+velset = 0,0
+anim = 224
+ctrl = 0
+facep2 = 1
+
+[State 1235, 1]
+type = ChangeAnim
+trigger1 = time = 0
+trigger1 = Var(11) = 111
+value = 6224
+
+[State 1235, 5]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 880
+ctrl = 0
+
+[Statedef -2]
+
+;AI Transform Super Saiyajin
+[State -2]
+type = ChangeState
+value = 111
+triggerall = power >= 3000
+triggerall = var(11) != 111
+triggerall = var(12) = 112
+triggerall = ctrl = 1
+trigger1 = statetype = S
+trigger2 = stateno = 1500
+
+[State -2]
+type = SuperPause
+trigger1 = P1name != "GotenGT"
+time = 10000000000000000000
+
+[State -2]
+type = varset
+trigger1 = stateno != 333
+trigger1 = stateno != 331
+trigger1 = stateno != 332
+trigger1 = stateno != 444
+trigger1 = stateno != 442
+trigger1 = stateno != 443
+var(4) = 0
+
+;AI Energy Blast Combo
+[State -2]
+type = ChangeState
+value = 878
+triggerall = var(12) = 112
+triggerall = P2movetype = H
+triggerall = P2Dist Y >= - 20
+triggerall = P2Statetype = S
+triggerall = Random <= 25
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;AI Zanzoken Vs Detahs Vegeta
+[State -2]
+type = ChangeState
+value = 222
+triggerall = Var(12) = 112
+triggerall = P2BodyDist X < 100
+triggerall = P2name = "Practice Vegeta by Detah"
+triggerall = statetype = S
+triggerall = ctrl = 1
+trigger1 = command = "a"
+trigger1 = P2Stateno = 1040
+trigger2 = command = "a"
+trigger2 = P2Stateno = 1043
+trigger3 = command = "x"
+trigger3 = P2Stateno = 1040
+trigger4 = command = "x"
+trigger4 = P2Stateno = 1043
+trigger5 = command = "AI32"
+trigger5 = P2Stateno = 1040
+trigger6 = command = "AI32"
+trigger6 = P2Stateno = 1043
+trigger7 = command = "AI33"
+trigger7 = P2Stateno = 1040
+trigger8 = command = "AI33"
+trigger8 = P2Stateno = 1043
+
+;AI Zanzoken Vs Detahs Vegeta 2
+[State -2]
+type = ChangeState
+value = 222
+triggerall = Var(12) = 112
+triggerall = P2Dist X < 0
+triggerall = P2name = "Practice Vegeta by Detah"
+triggerall = statetype = S
+trigger1 = command = "z"
+
+;Zanzoken Kamehameha (AI) only
+[State -2]
+type = ChangeState
+value = 4321
+triggerall = power >= 2000
+trigger1 = command = "AI16"
+trigger1 = ctrl = 1
+trigger1 = statetype = S
+trigger2 = command = "AI16"
+trigger2 = stateno = 1500
+trigger3 = command = "AI17"
+trigger3 = ctrl = 1
+trigger3 = statetype = S
+trigger4 = command = "AI17"
+trigger4 = stateno = 1500
+
+;Zanzoken Double HIT (AI) only
+[State -2]
+type = ChangeState
+value = 1234
+trigger1 = command = "AI18"
+trigger1 = ctrl = 1
+trigger1 = statetype = S
+trigger2 = command = "AI18"
+trigger2 = stateno = 1500
+trigger3 = command = "AI30"
+trigger3 = ctrl = 1
+trigger3 = statetype = S
+trigger4 = command = "AI30"
+trigger4 = stateno = 1500
+
+;AI Kamehameha
+[State -2]
+type = ChangeState
+value = 331
+triggerall = power >= 1500
+triggerall = ctrl
+trigger1 = Command = "AI1"
+trigger1 = statetype = S
+trigger2 = Command = "AI2"
+trigger2 = statetype = S
+trigger3 = Command = "AI3"
+trigger3 = statetype = S
+trigger4 = Command = "AI4"
+trigger4 = statetype = S
+trigger5 = Command = "AI5"
+trigger5 = statetype = S
+trigger6 = Command = "AI15"
+trigger6 = statetype = S
+trigger7 = Command = "AI1"
+trigger7 = stateno = 1500
+trigger8 = Command = "AI2"
+trigger8 = stateno = 1500
+trigger9 = Command = "AI3"
+trigger9 = stateno = 1500
+trigger10 = Command = "AI4"
+trigger10 = stateno = 1500
+trigger11 = Command = "AI5"
+trigger11 = stateno = 1500
+trigger12 = Command = "AI5"
+trigger12 = stateno = 1500
+
+;AI Renzoku Energy Dan
+[State -2]
+type = ChangeState
+value = 666
+triggerall = Var(12) = 112
+triggerall = Power >= 1000
+triggerall = P2Dist Y >= -50
+triggerall = P2Dist Y >= 30
+triggerall = Random >= 99
+triggerall = Random <= 168
+triggerall = ctrl = 1
+trigger1 = statetype = S
+trigger2 = stateno = 1500
+
+;AI Elbow
+[State -2]
+type = ChangeState
+value = 777
+triggerall = var(12) = 112
+triggerall = P2movetype = H
+triggerall = P2Dist Y >= -20
+triggerall = P2Statetype = S
+triggerall = Random >= 30
+triggerall = Random <= 98
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;AI Bebi Goten Ki Shots
+[State -2]
+type = ChangeState
+value = 888
+triggerall = power >= 1500
+triggerall = ctrl = 1
+trigger1 = command = "AI20"
+trigger1 = statetype = S
+trigger2 = command = "AI21"
+trigger2 = statetype = S
+trigger3 = command = "AI20"
+trigger3 = stateno = 1500
+trigger4 = command = "AI21"
+trigger4 = stateno = 1500
+
+;AI Ki Ball
+[State -2]
+type = ChangeState
+value = 990
+triggerall = power >= 500
+triggerall = ctrl = 1
+trigger1 = command = "AI22"
+trigger1 = statetype = S
+trigger2 = command = "AI23"
+trigger2 = statetype = S
+trigger3 = command = "AI22"
+trigger3 = stateno = 1500
+trigger4 = command = "AI23"
+trigger4 = stateno = 1500
+
+;AI Chou Kamehameha
+[State -2]
+type = ChangeState
+value = 330
+triggerall = Var(12) = 112
+triggerall = Var(3) != 1
+triggerall = ctrl = 1
+triggerall = power >= 3000
+triggerall = var(11) = 111
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger1 = command = "AI12"
+trigger2 = statetype = S
+trigger2 = ctrl = 1
+trigger2 = command = "AI13"
+trigger3 = statetype = S
+trigger3 = ctrl = 1
+trigger3 = command = "AI14"
+trigger4 = command = "AI12"
+trigger4 = stateno = 1500
+trigger5 = command = "AI13"
+trigger5 = stateno = 1500
+trigger6 = command = "AI14"
+trigger6 = stateno = 1500
+
+;AI Super Combo
+[State -2]
+type = ChangeState
+value = 660
+triggerall = var(11) = 111
+triggerall = Var(3) != 1
+triggerall = ctrl = 1
+triggerall = power >= 3000
+trigger1 = statetype = S
+trigger1 = command = "AI27"
+trigger2 = statetype = S
+trigger2 = command = "AI28"
+trigger3 = statetype = S
+trigger3 = command = "AI29"
+trigger4 = statetype = S
+trigger4 = command = "AI34"
+trigger5 = statetype = S
+trigger5 = command = "AI35"
+trigger6 = statetype = S
+trigger6 = command = "AI36"
+
+;AI Double Hit
+[State -2]
+type = ChangeState
+value = 880
+triggerall = var(12) = 112
+triggerall = P2BodyDist X < 40
+triggerall = P2statetype = S
+triggerall = ctrl = 1
+triggerall = statetype = S
+trigger1 = command = "AI24"
+trigger2 = command = "AI25"
+trigger3 = command = "AI26"
+
+;AI TakeDown Knee (1 2 3 Combo)
+[State -2]
+type = ChangeState
+value = 656
+triggerall = command = "AI33"
+triggerall = P2BodyDist Y > 0
+triggerall = var(12) = 112
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+trigger2 = stateno = 1500
+
+;AI Counter VS Detahs Vegeta 
+[State -2]
+type = ChangeState
+value = 770
+triggerall = P2name = "Practice Vegeta by Detah"
+triggerall = command = "AI31"
+triggerall = var(12) = 112
+triggerall = Power >= 500
+triggerall = P2BodyDist X < 50
+triggerall = ctrl = 0
+triggerall = alive = 1
+trigger1 = Movetype = H
+trigger1 = statetype = S
+trigger2 = Movetype = H
+trigger2 = statetype = A
+trigger3 = stateno = 130
+trigger4 = stateno = 132
+
+;AI Counter VS Detahs Vegeta 2
+[State -2]
+type = ChangeState
+value = 770
+triggerall = command = "AI31"
+triggerall = var(12) = 112
+triggerall = Power >= 500
+triggerall = P2name = "Practice Vegeta by Detah"
+triggerall = statetype = S
+triggerall = ctrl = 1
+trigger1 = command = "a"
+trigger1 = P2Stateno = 1040
+trigger2 = command = "a"
+trigger2 = P2Stateno = 1043
+trigger3 = command = "x"
+trigger3 = P2Stateno = 1040
+trigger4 = command = "x"
+trigger4 = P2Stateno = 1043
+
+;Punch Combo
+[State -2]
+type = ChangeState
+value = 440
+triggerall = command = "AI36"
+triggerall = var(12) = 112
+triggerall = Var(59) != 910
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 1500
+
+;Knee Combo
+[State -2]
+type = ChangeState
+value = 550
+triggerall = var(12) = 112
+trigger1 = command = "AI35"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;Short Combo
+[State -2]
+type = ChangeState
+value = 545
+triggerall = var(12) = 112
+triggerall = command = "AI34"
+triggerall = Var(59) != 912
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 1500

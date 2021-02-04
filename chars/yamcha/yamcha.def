@@ -1,0 +1,24 @@
+; Yamcha def file 
+
+[Info]
+name = "yamcha by yuski"
+displayname = "Yamcha"
+versiondate = 22,07,2000  
+mugenversion = 06,27,2000 
+author = "Yuski The Dog"     
+pal.defaults = 1,2,3,4,5,6  
+
+[Files]
+cmd      = yamcha.cmd     
+cns      = yamcha.cns     
+st       = yamcha.cns     
+stcommon = common1.cns   
+sprite   = yamcha.sff      
+anim     = yamcha.air      
+sound    = yamcha.snd
+pal1 = yamcha.act
+pal2 = amarelo.act
+pal3 = azul.act
+pal4 = verde.act
+pal5 = vermelho.act
+pal6 = branco.act

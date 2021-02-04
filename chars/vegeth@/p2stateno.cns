@@ -1,0 +1,403 @@
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 500]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 500
+
+[State 6001, 2]
+type = SelfState
+trigger1 = Time = 2
+value = 5000
+
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 501]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 500
+
+[State 6001, 2]
+type = SelfState
+trigger1 = Time = 25
+value = 5000
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 502]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 502
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 40
+value = 5000
+
+[State 6062, 1]
+type = veladd
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+x = -5
+y = -1.6
+
+[State 6062, 2]
+type = velmul
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+x = 1
+y = 1
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 503]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 502
+
+[State 6001, 2]
+type = SelfState
+trigger1 = pos Y >= -10
+value = 5000
+
+[State 6062, 1]
+type = veladd
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+y = 3
+
+[State 6062, 2]
+type = velmul
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+y = 1
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 504]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 500
+
+[State 6001, 2]
+type = SelfState
+trigger1 = Time = 70
+value = 5000
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 505]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 505
+
+[State 6001, 2]
+type = SelfState
+trigger1 = Time = 50
+value = 5000
+
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 506]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 502
+
+[State 6001, 2]
+type = ChangeState
+trigger1 = Time = 80
+value = 503
+
+[State 6062, 1]
+type = veladd
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+x = -5
+y = -3
+
+[State 6062, 2]
+type = velmul
+trigger1 = time = 0
+trigger2 = time = 3
+trigger3 = time = 6
+trigger4 = time = 9
+trigger5 = time = 12
+x = 1
+y = 1
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 507]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 507
+
+[State 6062, 1]
+type = posset
+trigger1 = time = 0
+y = 0
+
+[State 27001, TeleportFwd]
+type = posfreeze
+trigger1 = p2bodydist X  = [280,300]
+
+
+[State 27001, TeleportFwd]
+type = veladd
+trigger1 = time = [1,2]
+x = -3
+
+[State 27001, TeleportFwd]
+type = velmul
+trigger1 = time = [1,2]
+x = 2
+
+[State 6001, 2]
+type = changeState
+trigger1 = p1name = "Broli Remix ver1.2"
+trigger1 = Time = 6
+value = 508
+
+[State 6001, 2]
+type = SelfState
+trigger1 = Time = 50
+value = 5000
+
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 508]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 508
+
+[State 27001, TeleportFwd]
+type = veladd
+trigger1 = time = 1
+x = -3
+
+[State 27001, TeleportFwd]
+type = velmul
+trigger1 = time = 1
+x = 2
+
+[State 27001, TeleportFwd]
+type = velset
+trigger1 = time = 2
+x = 0
+
+[State 6001, 2]
+type = changeState
+trigger1 = p1name = "Broli Remix ver1.2"
+trigger1 = Time = 169
+value = 509
+
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 180
+value = 5110
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 509]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 502
+
+
+
+[State 27001, TeleportFwd]
+type = veladd
+trigger1 = time = 1
+y = -12
+
+[State 27001, TeleportFwd]
+type = velmul
+trigger1 = time = 1
+y = 8
+
+[State 27001, TeleportFwd]
+type = velset
+trigger1 = time = 2
+y = 0
+
+[State 6001, 2]
+type = changeState
+trigger1 = p1name = "Broli Remix ver1.2"
+trigger1 = Time = 2
+value = 510
+
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 180
+value = 5110
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 510]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 500
+
+
+
+[State 27001, TeleportFwd]
+type = veladd
+trigger1 = time = 1
+y = -8
+
+[State 27001, TeleportFwd]
+type = velmul
+trigger1 = time = 1
+y = 6
+
+[State 27001, TeleportFwd]
+type = velset
+trigger1 = time = 2
+y = 0
+
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 180
+value = 5110
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 511]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 508
+
+
+
+[State 27001, TeleportFwd]
+type = veladd
+trigger1 = time = 0
+y = 3
+
+[State 27001, TeleportFwd]
+type = velmul
+trigger1 = time = 0
+y = 2
+
+[State 27001, TeleportFwd]
+type = velset
+trigger1 = pos Y = 0
+y = 0
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 100
+value = 5110
+
+;---------------------------------------------------------------------------
+;p2Hit  
+[Statedef 512]
+type    = S
+movetype= H
+physics = S
+velset = 0,0
+
+[State 6001, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 512
+
+[State 6001, 2]
+type = selfState
+trigger1 = Time = 160
+value = 5000
+
+
+

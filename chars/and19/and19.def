@@ -1,0 +1,12 @@
+[Info]
+name    = "Android 19"
+displayname = "C 19"
+
+[Files]
+cmd     = 19.cmd     
+cns     = 19.cns     
+st      = 19.cns     
+stcommon = common1.cns   
+sprite  = 19.sff      
+anim    = 19.air
+

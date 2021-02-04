@@ -1,0 +1,43 @@
+;----------------------------------------------------------------------------
+; Char = " Super Dende "  
+; Criado por = " BARDOCK "                 
+;----------------------------------------------------------------------------
+
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+
+;----------------------------------------------------------------------------
+
+;Distribuido pela = "MugenZPower"
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR
+
+;----------------------------------------------------------------------------
+
+; Definition file for Dende
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name = "Super Dende by BARDOCK"        ;Name of character
+displayname = "Dende" ;Name of character to display
+versiondate = 04,14,2001    ;Version date of character
+mugenversion = 04,14,2001   ;Version of M.U.G.E.N character works on
+author = "Bardock"         ;Character author name
+pal.defaults =      ;Default palettes in order of preference
+
+; Files for the player
+[Files]
+cmd     = dende.cmd   ;Command set
+cns     = dende.cns   ;Constants
+st      = dende.cns   ;States
+stcommon = common1.cns ;Common states
+sprite  = dende.sff   ;Sprite
+anim    = dende.air   ;Animation
+sound   = dende.snd   ;Sound
+pal1    = dende.act
+pal2    = dende1.act
+pal3    = dende2.act
+pal4    = dende3.act
+pal5    = dende4.act
+pal6    = dende5.act
+

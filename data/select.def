@@ -1,0 +1,683 @@
+[Characters]
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ChibiGoku, stages/new-budoukai-hd.def, music=sound/dbz_battle_theme_2.mp3
+ultimatgoku, random,order=1
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+Krillin_jb, stages/localdetreino-dbz1.def, music=sound/revontuelt.mp3
+satan-son, stages/satan.def, music=sound/dbz2.mp3
+kame, stages/kamisama-n.def, music=sound/batle4.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+piccolo, stages/budoukai-hd.def, music=sound/batle4.mp3
+yamcha, stages/kaio.def, music=sound/batle4.mp3
+Tien, random, music=sound/revontuelt.mp3
+Chiaotzu, random, music=sound/dbz2.mp3
+Raditz, random, music=sound/batle4.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+vegetahd, random, music=sound/revontuelt.mp3
+bardack-hd, random, music=sound/revontuelt.mp3
+ginew, random, music=sound/dbz2.mp3
+zarbom, random, music=sound/dbz2.mp3
+recoom,  stages/asp40_nave_do_freeza.def, music=sound/spirit.mp3
+Freezahd, random, music=sound/revontuelt.mp3
+and17, random, music=sound/dbz_battle_theme_2.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+and-18, stages/skyhd3.def, music=sound/batle4.mp3
+and19, stages/skyhd2.def, music=sound/dbz2.mp3
+cell-j, stages/plant.def, music=sound/battle2.mp3
+cellform2, stages/CellGameUB.def, music=sound/batle4.mp3
+Cell-Jr, random, music=sound/revontuelt.mp3
+cell, random, music=sound/dbz_battle_theme_2.mp3
+son-gohan, random, music=sound/animetal.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+;*/
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+n-trunks, stages/Future.def, music=sound/revontuelt.mp3
+ssj2-goku, stages/pianeta-kaioshin.def, music=sound/revontuelt.mp3
+mrboohd, stages/cellarena.def, music=sound/spirit.mp3
+SuperBuu2, random, music=sound/revontuelt.mp3
+boo, random, music=sound/dbz_battle_theme_2.mp3
+kaioshin, random, music=sound/spirit.mp3
+n-gotenks, random, music=sound/animetal.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+gotenks, random, music=sound/spirit.mp3
+gokussj3plus, random, music=sound/dbz_battle_theme_2.mp3
+gohanssj, random, music=sound/dbz_trunks_theme.mp3
+sdende, random, music=sound/batle4.mp3
+chibiubuu, random, music=sound/dbz_battle_theme_2.mp3
+Vegeta Normal 2, random, music=sound/batle4.mp3
+son gokou, random, music=sound/select.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+koolahd, stages/namek.def, music=sound/battle2.mp3
+KingCold, stages/namek.def, music=sound/spirit.mp3
+Trunkz, random, music=sound/dbz_trunks_theme.mp3
+trunks-z-2, random, music=sound/spirit.mp3
+s17, random, music=sound/battle2.mp3
+m-gohan, random, music=sound/dbz_battle_theme_2.mp3
+GotenGT, random, music=sound/spirit.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+Goten, random, music=sound/dbz_battle_theme_2.mp3
+gokugt, random, music=sound/spirit.mp3
+Vegeta GT, random, music=sound/dbz_battle_theme_2.mp3
+vegeth@, random, music=sound/dbz_battle_theme_2.mp3
+panchan, random, music=sound/spirit.mp3
+gogetassj2, stages/vegettobudoukai.def, music=sound/DBGT.mp3
+Gotenks GT, random, music=sound/batle4.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+Gogeta-Ssj4, random, music=sound/select.mp3
+vegeta-ssj4, random, music=sound/DBGT.mp3
+Goku San, random, music=sound/animetal.mp3
+gokussj4GT, random, music=sound/DBGT.mp3
+Beby-Vegeta, random, music=sound/DBGT.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+bojack, random, music=sound/animetal.mp3
+BroliT, random, music=sound/DBGT.mp3
+broli, random, music=sound/DBGT.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+SSJ2-MAJIN-VEGETA, random, music=sound/battle2.mp3
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+==       blank. portrait area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+==       blank. buffer area        ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+SSJ2-MAJIN-VEGETA, random
+ultimatgoku, random,order=1
+kakaroto, random, order=1
+vegetto, random, order=1
+omegagoku, random, order=1
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+======= Insert secret char Here =======
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+==        blank. buffer area         ==
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|                                             |
+|                                             |
+|_____________________________________________|
+
+_
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |_________
+ |         |
+ |         |
+ |       THIS AREA MUST NOT BE REMOVED
+ |-------FOR CPU-ONLY CHARACTERS 
+ |       TO WORK PROPERLY   
+ |         |
+ |_________|
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+_|
+
+
+;            **** CPU CHARACTER ROSTER ****
+;===========INSERT CPU CHARS PAST THIS POINT==============
+                 
+
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|  DO NOT REMOVE THIS BOX  (CPU characters)   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|_____________________________________________|
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+
+
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|  DO NOT REMOVE THIS BOX  (CPU characters)   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|_____________________________________________| 
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+
+
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|  DO NOT REMOVE THIS BOX  (CPU characters)   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|_____________________________________________|
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+
+
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|  DO NOT REMOVE THIS BOX  (CPU characters)   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|_____________________________________________|
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+
+
+
+;==========Insert CPU-ONLY character in this line============
+
+
+ _____________________________________________
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|  DO NOT REMOVE THIS BOX  (CPU characters)   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|_____________________________________________|
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+==========Insert CPU-ONLY character in this line============
+
+
+_
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |_________
+ |         |
+ |         |
+ |       THIS AREA MUST NOT BE REMOVED
+ |-------FOR CPU-ONLY CHARACTERS 
+ |       TO WORK PROPERLY   
+ |         |
+ |_________|
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+ |
+_|
+
+
+
+;-----------------------
+[ExtraStages]
+
+stages/lobby.def
+stages/station.def
+stages/budoukai-hd.def
+stages/cellarena.def
+stages/estrada-dbz1.def
+stages/floresta.def
+stages/ilha-dbz1.def
+stages/kaio.def
+stages/kamisama-n.def
+stages/korin.def
+stages/localdetreino-dbz1.def
+stages/nuvem.def
+stages/power.def
+stages/praia.def
+stages/satan.def
+stages/sb3dcloud.def
+stages/skyhd.def
+stages/skyhd2.def
+stages/skyhd3.def
+stages/tenkaichi.def
+stages/vegettobudoukai.def
+stages/dbaa_piccolo.def
+stages/plant.def
+stages/pianeta-kaioshin.def
+stages/namek.def
+stages/Future.def
+stages/asp40_nave_do_freeza.def
+stages/new-budoukai-hd.def
+stages/CellGameUB.def
+stages/penhasco.def
+stages/Videlbg.def
+stages/ruins.def
+stages/cataract.def
+
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+arcade.maxmatches = 1,2,3,2,0,0,0,1,0,0
+                  ; 1 2 3 4 5 6 7 8 9 10
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 1,1,1,1,1,1,1,1,0,0
+

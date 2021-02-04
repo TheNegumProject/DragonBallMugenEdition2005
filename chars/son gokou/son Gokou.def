@@ -1,0 +1,39 @@
+Son Gokou By SSJ4GOKU
+[Info]
+name ="Son Gokou by AZ"  
+displayname ="SonGoku"
+versiondate =2,04,2001 
+mugenversion =04,01,2000   
+author ="SSJ4GOKU"   
+pal.defaults=1,2,3,4,5
+
+
+[Files]
+cmd     =Gokou.cmd
+cns     =Gokou.cns
+st      =Gokou.cns
+st2     = Especiais.cns
+st3     = Hypers.cns
+stcommon=common1.cns
+sprite  =Gokou.sff 
+anim    =Gokou.air
+Sound   =Gokou.snd
+pal1=
+pal2=
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+; Arcade mode
+[Arcade]
+intro.storyboard  =
+ending.storyboard =
+[Made in Brunei]
+

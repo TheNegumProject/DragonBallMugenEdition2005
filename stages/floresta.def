@@ -1,0 +1,178 @@
+; BackGround: Floresta - DBZ Totsugekihen
+; by Billy_Brother
+; E-Mail: billy_brother@bol.com.br
+; MugeNow - http://www.mugenow.cjb.net
+; Riped: Dragon ball Z Totsugekihen
+; Edição de Graficos: Billy_Brother
+; Edição de Imagens: Billy_Brother
+; Alterações: Billy_Brother
+; Riper: Billy_Brother
+; Animações: Billy_Brother
+
+[Info]
+name = "Floresta - DBZ Totsugekihen"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -325
+boundright = 325
+boundhigh = -27
+boundlow = 0
+verticalfollow = .2
+tension = 50
+
+[PlayerInfo]
+p1startx = -56
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset   = 210
+autoturn  = 1
+
+[Shadow]
+color = 128,128,128
+yscale = .3
+
+[Music]
+bgmusic = 
+
+[BGdef]
+spr = floresta.sff
+
+[BG 0]
+type  = normal
+spriteno = 0, 0
+start = 0, -27
+delta = 1, 1
+mask  = 1
+tile  = 1
+
+[BG 1]
+type  = normal
+spriteno = 0, 1
+start = 0, 150
+delta = 1.2, 1
+mask  = 1
+tile  = 1
+tilespacing = 10, 0
+layerno = 1
+
+;[BG 2]
+type  = anim
+start = 0, 60
+delta = 1, 1
+mask = 1
+actionno = 0
+
+
+[Begin Action 0]
+1,1, 0,0, 20
+1,2, 0,0, 19
+1,1, 0,0, 20
+1,2, 0,0, 28
+1,1, 0,0, 25
+1,2, 0,0, 20
+1,0, 0,-5, 15
+1,2, 0,-5, 15
+1,0, 0,-10, 15
+1,2, 0,-10, 15
+1,0, 0,-15, 15
+1,2, 0,-15, 15
+1,0, 0,-20, 15
+1,2, 0,-20, 15
+1,0, 0,-25, 15
+1,2, 0,-25, 15
+1,0, 0,-30, 15
+1,2, 0,-30, 15
+1,0, 0,-35, 15
+1,2, 0,-35, 15
+1,0, 0,-40, 15
+1,2, 0,-40, 15
+1,0, 0,-45, 15
+1,2, 0,-45, 15
+1,0, 0,-50, 15
+1,2, 0,-50, 15
+1,0, 0,-55, 15
+1,2, 0,-55, 15
+1,0, 0,-60, 15
+1,2, 0,-60, 15
+1,0, 0,-65, 15
+1,2, 0,-65, 15
+1,0, 0,-70, 15
+1,2, 0,-70, 15
+1,0, 0,-75, 15
+1,2, 0,-75, 15
+1,0, 0,-80, 15
+1,2, 0,-80, 15
+1,0, 0,-85, 20
+1,2, 0,-85, 20
+1,0, 0,-90, 25
+1,2, 0,-90, 25
+1,0, 0,-95, 25
+1,2, 0,-95, 25
+1,0, 0,-100, 25
+1,2, 0,-100, 25
+1,0, 0,-105, 25
+1,2, 0,-105, 25
+1,0, 0,-110, 25
+1,2, 0,-110, 25
+1,0, 0,-115, 25
+1,2, 0,-115, 25
+1,0, 0,-120, 25
+1,2, 0,-120, 25
+1,3, 0,-120, 30
+1,3, 0,-118, 30
+1,3, 0,-116, 30
+1,3, 0,-114, 30
+1,3, 0,-112, 30
+1,3, 0,-110, 30
+1,3, 0,-108, 30
+1,3, 0,-106, 30
+1,3, 0,-104, 30
+1,3, 0,-102, 30
+1,3, 0,-100, 30
+1,3, 0,-95, 25
+1,3, 0,-90, 25
+1,3, 0,-85, 25
+1,3, 0,-80, 25
+1,3, 0,-75, 25
+1,3, 0,-70, 25
+1,3, 0,-65, 25
+1,3, 0,-60, 25
+1,3, 0,-55, 25
+1,3, 0,-50, 25
+1,3, 0,-45, 25
+1,3, 0,-40, 25
+1,3, 0,-35, 25
+1,3, 0,-30, 25
+1,3, 0,-25, 25
+1,3, 0,-20, 25
+1,3, 0,-15, 25
+1,3, 0,-10, 25
+1,3, 0,-8, 30
+1,3, 0,-6, 30
+1,3, 0,-4, 30
+1,3, 0,-2, 30
+1,4, 0,0, 35
+1,2, 0,0, 35

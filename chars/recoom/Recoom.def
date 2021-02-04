@@ -1,0 +1,24 @@
+[Info]
+Name="Recoom by Lucifer"
+DisplayName="Recoom"
+VersionDate=27,07,2000
+MugenVersion=06,27,2000
+Author="Lucifer-MugenMania"
+pal.defaults = 1
+
+[Files]
+cmd=recoom.cmd
+cns=recoom.cns
+st=recoom.cns
+st2=meteor.cns
+;st3=recoom-final.cns
+stcommon=common1.cns
+sprite=recoom.sff
+anim=recoom.air
+;sound=recoom.snd
+pal1=recoom.act
+;pal2=original1.act
+;pal3=azul.act
+;pal4=vermelho.act
+   
+

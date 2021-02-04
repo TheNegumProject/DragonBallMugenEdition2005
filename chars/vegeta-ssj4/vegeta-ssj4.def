@@ -1,0 +1,27 @@
+; Vegeta Super Sayjin 4 (1.1) def file 
+; by EmuBoarding
+; Sprites by Black_Spider (Thanks!!! :)
+; http://www.mugenow.cjb.net
+; The Great Original DBZ Characters...
+
+[Info]
+name = "Vegeta Super Sayjin 4 by EB and BS"
+displayname = "Vegeta SSJ4"
+versiondate = 20,08,2000  
+mugenversion = 06,27,2000 
+author = "EmuBoarding-MugeNow"     
+pal.defaults = 1
+
+[Files]
+cmd      = vegeta-ssj4.cmd     
+cns      = vegeta-ssj4.cns     
+st       = vegeta-ssj4.cns     
+stcommon = common1.cns   
+sprite   = vegeta-ssj4.sff      
+anim     = vegeta-ssj4.air      
+sound    = vegeta-ssj4.snd
+pal1     = vegeta-ssj4.act
+pal2     = vegeta-ssj4-2.act             
+pal3     = vegeta-ssj4-3.act
+pal4     = vegeta-ssj4-4.act
+          

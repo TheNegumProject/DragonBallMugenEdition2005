@@ -1,0 +1,24 @@
+; Definition file for Player
+; Contains all the filenames needed for the character
+; Template player 9X-09-12
+
+; Character information
+[Info]
+name    = "Son Gohan";<-- Replace with a real name
+displayname = "Mystic Son Gohan";<-- Replace with name to display
+
+; Files for the character
+[Files]
+cmd     = Gohan.cmd     ;Command set
+cns     = Gohan.cns     ;Constants
+st      = Gohan.cns     ;States
+st1     = Basico.st
+st2     = Golpes.st
+st3     = Especiais.st
+st4     = Piccolo.st
+st5     = SSJ4.st
+stcommon = common1.cns   ;Common states
+sprite  = Gohan.sff     ;Sprite
+anim    = Gohan.air     ;Animation
+sound   = Gohan.snd     ;Sound
+pal1    = Gohan.act     ;Palettes

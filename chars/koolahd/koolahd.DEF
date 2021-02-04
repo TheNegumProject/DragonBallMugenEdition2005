@@ -1,0 +1,27 @@
+; Character information
+[Info]
+name    = "koola-hd"
+displayname = "Kuler"
+versiondate = 26,07,2000  
+mugenversion = 07,31,2000 
+author = "Solid"     
+pal.defaults = 1,2
+
+; Files for koola
+[Files]
+cmd     = koolahd.cmd     ;Command set
+cns     = koolahd.cns     ;Constants
+st      = koolahd.cns     ;States
+stcommon = common.cns   ;Common states
+sprite  = koolahd.sff     ;Sprite
+anim    = koolahd.air     ;Animation
+sound   = koolahd.snd     ;Sound
+pal1    = koolahd.act     ;Palettes
+pal2    = koola1hd.act     ;Palettes
+pal3    = koola2hd.act     ;Palettes
+pal4    = koola3hd.act     ;Palettes
+pal5    = koola4hd.act     ;Palettes
+pal6    = koola5hd.act     ;Palettes
+pal7    = koolahd.act     ;Palettes
+pal8    = koola1hd.act     ;Palettes
+

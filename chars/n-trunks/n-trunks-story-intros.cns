@@ -1,0 +1,358 @@
+
+;intro
+[Statedef 190]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 190, 1] ;If opponent is Vegeta's
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Vegeta Normal 2 by EB"
+trigger2 = P2Name = "Vegeta Super Sayjin 4 by EB and BS"
+trigger3 = P2Name = "vegeta-n-3 by EmuBoarding"
+trigger4 = P2Name = "Vegeta by OverMind"
+value = 191
+
+[State 190, 1] ;If opponent is Goku's
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Goku-n-hd by EmuBoarding"
+trigger2 = P2Name = "Goku Super Sayajin 2 by ribeiro"
+value = 193
+
+[State 190, 1] ;If opponent is Kurilin
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Kuririn by EmuBoarding"
+value = 194
+
+[State 190, 1] ;If opponent is Freeza's
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "freeza"
+trigger2 = P2Name = "Freeza by OverMind"
+value = 192
+
+[State 190, 1] ;If opponent is Androide nº 18
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Androide 18 by _Vision"
+value = 15050
+
+[State 190, 1] ;If opponent is Broli
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Broli"
+trigger2 = P2Name = "Broli Remix ver1.2"
+value = 15060
+
+[State 190, 1] ;If opponent is Cell Hd and Perfect Cell
+type = ChangeState
+triggerall = Time = 0
+trigger1 = P2Name = "Cell por Ssonic"
+trigger2 = P2Name = "perfect cell"
+value = 15070
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 199
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 100
+value = 0
+ctrl = 0
+
+;----------------------------------------------------------
+
+;Intro contra o Broli's
+[Statedef 15060]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 15060
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0
+
+;Intro contra o Cell HD and Perfect Cell
+[Statedef 15070]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 15070
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0
+
+;-------------------------------
+
+
+;Intro contra o Androide Nº 18
+[Statedef 15050]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 15050
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0
+
+;-------------------------------
+;Intro contra o Vegeta's
+[Statedef 191]
+type = S
+ctrl = 0
+anim = 198
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,500]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 191
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 999
+value = 0
+ctrl = 0
+
+;-----------------------------------------------------------
+
+;Intro contra o Goku's
+[Statedef 193]
+type = S
+ctrl = 0
+anim = 198
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,400]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 193
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0
+
+
+;------------------------------------------------------------
+
+;Intro contra o Freeza's
+[Statedef 192]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,300]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 192
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0
+
+;----------------------------------------------------
+
+;Intro contra o Kurilin
+[Statedef 194]
+type = S
+ctrl = 0
+anim = 198
+velset = 0,0,0
+
+[State 190, begin]
+type = AssertSpecial
+trigger1 = time = [0,300]
+flag = intro
+
+[State 3000,MBS]
+type = explod
+trigger1 = AnimElem = 1
+anim = 194
+facing = 1
+pos = 10,67
+postype = left
+sprpriority = 1;-2
+bindtime = 600
+ownpal = 1
+supermove = 1
+removetime = 600
+
+[State 400, 1]
+type = PlaySnd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+value = 190, 190
+
+[State 190, 3]
+type = changestate
+trigger1 = animtime = 500
+value = 0
+ctrl = 0

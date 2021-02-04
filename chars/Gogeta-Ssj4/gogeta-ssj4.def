@@ -1,0 +1,26 @@
+; Definições dos Arquivos do Gogeta-SSJ4
+; By Pocket_Danyell
+
+; Gogeta ssj4 informations
+[Info]
+name = "Gogeta-SSJ4 by Pocket_Danyell"        
+displayname = "Gogeta SSJ4" 
+versiondate = 11,22,2000    
+mugenversion = 11,22,2000   
+author = "Pocket_Danyell"        
+pal.defaults = 1,2,3,4      
+
+; Files for the player
+[Files]
+cmd     = gogeta-ssj4.cmd   
+cns     = gogeta-ssj4.cns   
+st      = gogeta-ssj4.cns
+st1      = gogeta-ssj4-2.cns  
+stcommon = common1.cns 
+sprite  = gogeta-ssj4.sff   
+anim    = gogeta-ssj4.air   
+sound   = gogeta-ssj4.snd 
+pal1    = gogeta.act  
+pal2    = gogeta1.act
+pal3    = gogeta2.act
+pal4    = gogeta3.act

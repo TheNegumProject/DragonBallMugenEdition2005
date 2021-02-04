@@ -1,0 +1,741 @@
+[Statedef -2]
+
+[State -2, 500]
+type = palfx
+trigger1 = var(1) = 1
+trigger1 = timemod = 2, 1
+time = 1
+add = 224,96,64
+sinadd = 200,72,40,1
+
+[State -2, 500]
+type = poweradd
+triggerall = var(1) = 1
+trigger1 = time > 0
+value = -1
+
+[State -2, 500]
+type = varset
+trigger1 = var(1) = 1
+trigger1 = power = 0
+v = 1
+value = 0
+
+[State -2, 500]
+type = removeexplod
+triggerall = var(1) = 0
+trigger1 = power = 0
+id = 501
+
+[State -2, 500]
+type = removeexplod
+triggerall = var(1) = 1
+trigger1 = alive = 0
+id = 501
+
+[State -2, 500]
+type = removeexplod
+triggerall = var(1) = 1
+trigger1 = alive = 0
+id = 502
+
+[State -2, 500]
+type = removeexplod
+triggerall = var(1) = 0
+trigger1 = power = 0
+id = 502
+
+
+[State -2, AddPower]
+type = poweradd
+triggerall = var(1)!= 1
+trigger1 = timemod = 3, 1
+value = 2
+
+[State -2, Defence]
+type = defencemulset
+trigger1 = var(1) = 2
+value = 0.5
+
+[State -2, Defence]
+type = defencemulset
+trigger1 = var(1) = 3
+value = 0.25
+
+;-------------------------------------AI----------------------------------------
+
+[State -2, Defend]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = A
+triggerall = p2bodydist x = [5, 60]
+triggerall = p2statetype != C
+triggerall = statetype = S
+trigger1 = time = 0
+value = 130
+
+[State -2, Defend]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = A
+triggerall = p2bodydist x = [5, 60]
+triggerall = p2statetype != C
+triggerall = statetype = A
+trigger1 = time = 0
+value = 132
+
+[State -2, Defend]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = A
+triggerall = p2bodydist x = [5, 60]
+triggerall = p2statetype = C
+triggerall = statetype = C
+trigger1 = time = 0
+value = 131
+
+[State -2, Defend]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = A
+triggerall = p2bodydist x = [5, 60]
+triggerall = p2statetype = C
+triggerall = statetype = S
+trigger1 = time = 0
+value = 130
+
+[State -2, Defend]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = A
+triggerall = p2bodydist x = [5, 60]
+triggerall = p2statetype != C
+triggerall = statetype = C
+trigger1 = time = 0
+value = 131
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [0, 20]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 2040
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [21, 26]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 2010
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [27, 32]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 200
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [33, 38]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 205
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [39, 44]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 210
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [0, 80]
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = var(10) = [45, 50]
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 10
+value = 215
+
+[State -2, Attack]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = p2movetype = I
+triggerall = p2bodydist x >= 80
+triggerall = statetype = S
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 192
+triggerall = stateno != 193
+triggerall = stateno != 194
+triggerall = stateno != 195
+triggerall = stateno != 196
+triggerall = stateno != 197
+triggerall = stateno != 198
+triggerall = stateno != 199
+triggerall = stateno != 203
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+triggerall = movetype != A
+trigger1 = timemod = 80, 50
+value = 1050
+
+[State -2, VarSet]
+type = varrandom
+trigger1 = time > 0
+v = 10
+range = 50
+
+[State -2, VarSet]
+type = varrandom
+trigger1 = time > 0
+v = 7
+range = 60
+
+[State -2, VarSet]
+type = varrandom
+trigger1 = time > 0
+v = 8
+range = 60
+
+[State -2, VarSet]
+type = varrandom
+trigger1 = time > 0
+v = 11
+range = 60
+
+
+[State -2, Kamehameha]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power >= 1000
+triggerall = var(7) = [0, 10] 
+triggerall = statetype != C
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2060
+triggerall = stateno != 8000
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+triggerall = movetype != A
+trigger1 = time = 30
+value = 1900
+
+
+[State -2, Kamehameha]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power >= 1000
+triggerall = var(7) = [11, 20]
+triggerall = statetype != C
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 1900
+triggerall = stateno != 8000
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+triggerall = movetype != A
+trigger1 = time = 30
+value = 2030
+
+[State -2, Kamehameha]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power >= 1000
+triggerall = var(7) = [21, 30]
+triggerall = statetype != C
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2060
+triggerall = stateno != 1900
+triggerall = movetype != A
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = stateno != 8060
+triggerall = stateno != 8062
+triggerall = stateno != 8063
+triggerall = stateno != 8065
+triggerall = stateno != 8066
+triggerall = stateno != 2020
+triggerall = stateno != 8070
+triggerall = stateno != 8071
+triggerall = stateno != 8073
+triggerall = stateno != 8074
+triggerall = stateno != 8075
+triggerall = stateno != 8076
+triggerall = stateno != 8080
+triggerall = stateno != 8081
+triggerall = stateno != 8084
+triggerall = stateno != 8086
+triggerall = stateno != 8088
+triggerall = stateno != 8090
+triggerall = stateno != 8091
+triggerall = stateno != 8092
+triggerall = stateno != 8093
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 30
+value = 8000
+
+[State -2, SSJ]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power = 3000
+triggerall = var(7) = [31, 60]
+triggerall = statetype = S
+triggerall = var(1) = 0
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 0
+value = 2999
+
+[State -2, SSJ]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power = 3000
+triggerall = var(8) = [0, 24]
+triggerall = statetype = S
+triggerall = var(1) = 0
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 30
+value = 8060
+
+[State -2, SSJ]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power = 3000
+triggerall = statetype = S
+triggerall = var(1) = 2 
+triggerall = var(11) = [40,60]
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 0
+value = 8080
+
+[State -2, SSJ]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power = 3000
+triggerall = statetype = S
+triggerall = var(1) = 2 
+triggerall = var(11) = [0,39]
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 0
+value = 736
+
+[State -2, SSJ]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = power = 3000
+triggerall = statetype = S
+triggerall = var(1) = 3
+triggerall = stateno != 130
+triggerall = stateno != 191
+triggerall = stateno != 181
+triggerall = stateno != 5900
+triggerall = stateno != 1940
+triggerall = stateno != 2060
+triggerall = stateno != 7065
+triggerall = stateno != 2999
+triggerall = stateno != 500
+triggerall = alive = 1
+triggerall = win = 0
+trigger1 = time = 0
+value = 8080
+;--------------------------------------------------
+
+[State -2, INTRO EX]
+type = null; changestate
+triggerall = palno != [7, 12]
+trigger1 = matchno = 1
+trigger1 = roundno = 1
+trigger1 = time = 15
+trigger1 = roundstate = 0
+trigger1 = stateno != 208
+trigger1 = stateno != 5900
+value = 204
+
+
+;-----------------------------------
+[State -2, Hurt]
+type = playsnd
+triggerall = time = 0
+triggerall = lose = 0
+trigger1 = stateno = 5000
+trigger2 = stateno = 5010
+trigger3 = stateno = 5020
+value = 5000, 0
+volume = -200
+
+[State -2, Hurt]
+type = removeexplod
+triggerall = time = 0
+triggerall = lose = 0
+trigger1 = stateno = 5000
+trigger2 = stateno = 5010
+trigger3 = stateno = 5020
+id = 2995
+
+[State -2, VarSet]
+type = varrandom
+trigger1 = time > 0
+v = 11
+range = 60
+
+[State -2, Teleport]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = var(1) = 2 || var(1) = 3
+triggerall = var(11) = [0, 30]
+triggerall = stateno = 5071
+trigger1 = time = 10
+value = 1999
+
+[State -2, Counter]
+type = changestate
+triggerall = palno = [7, 12]
+triggerall = var(1) = 2 || var(1) = 3
+triggerall = var(11) = [31, 60]
+triggerall = stateno = 5071
+trigger1 = time = 10
+value = 1980
+
+[State -2, 780]
+type = removeexplod
+triggerall = var(1) = 3
+trigger1 = alive = 0
+id = 780
+
+[State -2, 781]
+type = removeexplod
+triggerall = var(1) = 3
+trigger1 = alive = 0
+id = 781
+
+[State -2, 790]
+type = removeexplod
+triggerall = var(1) = 3
+trigger1 = alive = 0
+id = 790
+
+[State -2, 790]
+type = removeexplod
+triggerall = var(1) = 3
+trigger1 = alive = 0
+id = 791
+
+[State -2, sound]
+type = playsnd
+triggerall = var(1) = 3
+triggerall = alive = 1
+trigger1 = timemod = 60,0
+value = 740,0
+channel = 0
+volume = 200
+

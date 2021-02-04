@@ -1,0 +1,89 @@
+;Programming by Goten88
+
+[Statedef -2]
+
+[State -2: DisplayToClipBoard]
+type = DisplayToClipBoard
+trigger1 = 1
+text = "Variable 5: %d"
+params = Var(5)
+
+[State -2]
+type = SuperPause
+trigger1 = P1name != "Chiaotzu"
+time = 100000000000000000000
+
+; AI Power Gain
+[State -2]
+type = PowerAdd
+triggerall = Var(4) = 1
+triggerall = 1
+trigger1 = ctrl = 1
+trigger2 = stateno = 1500
+trigger3 = Movetype = A
+value = 1
+
+;AI Come Down
+[State -2]
+type = ChangeState
+trigger1 = Stateno = 1500
+trigger1 = Var(4) = 1
+trigger1 = P2BodyDist Y >= 20
+value = 15100
+
+[State -2]
+type = PlaySnd
+trigger1 = LoseKO
+trigger1 = time = 1
+trigger1 = var(9) = 0
+value = 5000,0
+
+[State -2]
+type = varset
+trigger1 = LoseKO
+trigger1 = time = 1
+var(9) = 1
+
+[State -2]
+type = PlaySnd
+trigger1 = var(10) = 0
+trigger1 = GetHitVar(fall) = 1
+trigger1 = GetHitVar(hitcount) < 2
+trigger1 = time = 0
+trigger1 = alive = 1
+value = 5000,0
+
+[State -2]
+type = varset
+trigger1 = GetHitVar(fall) = 1
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 1
+
+[State -2]
+type = varset
+trigger1 = stateno < 5000
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 0
+
+;Suicide Var
+[State -2]
+type = varset
+trigger1 = roundstate = 1
+trigger1 = life > 2500
+var(5) = 1
+
+[State -2]
+type = StopSnd
+Trigger1 = stateno != 222
+value = 1900,3
+channel = 3
+
+;Suicide Var
+[State -2]
+type = varset
+trigger1 = roundstate = 1
+trigger1 = life < 2500
+var(5) = 2
+;------------------------------------------------------------

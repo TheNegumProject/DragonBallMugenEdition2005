@@ -1,0 +1,30 @@
+
+
+[Info]
+name    = "Ubub"
+displayname = "Ubub"
+versiondate = 26,10,2000  
+mugenversion = 07,31,2000 
+author = "EmuBoarding http://members.xoom.it/sciak"     
+pal.defaults = 1
+
+[Files]
+cmd     = son-gohan.cmd     
+cns     = son-gohan.cns     
+st      = son-gohan.cns  
+stcommon = common1.cns   
+sprite  = son-gohan.sff      
+anim    = son-gohan.air      
+sound   = son-gohan.snd
+,pal1    = son-gohan-1.act
+,pal2    = son-gohan-2.act
+,pal3    = son-gohan-3.act
+,pal4    = son-gohan-4.act
+,pal5    = son-gohan-5.act
+,pal6    = son-gohan-6.act        
+,pal7    = son-gohan-7.act        
+,pal8    = son-gohan-8.act        
+,pal9    = son-gohan-9.act        
+,pal10   = son-gohan-10.act        
+,pal11   = son-gohan-11.act        
+,pal12   = son-gohan-12.act        

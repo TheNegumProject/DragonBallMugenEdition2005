@@ -1,0 +1,20 @@
+; Character information
+[Info]
+name          = "Vegeta GT by HyperionX" 
+displayname   = "Vegeta GT"
+versiondate 	= 05,27,2001    			
+mugenversion 	= 04,14,2001 			
+author 		= "HyperionX & ZGTeam" 
+
+; Files for the character
+[Files]
+cmd      = VegGT.cmd      ;Command set
+cns      = VegGT.cns      ;Constants
+st       = VegGT.cns      ;States
+st3      = Basic.cns       ;States
+stcommon = common1.cns     ;Common states
+sprite   = VegGT.sff      ;Sprite
+anim     = VegGT.air      ;Animation
+sound    = VegGT.snd      ;Sound
+pal1     = GT.act         ;Palette
+

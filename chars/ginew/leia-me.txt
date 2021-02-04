@@ -1,0 +1,19 @@
+Ginew 80% 
+by Lucifer
+
+
+ele tem dos os ataques basicos, voa,5 paletas de cores,zanzoken,
+estão faltando os sons,os um especiais,os golpes originais, provocasão
+e arrumar alguns bugs...
+
+Golpes 
+ESPECIAIS:
+Teletranporte:x+y
+a + b - Carregar Power Bar			     
+a + y (durante o pulo) - Voar
+Sequence: B, DIE, T, + b
+elbow dash: D, DF, F, x
+
+SUPERS:
+Hyper 2: B, DID, D + b
+

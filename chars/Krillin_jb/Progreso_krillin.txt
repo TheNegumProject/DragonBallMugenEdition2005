@@ -1,0 +1,353 @@
+        =*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*=
+       ==*          ____    _________     _________      ___                           *==
+      ===*	   |\___\  |\________\   |\________>    |\___\   ~~~                   *===
+     ====*	   ||   |  ||         |  ||         \   ||   /   ~~~                   *====
+    =====*   ___   ||   |  ||   ___   |  ||    ___   |  ||  |   ~~~                    *=====
+   ======*  |\__\  ||   |  ||  /   \  |  ||   |___>  |  ||  |  ~~~                     *======
+    =====*  ||  |__||   |  ||  \___/  |  ||    ___  <   ||  |  ~~~                     *=====
+     ====*  ||  |__\|   |  ||         |  ||   |___>  |  ||  |  ~~~                     *====
+      ===*  \\          |  ||   ___   |  ||          |  ||  |  ~~~      	       *===
+       ==*   \\________/   \|__|  \|__|  \|_________/   \|__|  ~~~          03-08-2004 *==
+        =*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*=
+
+***............Mejor vista a tamaño -10- -Courier New- (con "Negrita" activado)..............*** 
+***..............................MAXIMIZA ESTA VENTANA.......................................***
+
+
+
+|===========================================================|
+|==DESACTIVAR:"EDICION/AJUSTE DE LINEA" ANTES DE CONTINUAR==|
+|===========================================================|
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|                                                           |
+| Aqui empiezo un proyecto de sacar un char. El char elegido|
+|es krillin ya que por el momento no hay ningun krillin que | 
+|este verdaderamente bien. Los sprites son d Chrono_strife, |
+|asi que todo el merito de los graficos son para el. Este   |
+|sera mi primer char asi que en un principio no podra compe-|
+|tir con los chars que hay en estos momentos por ahi.Digamos|
+|que sera mi char de aprendizaje.                           |
+|                                                           |
+| 							    |
+|                                                           |
+ *****Alicante 02 agosto de 2004 -  20:48 ******************
+|                                                           |
+|                                                           |
+|                                                           |
+|                       by JABI*******___                   |
+|                                                           |
+|                                                           |
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+=============================================================
+=============================================================
+
+
+INFO:
+------------------------------
+Char:           Krillin
+Programacion:   JABI(Proyecto DBZ).
+Sprites: 	Buyuu Retsudan Krillin sprite (Chrono_strife).
+Char Base:   	Kfm creado por elecbyte como modelo basico de aprendizaje.
+
+
+
+|||||||||||||||||||||||||||||||
+||||||||||PROGRESO|||||||||||||
+|||||||||||||||||||||||||||||||
+
+
+Lo q falta
+------------
+-** Hacer archivo leeme de krillin.(TERMINAR)
+- Agregar sprites especiales.
+-** Icono de seleccion.
+-** Foto grande de seleccion.
+-** Sonidos.
+- Tecnicas especiales y supers.
+
+- Corregir bugs:
+  *En el especial_b el damage en la ultima patada solo kita un pto de vida.REVISAR
+  
+  **solucionado problemas con  las paletas.
+  **correr hacia atras.CORREGIDO==> krillin_common1
+  **puñetazo fuerte(golpea dos veces)CORREGIDO
+
+
+-----------------
+-----NOTAS-------
+-----------------
+
+*editamos icono de seleccion xo en la pantalla de selec se ve mal en la de lucha bien,x el momento no lo pondremos seguimos con la paleta sin los colores del icono. tenemos guardado el sprite del icono editado limpio para utilizarlo hacer la paleta otra vez.
+*A partir de ahora cogeremos los estado 7000 para los efectos y los 8000 para magias tipo proyectil(tanto en spr como en air).
+*cogidos sprites de goten d bardock xa aura,posibles auras freezer namek,tien.
+
+
+**golpe recibido agachado fuerte comprobar animacion si funciona.(comprobado,en principio funciona).
+
+
+
+========================================================
+
+27 sept 2004
+============
+- Agregado modo FLY (modelo del autor Bardock).Comando "b+y". En el [State X ,land 2] hemos tenido q agregar una linea  q faltaba ==> trigger1 = command = "holddown".
+posiblemente cambiemos las velocidades del modo vuelo.
+REVISAR X SI BUG
+
+26 sept 2004
+============
+- Agregados efectos de impacto de golpe (7050,7051,7052)
+- icono de seleccion  editado xo nose v bien  
+- Empezado a poner modo FLY, solo .cmd comando "b+y"
+
+25 sept 2004
+============
+-Programacion:
+ *Carga de KI: FUNCIONA (revisar x si bugs)
+	+Cmd lo hemos puesto en dos comandos, ki y ki2 ==> a+x.
+	+Cns basico grupo 830(animacion char).
+	+Air animacion 830. Efectos: 7000,7010
+	+Sff Agregados sprites de carga.
+	+Snd hecho.
+
+
+21 sept 2004
+============
+- Hechas 4 nuevas paletas xa el cambio de color de la vestimenta.
+
+20 sept 2004
+============
+- Puesto sonido a la intro y al taund.
+- Empezado a hacer la recopilacion de magias y efectos para hacer la paleta.
+
+18 sept 2004
+============
+-Combo especial_b TERMINADO(kizas revisar los Hitby y los guardflag).
+-Programacion:
+ *Combo especial_b: TERMINADO
+	+Cmd comando D,DB,B, b. ==> OPCION pulsando "b"
+	+Cns basico statedef 2050,2052,2053,2054,2055,840.
+	+Air Anim 2000,2053,2054,2055,840.
+	+Sff 3 sprites nuevos de teletransportacion.
+	+Snd Terminado.
+
+
+-Agregada animacion de derrota (850) cuando se acaba el  tiempo y de estado de cansancio.
+
+
+12 sept 2004
+============
+-Combo especial_a corregido FUNCIONA. Kizas segun veamos corregir la posicion y la pausa del pisoton final.Y tb configurarlo para q el combo no funcione qnd coge a  p2 en  el aire.
+
+-Empezado "combo especial_b".
+-Programacion:
+ *Combo especial_b: TERMINAR
+	+Cmd comando D,DB,B, b.
+	+Cns basico statedef 2050.Terminar.
+	+Air TODO.
+	+Sff 3 sprites nuevos.
+	+Snd falta todo.
+
+
+
+11 sept 2004
+============
+- Ajustado el combo especial_a,aun falla algunas veces en el pisoton.Lo dejamos asi x el momento.
+
+
+08 sept 2004
+============
+-combo especial_a,falla a veces en el pisoton final ya q ciertos chars se levantan muy pronto.
+- Agregado archivo de  sonido.
+
+06 sept 2004
+============
+-Terminado combo especial_a(funciona).
+ Falta sonidos y efectos de tipo explot.
+
+
+
+02 sept 2004
+============
+- Seguimos con el combo basandonos en uno de gokussj2 de bardock(porrada).
+-Programacion:
+ *Combo especial_a: FUNCIONA (revisar x si bugs)TERMINAR
+	+Cmd comando D,DB,B, a.
+	+Cns basico statedef 2000(faltan efectos).Terminar.
+	+Air animacion 2000 hecha,2001(golpes a mitad).
+	+Sff sin  sprites nuevos.
+	+Snd falta todo.
+
+
+
+01 sept 2004
+==============
+-Hecho un pekeño combo state en cns y air:  2000. Comando D,DB,B a.
+ no funcion,xo si ponemos comando "c" si q va,REVISAR.No funciona qnd le ponemos la cmbinacion con  una tecla ya  utilizada.
+ Solucionado temporalmente poniendo en  el State -1 del puñetazo flojo(tecla"a"): trigger = command != (el comando  de  la tecnica en  cuestion)
+
+
+28 agosto 2004
+==============
+-Programacion:
+ *Carga de KI: FUNCIONA (revisar x si bugs)
+	+Cmd lo hemos puesto en dos comandos, ki y ki2(revisar lo de recovery).
+	+Cns basico grupo 830(faltan efectos).revisar funcion  poweradd.
+	+Air animacion 830.HAy q reacerla para q kede bien.(HECHO)
+	+Sff Agregados sprites de carga(faltan todos los efectos).
+	+Snd falta todo.
+
+
+27 agosto 2004
+==============
+- Terminado los movimientos basicos de krillin,ahora  empezamos con los especiales.
+- Empezamos con la recarga de KI. Utilizaremos los grupos del 800-1000 para las animaciones en el .air.
+
+26 agosto 2004
+==============
+- Sprites agregados:
+  *puñetazo debil agachado.
+  *Patada debil agachado(sprites terminados de editar).
+
+25 agosto 2004
+==============
+- Sprites agregados:
+  *Patada agachado(falta editar los sprites).
+
+
+
+24 agosto 2004
+==============
+-  Cambiados los comandos de puñetazos a  las letras "a,b,c" y patadas "x,y,z".
+- Sprites agregados:
+  *Burla.
+
+
+23 agosto 2004
+==============
+- Sprites agregados:
+  *Guardia de pie, aire y agachado
+  *Hit back while guarding(de pie, aire y agachado).
+
+22 agosto 2004
+==============
+- Sprites agregados:
+  *Puñetazo1 en el aire.
+  *Patada1 en el aire.
+
+21 agosto 2004
+==============
+- Sprites agregados:
+  *Segunda patada y tercera(alejate enemigo).
+  *Agregada foto bigpotrait.
+
+20 agosto 2004
+==============
+- Sprites agregados:
+  *una patada.
+
+
+17 agosto 2004
+==============
+- Sprites agregados:
+  *Sprites de las caidas grupos 5060,5061,5062,5070,5071,5072(sin .air)
+  *Turning y crouch turning.
+  *Puñetazo fuerte(BUG)REVISAR
+
+15 agosto 2004
+==============
+- Sprites agregados:
+  *Hit ground from fall (up-type)
+  *LieDown
+  *Get up from LieDown
+  *LieDead animation
+  *Cansado.
+  
+  *Fall-recovery near ground(Sin comprobar si va bien)
+  *Fall-recovery in mid-air(Sin comprobar si va bien)
+
+- Y sprites necesarios pertenecientes a las caidas(sin animacion en .air).
+
+
+13 agosto 2004
+==============
+- Sprites agregados:
+  *Tripped.
+  *LieDown Hit (stay down)
+  *LieDown Hit (hit up into air)
+  *Hit ground from fall
+  *Bounce into air
+  *Hit ground from bounce
+  
+
+12 agosto 2004
+==============
+- Sprites agregados:
+  *Stand/Air Hit back
+  *Stand/Air Hit transition
+  *Air Recover
+  *Air Fall (going up)
+
+11 agosto 2004
+=============
+- Sprites agregados:
+  *golpe recibido agachado,todas intensidades.
+
+- Editado otro sprite de agachado recivir golpe.
+
+
+10 agosto 2004
+=============
+- Edidado un sprite q faltaba(recivir golpe agachado).
+  faltan mas.
+
+9 agosto 2004
+=============
+- Sprites agregados:
+  *salto atras.
+  *Golpe recibido en posicion de pie,altura alta y baja,todas las intensidades(flojo,medio,fuerte).
+
+6 agosto 2004
+=============
+- Sprites agregados:
+  *Agacharse.
+  *Salto neutral.
+  *salto adelante.
+
+5 agosto 2004
+=============
+- Arreglado bug de Stand  puñetazo debil.
+- Sprites agregados:
+   *Correr adelante.
+   *correr atras(BUG)corregir. 
+
+4 agosto 2004
+=============
+- Sprites agregados:
+   *Puñetazo debil.==>bug al dar al puñetazo rapidamente(CORREGIDO).
+
+3 agosto 2004
+=============
+- Creada una nueva paleta para krillin.
+- Empezado a agregar los sprites sobre el .sff de kfm.
+- Sprites agregados:
+   *Intro.
+   *Stand.
+   *Andar adelante y hacia atras.
+   
+2 agosto 2004
+=============
+ 
+Lo q tenemos 
+------------
+- Sprites(chronostrife).
+- Char kfm como base(Elecbyte).
+
+
+Lo q falta
+------------
+- Todo
+
+

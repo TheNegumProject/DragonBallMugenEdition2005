@@ -1,0 +1,47 @@
+
+;----------------------------------------------------------------------------
+; Char = " Gotenks GT "  
+; Criado por = " Lip Ultra SSJ "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================
+
+=================M.U.G.E.N. Ultra Super Saiyajin==================
+;Gotenks GT def file
+
+; Informções do Personagem
+[Info]
+name = "Gotenks GT by Lip Ultra SSJ"
+displayname = "Gotenks GT"
+versiondate = 2,04,2001 
+mugenversion = 14,04,2001
+author = "Lip Ultra SSJ"
+pal.defaults = 1
+
+; Todos Arquivos 
+[Files]
+cmd     = Gotenks-gt.cmd
+cns     = Gotenks-gt.cns
+st      = Gotenks-gt.cns
+st2     = Voar.cns
+st3     = Helpers-gt.cns
+st4     = Combo-gt.cns
+stcommon = Common.cns
+sprite  = Gotenks-gt.sff
+anim    = Gotenks-gt.air
+sound   = Gotenks-gt.snd

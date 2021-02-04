@@ -1,0 +1,15 @@
+[Info]
+mugenversion=7, 31, 2000
+name="Cell forma 2"
+DisplayName="Komurczak Forma 2"
+
+[Files]
+cmd=cellform2.cmd
+cns=cellform2.cns
+st=cellform2.cns
+stcommon=common1.cns
+sprite=cellform2.sff
+anim=cellform2.air
+sound=cellform2.snd
+
+;By Bicio

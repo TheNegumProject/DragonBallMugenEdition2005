@@ -1,0 +1,16 @@
+[Info]
+name    = "Majin Bu Magro";<-- Replace with a real name
+displayname = "BuuBuu Forma 3";<-- Replace with name to display
+; Files for the character
+[Files]
+cmd     = boo.cmd
+cns     = boo.cns
+st      = boo.cns
+stcommon = common1.cns
+sprite  = boo.sff
+anim    = boo.air
+sound   = boo.snd
+pal1    = boo.act
+
+
+

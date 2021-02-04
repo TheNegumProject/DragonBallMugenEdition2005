@@ -1,0 +1,177 @@
+; Arquivo de IA do personagem(inteligência artificial), esse é o arquivo que faz com
+; que o char não fique dormindo durante a luta :) 
+; Eu não fiz um ia para o char ficar apelão, foi mais para ele saber administrar
+; melhor os golpes, ele ainda esta bem básico mas pretendo melhora-lo
+;---------------------------------------------------------------------------------------
+; States do statedef -2 não ligados ao ia
+;---------------------------------------------------------------------------------------
+[StateDef -2]
+;---------------------------------------------------------------------------------------
+;---------------------------------------------------------------------------------------
+; States ligados ao ia
+;---------------------------------------------------------------------------------------
+[State -2, AI]
+type = VarSet
+trigger1 = command = "ai"
+trigger2 = command = "ai1"
+trigger3 = command = "ai2"
+trigger4 = command = "ai3"
+trigger5 = command = "ai4"
+trigger6 = command = "ai5"
+trigger7 = command = "ai6"
+trigger8 = command = "ai7"
+trigger9 = command = "ai8"
+trigger10= command = "ai9"
+trigger11= command = "ai10"
+trigger12= command = "ai11"
+trigger13= command = "ai12"
+trigger14= command = "ai13"
+var(59) = 1
+;---------------------------------------------------------------------------------------
+;Combos pré definidos
+;---------------------------------------------------------------------------------------
+[State -2, AI8]
+;Início do combo
+Type = ChangeState
+triggerall = Ctrl
+triggerall = roundstate = 2
+triggerall = var(59) = 1
+triggerall = StateType = S
+triggerall = P2MoveType != H
+triggerall = P2StateType != A
+triggerall = random > 700
+trigger1 = P2BodyDist X < 10
+trigger1 = P2StateNo != 130
+trigger1 = P2StateNo != 152
+value = 200
+
+[State -2, AI9]
+;Opção 01 para combo
+Type = ChangeState
+triggerall = roundstate = 2
+triggerall = StateType = S
+triggerall = Var(59) = 1
+triggerall = Power >= 3000
+triggerall = P2BodyDist X < 60
+triggerall = NumExplod(1700) = 1
+triggerall = random < 600
+trigger1 = P2StateType = S
+trigger1 = Ctrl
+trigger1 = P2StateNo != 100
+trigger2 = Ctrl
+trigger2 = P2MoveType = A
+trigger3 = PrevStateNo = 200
+trigger3 = P2MoveType = H
+value = 1200
+
+[State -2, AI10]
+;Se a opção 01 falhou, tente opção 02
+Type = ChangeState
+triggerall = roundstate = 2
+triggerall = StateType = S
+triggerall = Var(59) = 1
+triggerall = P2BodyDist X < 60
+triggerall = NumExplod(1700) = 0
+trigger1 = P2StateType = S
+trigger1 = Ctrl
+trigger2 = Ctrl
+trigger2 = P2MoveType = A
+trigger3 = PrevStateNo = 200
+trigger3 = P2MoveType = H
+value = 1800
+
+[State -2, AI1]
+;Se o char estiver distante
+Type = ChangeState
+triggerall = roundstate = 2
+triggerall = StateType = S
+triggerall = Var(59) = 1
+triggerall = Power >= 3000
+triggerall = P2BodyDist X < 400
+triggerall = NumExplod(1700) = 1
+triggerall = random < 600
+trigger1 = P2StateType = S
+trigger1 = Ctrl
+trigger1 = P2StateNo != 100
+trigger2 = Ctrl
+trigger2 = P2MoveType = A
+trigger3 = PrevStateNo = 200
+trigger3 = P2MoveType = H
+value = 1000
+
+;---------------------------------------------------------------------------------------
+;Combo com cancelamento de movimento
+;---------------------------------------------------------------------------------------
+[State -2, AI7]
+Type = ChangeState
+triggerall = Ctrl
+triggerall = StateType = S
+triggerall = Var(59) = 1
+trigger1 = P2BodyDist X < 6
+trigger1 = P2MoveType != H
+trigger1 = P2Stateno != 130
+trigger1 = P2Stateno != 152
+trigger1 = random < 500
+value = 200
+
+[State -2, AI9]
+Type = ChangeState
+triggerall = StateType = S
+triggerall = Var(59) = 1
+triggerall = P2StateType = S
+trigger1 = Ctrl
+trigger1 = P2BodyDist X < 6
+trigger1 = random < 600
+trigger2 = Stateno = 200
+trigger2 = time > 5
+trigger2 = movehit = 1
+trigger2 = random < 500
+trigger2 = P2BodyDist X < 10
+value = 1200
+
+[State -2, sequencia]
+Type = ChangeState
+triggerall = StateType = S
+triggerall = Var(59) = 1
+triggerall = P2StateType = S
+trigger1 = Ctrl
+trigger1 = P2BodyDist X < 6
+trigger1 = random < 600
+trigger2 = Stateno = 200
+trigger2 = time > 5
+trigger2 = movehit = 1
+trigger2 = random < 700
+trigger2 = P2BodyDist X < 10
+value = 1000
+
+;---------------------------------------------------------------------------------------
+;Defesas automáticas
+;---------------------------------------------------------------------------------------
+
+[State -2, AI2]
+;Defesa em pé
+type = ChangeState
+triggerall = Ctrl
+triggerall = roundstate = 2
+triggerall = StateType = S
+triggerall = var(59) = 1
+trigger1 = P2MoveType = A
+trigger1 = P2BodyDist X < 40
+trigger1 = Random < 500
+value = 130
+
+[State -2, AI3]
+;Defesa abaixado 
+type = ChangeState
+triggerall = Ctrl
+triggerall = roundstate = 2
+triggerall = StateType = S
+triggerall = Var(59) = 1
+trigger1 = P2StateType = C
+trigger1 = P2MoveType = A
+trigger1 = P2BodyDist X < 40
+trigger1 = random < 500
+value = 152
+;---------------------------------------------------------------------------------------
+;FIM :P
+;---------------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+[Info]
+name="Gohan Ssj"
+DisplayName="SonGohan SSJ"
+Author="SodonHID"
+pal.defaults = 1
+
+[Files]
+cmd=gohanssj.cmd
+cns=gohanssj.cns
+st=gohanssj.cns
+st2=helpers.cns 
+st23=IA.cns
+stcommon=common1.cns
+sprite=gohanssj.sff
+anim=gohanssj.air
+sound=gohanssj.snd 
+pal1=original.act
+pal2=laranja.act 
+pal3=preto.act 
+pal4=vermelho.act 
+
+

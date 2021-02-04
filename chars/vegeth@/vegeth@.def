@@ -1,0 +1,20 @@
+[Info]
+Name="Vegeth@ by Nemesis82 & Biohazard82"
+DisplayName="Vegetto SSJ"
+Author="Nemesis82 & Biohazard82"
+MugenVersion = 2001.04.14
+
+
+[Files]
+cmd=vegeth@.cmd
+cns=vegeth@.cns
+cns1=vegeth@.cns
+st=vegeth@.cns
+st1=vegeth-2@.cns
+st2=p2stateno.cns
+stcommon=common1.cns
+sprite=vegeth@.sff
+anim=vegeth@.air
+sound=vegeth@.snd
+pal1=vegeth@.act
+

@@ -1,0 +1,51 @@
+
+;----------------------------------------------------------------------------
+; Char = " King Cold "  
+; Criado por = " Future Vegetto "  
+  
+; ## Nós não Temos Nenhuma Responsabilidade por esse char ##             
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Divulgue seu Char em nosso Site Gratuitamente !!!!!!!!!!!
+; Mais Informações www.mzpex.rg3.net  ou www.mugenzpower.hpg.com.br
+;----------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------
+; Esse Char foi pego no Site MugenZPower www.mzpex.rg3.net
+; Se você pegou esse char em outro site com o nosso link, porfavor nos avise.
+;----------------------------------------------------------------------------
+
+:=============================================================================================
+;Distribuido pela = "MugenZPower"							      
+;URL  = WWW.MZPEX.RG3.NET      OU   WWW.MUGENZPOWER.RG3.NET   OU  WWW.MUGENZPOWER.HPG.COM.BR  
+;=============================================================================================
+
+
+; King Cold by Future Vegetto
+
+[Info]
+name="King Cold "
+displayname="General Kord"
+versiondate=20/7/2002
+mugenversion=
+author="Future_Vegetto"
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=KingCold.cmd
+cns=KingCold.cns
+st=KingCold.cns
+stcommon=common1.cns
+sprite=KingCold.sff
+anim=KingCold.air
+sound=KingCold.snd
+pal1=KingCold.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.mussj.rg3.net
+E-mail=zmugen@yahoo.com.br

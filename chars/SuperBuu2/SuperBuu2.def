@@ -1,0 +1,40 @@
+;|=================================================|;
+;|    	    BOO COPYCAT BY COPYCAT	   |;
+;|=================================================|;
+
+;|=================================================|;
+[Info]
+name         = "BOO COPYCAT"        
+displayname  = "BuuBuu Forma 2"
+mugenversion = 04,14,2001   			   
+author       = "COPYCAT"    
+pal.defaults = 1,2,3,4,5,6
+;==================================================|;
+
+;==================================================|;
+;Archivos requeridos, por favor no muevas nada....
+[Files]
+cmd         = comandos.cmd  
+cns         = constantes.cns   
+st          = constantes.cns 
+;st1         = ia.cns
+stcommon    = common1.cns
+sprite      = imagenes.sff   
+anim        = animaciones.air
+
+pal2        = boo.act
+
+
+sound       = sonidos.snd   
+;==================================================|;
+                      [Arcade]	
+                      
+;|=================[ Arcade mode ]=================|;      
+;|	    intro.storyboard = intro.def           |;
+;|	    ending.storyboard = ending.def	   |;
+;|=================================================|;
+	    
+;|=================================================|;
+;|	   	http://neom.studiosmh.com   	   |;
+;|      metalicwarrior@hotmail.com --> @ndroide	   |;
+;|=================================================|;

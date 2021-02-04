@@ -1,0 +1,25 @@
+
+[Info]
+name    = "GotenGT"
+displayname = "SonGoten GT"
+author = "Goten88"
+versiondate = 09,19,2004
+pal.defaults = 1,2,3,4
+
+[Files]
+cmd     = GotenGT.cmd
+cns     = GotenGT.cns
+st      = GotenGT.cns
+st2     = AI.cns
+stcommon = common1.cns
+sprite  = GotenGT.sff
+anim    = GotenGT.air
+sound   = GotenGT.snd
+pal1    = GotenGTOtherEps.act
+pal2    = GotenGT1stEp.act
+pal3    = GotenTC.act
+pal4    = GotenGTOtherEps2.act
+
+; Arcade mode
+[Arcade]
+ending.storyboard = GotenGTending.def

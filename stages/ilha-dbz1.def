@@ -1,0 +1,103 @@
+; BackGround - Ilha - DBZ1
+; by Billy_Brother
+; E-Mail: billy_brother@bol.com.br
+; MugeNow - http://www.MugeNow.cjb.net
+; Riped: Dragon Ball Z 1 (Snes)
+; Edição de Graficos: Billy_Brother
+; Edição de Imagens: Billy_Brother
+; Alterações: Billy_Brother
+; Riper: Billy_Brother
+; Animações: Billy_Brother
+
+[Info]
+name = "Ilha - DBZ1"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -96
+boundright = 96
+boundhigh = -256
+boundlow = 0
+verticalfollow = .7
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset   = 210
+autoturn  = 1
+
+[Shadow]
+color = 128,128,128
+yscale = .3
+
+[Music]
+bgmusic = 
+
+[BGdef]
+spr = ilha-dbz1.sff
+
+[BG 0]
+type  = normal
+spriteno = 0, 2
+layerno = 0
+start =0, -300
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1
+
+[BG 1]
+type  = normal
+spriteno = 0, 0
+layerno = 0
+start = 0, 6
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1
+
+[BG 2]
+type  = normal
+spriteno = 0, 1
+layerno = 0
+start = 0, -300
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1
+velocity = 0.3, 0
+
+[BG 3]
+type  = normal
+spriteno = 0, 3
+layerno = 0
+start = 0, -13
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1
+velocity = 0.1, 0

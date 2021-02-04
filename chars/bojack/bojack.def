@@ -1,0 +1,23 @@
+[Info]
+Name="Bojack SNES DBZ 2"
+DisplayName="Bojack"
+Author="GohanSSM2"
+VersionDate=
+MugenVersion=27,06,2000
+Pal.Defaults=
+
+[Files]
+cmd=bojack.cmd
+cns=bojack.cns
+st=bojack.cns
+stcommon=aircodes.cns
+sprite=bojack.sff
+anim=bojack.air
+sound=bojack.snd
+pal1=bojack.act
+pal2=bojack2.act
+pal3=bojack4.act
+pal4=bojack3.act
+pal5=bojack5.act
+pal6=bojack6.act
+

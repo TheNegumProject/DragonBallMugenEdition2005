@@ -1,0 +1,28 @@
+[Info]
+name= "Vegeta by OverMind"
+DisplayName="Majin Vegeta SSJ"
+versiondate = 12,16,2000  
+mugenversion = 11,29,2000 
+author = "Trunks"     
+pal.defaults = 1,2,3,4,5,6
+
+[Files]
+cmd=vegetahd.cmd
+cns=vegetahd.cns
+st=vegetahd.cns
+stcommon=common.cns
+sprite=vegetahd.sff
+anim=vegetahd.air
+sound=vegetahd.snd
+pal1=vegetahd.act
+pal2=vegetahd1.act
+pal3=vegetahd2.act
+pal4=vegetahd3.act
+pal5=vegetahd4.act
+pal6=vegetahd5.act
+pal7=vegetahd.act
+pal8=vegetahd1.act
+pal9=vegetahd2.act
+pal10=vegetahd5.act
+pal11=vegetahd4.act
+pal12=vegetahd3.act
